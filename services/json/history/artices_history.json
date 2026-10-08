@@ -1,0 +1,23 @@
+[
+  {
+    "year": 2026,
+    "page_id": "2026001",
+    "page_html_path": "services/html_contents/Game/2026001.html",
+    "is_done": "True",
+    "type": "Game"
+  },
+  {
+    "year": 2026,
+    "page_id": "2026002",
+    "page_html_path": "services/html_contents/Game/2026002.html",
+    "is_done": "True",
+    "type": "Game"
+  },
+  {
+    "year": 2026,
+    "page_id": "2026003",
+    "page_html_path": "services/html_contents/Game/2026003.html",
+    "is_done": "True",
+    "type": "Game"
+  }
+]
