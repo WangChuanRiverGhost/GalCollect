@@ -3,7 +3,8 @@ function getFormData() {
   return {
     choose_source: $choose_source.find("option:selected").text().trim(),
     choose_cngal_type: $choose_cngal_type.find("option:selected").text().trim(),
-    choose_cngal_week_year: $choose_cngal_week_year.find("option:selected").text().trim(),
+    choose_cngal_second_type: $choose_cngal_second_type.find("option:selected").text().trim(),
+    year:$choose_year.find("option:selected").text().trim(),
     page_start: parseInt($start_page.val()),
     page_end: parseInt($end_page.val())
   };

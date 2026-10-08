@@ -272,7 +272,3 @@ def get_article(year,pages,category):  # 储存文章数据到数据库|储存�
     print("全部解析完成，准备传输数据")
 
     return artices_history,artices
-
-
-a = get_article(2026,[1,2,3],"Game")
-print(a)

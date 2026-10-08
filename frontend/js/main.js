@@ -4,8 +4,9 @@
 //关于用户输入
 var $choose_source = $("#choose_source");
 var $choose_cngal_type = $("#choose_cngal_type");
-var $choose_cngal_week_year = $("#choose_week_year");
+var $choose_cngal_second_type = $("#choose_week_year");
 var $choose_cngal_weekly_page = $("#choose_cngal_weekly_page")
+var $choose_year = $("#choose_cngal_week_year")
 var $start_page = $("#start_cngal_weekly_page");
 var $end_page = $("#end_cngal_weekly_page");
 
@@ -37,17 +38,31 @@ $(function(){
     $choose_cngal_type.on("change",function(){
         show_choose_week_year($(this).val())
     })
-    //监控按钮
-    $start_collect.click(function(){
+    //监控按钮：开始采集
+    $start_collect.on("click",function(){
 
         var data = getFormData()
-
         $("#show_table").show()
 
+        window.alert("已经获取数据："+ data)
 
-        //把data传到后端处理，发起调用爬虫脚本的请求
+        //把data传到后端处理，发起调用爬虫脚本并解析数据到json文件的请求
+        fetch("/start_spider?year=" + data.year + "&page_start=" + data.page_start + "&page_end=" + data.page_end + "&category=" + data.choose_cngal_second_type)
+            .then(res=>res.json())
+            .then(()=>fetch("/get_table?tp=" + "work_artices")//向后端发送读取work_artices文件中的数据的请求，并展示到前端
+                    .then(res=>res.json())
+                    .then(data=>{
+                        data.forEach(item => {
+                            $("#cngal_weekly_table").append(
+                                `<tr><td>${item.title}</td><td>${item.url}</td><td>${item.maintext_path}</td>`
+                            )
 
-        //向后端发送读取work_artices文件中的数据的请求，并展示到前端
+                    });})
+        )
+        
+        window.alert("调用成功")
+
+
         
 
     })
