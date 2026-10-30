@@ -1,6 +1,6 @@
 //获取用户输入数据
 function getFormData() {
-  return {
+  data = {
     choose_source: $choose_source.find("option:selected").text().trim(),
     choose_cngal_type: $choose_cngal_type.find("option:selected").text().trim(),
     choose_cngal_second_type: $choose_cngal_second_type.find("option:selected").text().trim(),
@@ -8,6 +8,12 @@ function getFormData() {
     page_start: parseInt($start_page.val()),
     page_end: parseInt($end_page.val())
   };
+  if (!data.choose_source || !data.choose_cngal_type ||
+      !data.choose_cngal_second_type || !data.year ||
+      isNaN(data.page_start) || isNaN(data.page_end)) {
+      return null;   // 返回 null 表示数据不完整
+  }
+  return data
 }
 //获取用户选择的数据源的数据
 function show_filter_criteria(choose_source){

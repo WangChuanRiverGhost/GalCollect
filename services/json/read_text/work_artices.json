@@ -1,182 +1,352 @@
 [
   {
-    "title": "在你的声音里",
-    "maintext_path": "services/text_file/reports5932.txt",
-    "url": "https://www.cngal.org/entries/index/5932",
-    "type": "Game"
-  },
-  {
-    "title": "大学物语",
-    "maintext_path": "services/text_file/reports6068.txt",
-    "url": "https://www.cngal.org/entries/index/6068",
-    "type": "Game"
-  },
-  {
-    "title": "魔岛新纪",
-    "maintext_path": "services/text_file/reports6402.txt",
-    "url": "https://www.cngal.org/entries/index/6402",
-    "type": "Game"
-  },
-  {
-    "title": "我们纯真的青春",
-    "maintext_path": "services/text_file/reports6762.txt",
-    "url": "https://www.cngal.org/entries/index/6762",
-    "type": "Game"
-  },
-  {
     "title": "机影：夏夜梦寻",
     "maintext_path": "services/text_file/reports5669.txt",
     "url": "https://www.cngal.org/entries/index/5669",
-    "type": "Game"
+    "type": "Game",
+    "create_time": "2025-05-27"
   },
   {
     "title": "赝作 心灵推演",
     "maintext_path": "services/text_file/reports5597.txt",
     "url": "https://www.cngal.org/entries/index/5597",
-    "type": "Game"
+    "type": "Game",
+    "create_time": "2026-05-12"
   },
   {
     "title": "蝎之尾",
     "maintext_path": "services/text_file/reports6085.txt",
     "url": "https://www.cngal.org/entries/index/6085",
-    "type": "Game"
+    "type": "Game",
+    "create_time": "2026-06-17"
   },
   {
     "title": "睢阳：诗与火",
     "maintext_path": "services/text_file/reports6176.txt",
     "url": "https://www.cngal.org/entries/index/6176",
-    "type": "Game"
+    "type": "Game",
+    "create_time": "2026-09-05"
   },
   {
     "title": "黄莓C",
     "maintext_path": "services/text_file/reports6214.txt",
     "url": "https://www.cngal.org/entries/index/6214",
-    "type": "Game"
+    "type": "Game",
+    "create_time": "2026-08-30"
   },
   {
     "title": "失败作",
     "maintext_path": "services/text_file/reports6215.txt",
     "url": "https://www.cngal.org/entries/index/6215",
-    "type": "Game"
+    "type": "Game",
+    "create_time": "2026-09-22"
   },
   {
     "title": "妹居物语",
     "maintext_path": "services/text_file/reports6340.txt",
     "url": "https://www.cngal.org/entries/index/6340",
-    "type": "Game"
+    "type": "Game",
+    "create_time": "2026-05-15"
   },
   {
     "title": "瑶光",
     "maintext_path": "services/text_file/reports6909.txt",
     "url": "https://www.cngal.org/entries/index/6909",
-    "type": "Game"
+    "type": "Game",
+    "create_time": "2026-05-26"
   },
   {
     "title": "蓝琥珀",
     "maintext_path": "services/text_file/reports6931.txt",
     "url": "https://www.cngal.org/entries/index/6931",
-    "type": "Game"
+    "type": "Game",
+    "create_time": "2026-06-23"
   },
   {
     "title": "故地春寻",
     "maintext_path": "services/text_file/reports7103.txt",
     "url": "https://www.cngal.org/entries/index/7103",
-    "type": "Game"
+    "type": "Game",
+    "create_time": "2026-07-13"
   },
   {
     "title": "天狐札记",
     "maintext_path": "services/text_file/reports3379.txt",
     "url": "https://www.cngal.org/entries/index/3379",
-    "type": "Game"
+    "type": "Game",
+    "create_time": "2025-11-09"
   },
   {
     "title": "无垢之恋 -绽放于春之花海-",
     "maintext_path": "services/text_file/reports3440.txt",
     "url": "https://www.cngal.org/entries/index/3440",
-    "type": "Game"
+    "type": "Game",
+    "create_time": "2026-06-21"
   },
   {
     "title": "维罗瓦年代记：绯红之狼",
     "maintext_path": "services/text_file/reports3975.txt",
     "url": "https://www.cngal.org/entries/index/3975",
-    "type": "Game"
+    "type": "Game",
+    "create_time": "2025-06-03"
   },
   {
     "title": "梦之彼方-fate prologue",
     "maintext_path": "services/text_file/reports4152.txt",
     "url": "https://www.cngal.org/entries/index/4152",
-    "type": "Game"
+    "type": "Game",
+    "create_time": "2026-08-23"
   },
   {
     "title": "构想彼方",
     "maintext_path": "services/text_file/reports4686.txt",
     "url": "https://www.cngal.org/entries/index/4686",
-    "type": "Game"
+    "type": "Game",
+    "create_time": "2026-06-15"
+  },
+  {
+    "title": "苍蓝恋诗：殆尽的八月之星",
+    "maintext_path": "services/text_file/reports4835.txt",
+    "url": "https://www.cngal.org/entries/index/4835",
+    "type": "Game",
+    "create_time": "2026-10-09"
   },
   {
     "title": "旅人的紫阳",
     "maintext_path": "services/text_file/reports4848.txt",
     "url": "https://www.cngal.org/entries/index/4848",
-    "type": "Game"
+    "type": "Game",
+    "create_time": "2025-06-03"
   },
   {
     "title": "鸢之歌：归途",
     "maintext_path": "services/text_file/reports5051.txt",
     "url": "https://www.cngal.org/entries/index/5051",
-    "type": "Game"
+    "type": "Game",
+    "create_time": "2026-09-10"
   },
   {
     "title": "Starry-巡星之旅",
     "maintext_path": "services/text_file/reports5068.txt",
     "url": "https://www.cngal.org/entries/index/5068",
-    "type": "Game"
+    "type": "Game",
+    "create_time": "2026-08-30"
   },
   {
     "title": "银雀：十三月的爱恋",
     "maintext_path": "services/text_file/reports5204.txt",
     "url": "https://www.cngal.org/entries/index/5204",
-    "type": "Game"
+    "type": "Game",
+    "create_time": "2026-06-20"
   },
   {
     "title": "爱之巢",
     "maintext_path": "services/text_file/reports5337.txt",
     "url": "https://www.cngal.org/entries/index/5337",
-    "type": "Game"
+    "type": "Game",
+    "create_time": "2026-09-11"
   },
   {
     "title": "MagicSweets-给予幸福的魔法糖果-",
     "maintext_path": "services/text_file/reports5429.txt",
     "url": "https://www.cngal.org/entries/index/5429",
-    "type": "Game"
+    "type": "Game",
+    "create_time": "2026-10-11"
   },
   {
     "title": "藏物",
     "maintext_path": "services/text_file/reports5566.txt",
     "url": "https://www.cngal.org/entries/index/5566",
-    "type": "Game"
+    "type": "Game",
+    "create_time": "2026-03-13"
   },
   {
     "title": "东北在逃青年",
     "maintext_path": "services/text_file/reports5584.txt",
     "url": "https://www.cngal.org/entries/index/5584",
-    "type": "Game"
+    "type": "Game",
+    "create_time": "2024-12-31"
   },
   {
     "title": "井底：与奇迹邂逅的井底之人",
     "maintext_path": "services/text_file/reports5604.txt",
     "url": "https://www.cngal.org/entries/index/5604",
-    "type": "Game"
+    "type": "Game",
+    "create_time": "2026-08-03"
   },
   {
     "title": "释梦之祩",
     "maintext_path": "services/text_file/reports5629.txt",
     "url": "https://www.cngal.org/entries/index/5629",
-    "type": "Game"
+    "type": "Game",
+    "create_time": "2025-12-31"
   },
   {
     "title": "AirBoost 天空机士",
     "maintext_path": "services/text_file/reports5636.txt",
     "url": "https://www.cngal.org/entries/index/5636",
-    "type": "Game"
+    "type": "Game",
+    "create_time": "2025-11-30"
+  },
+  {
+    "title": "夜空色的魔法少女",
+    "maintext_path": "services/text_file/reports5673.txt",
+    "url": "https://www.cngal.org/entries/index/5673",
+    "type": "Game",
+    "create_time": "2025-11-09"
+  },
+  {
+    "title": "金鱼症候群",
+    "maintext_path": "services/text_file/reports5786.txt",
+    "url": "https://www.cngal.org/entries/index/5786",
+    "type": "Game",
+    "create_time": "2025-12-31"
+  },
+  {
+    "title": "恋爱泡馍！青春老陕",
+    "maintext_path": "services/text_file/reports5868.txt",
+    "url": "https://www.cngal.org/entries/index/5868",
+    "type": "Game",
+    "create_time": "2025-11-30"
+  },
+  {
+    "title": "雨中的生命之歌",
+    "maintext_path": "services/text_file/reports5903.txt",
+    "url": "https://www.cngal.org/entries/index/5903",
+    "type": "Game",
+    "create_time": "2025-11-20"
+  },
+  {
+    "title": "柔蒂亚克：永眠之城",
+    "maintext_path": "services/text_file/reports5931.txt",
+    "url": "https://www.cngal.org/entries/index/5931",
+    "type": "Game",
+    "create_time": "2026-09-09"
+  },
+  {
+    "title": "列乌尼斯的挽歌",
+    "maintext_path": "services/text_file/reports5979.txt",
+    "url": "https://www.cngal.org/entries/index/5979",
+    "type": "Game",
+    "create_time": "2026-07-29"
+  },
+  {
+    "title": "恋语星缘",
+    "maintext_path": "services/text_file/reports6008.txt",
+    "url": "https://www.cngal.org/entries/index/6008",
+    "type": "Game",
+    "create_time": "2026-09-08"
+  },
+  {
+    "title": "世界之外的愚人船",
+    "maintext_path": "services/text_file/reports6053.txt",
+    "url": "https://www.cngal.org/entries/index/6053",
+    "type": "Game",
+    "create_time": "2026-06-23"
+  },
+  {
+    "title": "不上岸不恋爱",
+    "maintext_path": "services/text_file/reports6058.txt",
+    "url": "https://www.cngal.org/entries/index/6058",
+    "type": "Game",
+    "create_time": "2026-09-10"
+  },
+  {
+    "title": "黑巢：蛇之契约",
+    "maintext_path": "services/text_file/reports6069.txt",
+    "url": "https://www.cngal.org/entries/index/6069",
+    "type": "Game",
+    "create_time": "2026-09-11"
+  },
+  {
+    "title": "暗色神具的魔王",
+    "maintext_path": "services/text_file/reports6151.txt",
+    "url": "https://www.cngal.org/entries/index/6151",
+    "type": "Game",
+    "create_time": "2026-09-17"
+  },
+  {
+    "title": "乌合之罪",
+    "maintext_path": "services/text_file/reports6153.txt",
+    "url": "https://www.cngal.org/entries/index/6153",
+    "type": "Game",
+    "create_time": "2026-08-01"
+  },
+  {
+    "title": "里垢女子的非常规攻略法",
+    "maintext_path": "services/text_file/reports6174.txt",
+    "url": "https://www.cngal.org/entries/index/6174",
+    "type": "Game",
+    "create_time": "2025-11-27"
+  },
+  {
+    "title": "DeCoDiary - 祀学日记",
+    "maintext_path": "services/text_file/reports6191.txt",
+    "url": "https://www.cngal.org/entries/index/6191",
+    "type": "Game",
+    "create_time": "2026-04-18"
+  },
+  {
+    "title": "大梦春秋",
+    "maintext_path": "services/text_file/reports6192.txt",
+    "url": "https://www.cngal.org/entries/index/6192",
+    "type": "Game",
+    "create_time": "2025-12-19"
+  },
+  {
+    "title": "沈鸣大学新闻部：怪奇事件录",
+    "maintext_path": "services/text_file/reports6224.txt",
+    "url": "https://www.cngal.org/entries/index/6224",
+    "type": "Game",
+    "create_time": "2026-08-30"
+  },
+  {
+    "title": "薄缘浅份",
+    "maintext_path": "services/text_file/reports6242.txt",
+    "url": "https://www.cngal.org/entries/index/6242",
+    "type": "Game",
+    "create_time": "2025-08-24"
+  },
+  {
+    "title": "捡妻",
+    "maintext_path": "services/text_file/reports6247.txt",
+    "url": "https://www.cngal.org/entries/index/6247",
+    "type": "Game",
+    "create_time": "2026-08-18"
+  },
+  {
+    "title": "花岬",
+    "maintext_path": "services/text_file/reports6274.txt",
+    "url": "https://www.cngal.org/entries/index/6274",
+    "type": "Game",
+    "create_time": "2025-09-07"
+  },
+  {
+    "title": "中国黑龙传说",
+    "maintext_path": "services/text_file/reports6289.txt",
+    "url": "https://www.cngal.org/entries/index/6289",
+    "type": "Game",
+    "create_time": "2026-09-09"
+  },
+  {
+    "title": "你予我的羽翼和星辰",
+    "maintext_path": "services/text_file/reports6297.txt",
+    "url": "https://www.cngal.org/entries/index/6297",
+    "type": "Game",
+    "create_time": "2026-06-20"
+  },
+  {
+    "title": "碧海六重奏",
+    "maintext_path": "services/text_file/reports6298.txt",
+    "url": "https://www.cngal.org/entries/index/6298",
+    "type": "Game",
+    "create_time": "2026-08-09"
+  },
+  {
+    "title": "无力系的我，乐观派的她",
+    "maintext_path": "services/text_file/reports6313.txt",
+    "url": "https://www.cngal.org/entries/index/6313",
+    "type": "Game",
+    "create_time": "2026-03-22"
   }
 ]

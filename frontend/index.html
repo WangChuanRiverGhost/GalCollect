@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">           
+        <link rel="stylesheet" href="/style.css">           
         <title>数据采集</title>
     </head>
 
@@ -12,7 +12,7 @@
             <div id="upper_part">  <!--标题块与选择数据源：cngal网站-->
 
                 <div id="title">
-                    <img src="img/icg-spider.png">
+                    <img src="/img/icg-spider.png">
                     <p>数据采集平台</p>
                 </div>
 
@@ -42,6 +42,17 @@
                         <option>周报</option>
                         <option>游戏</option>
                         <option>文章</option>
+                        <option>词条</option>
+                        <option>感想</option>
+                        <option>攻略</option>
+                        <option>访谈</option>
+                        <option>动态</option>
+                        <option>评测</option>
+                        <option>周边文章</option>
+                        <option>公告</option>
+                        <option>杂谈</option>
+                        <option>二创</option>
+                        <option>视频</option>
                     </select>
 
                 </div>
@@ -76,9 +87,10 @@
                 </div>
 
                 <div id="start">
-                    <button id="start_collect" class="start"><img src="img/开始.png"> 开始采集</button>
-                    <button id="collect_history" class="start"><img src="img/历史记录.png"> 采集历史</button>
-                    <button id="clear_log" class="start"><img src="img/清空设置.png"> 清空日志</button>
+                    <button id="start_collect" class="start"><img src="/img/开始.png"> 开始采集</button>
+                    <button id="collect_history" class="start" onclick="window.location.href='frontend/select_history.html'"><img src="/img/历史记录.png"> 历史查询</button>
+                    <button id="clear_log" class="start"><img src="/img/清空设置.png"> 清空日志</button>
+                    <button id="get_excel" class="start"><img src="/img/导出表格.png"> 生成文件</button>
                 </div>
             </div>
 
@@ -92,8 +104,10 @@
 
                             <tr>
                                 <th>文章标题</th>
-                                <th>文章地址</th>
+                                <th>文章类型</th>
+                                <th>发布时间</th>
                                 <th>正文文件路径</th>
+                                <th>文章地址</th>
                             </tr>
 
                         </thead>
@@ -108,8 +122,9 @@
 
                 <div id="show_file">  <!--展示文件内容-->
                    
-                    <p id="file"></p>
-                    <button>跳转并打开此文件</button>
+                    <div id="file">
+                    </div>
+
 
                 </div>
 
@@ -117,16 +132,16 @@
 
             <div id="lower_part">  <!--日志-->
 
-                <div class="log"><span id="time">[时间]</span>欢迎使用信息采集系统。</div>
-                <div class="log"><span id="time">[时间]</span>评论采集默认采集最新评论，查找往期评论数据可使用[采集历史]功能。</div>
+                <div class="log">欢迎使用信息采集系统。</div>
+                <div class="log">评论采集默认采集最新评论，查找往期评论数据可使用[采集历史]功能。</div>
 
             </div>
         </div>
 
-        <script src="plugin/jquery-4.0.0.min.js"></script>
-        <script src="js/ui.js"></script>
-        <script src="js/api.js"></script>
-        <script src="js/main.js"></script>
+        <script src="/plugin/jquery-4.0.0.min.js"></script>
+        <script src="/js/ui.js"></script>
+        <script src="/js/api.js"></script>
+        <script src="/js/main.js"></script>
 
     </body>
     

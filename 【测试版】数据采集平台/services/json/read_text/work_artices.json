@@ -1,0 +1,702 @@
+[
+  {
+    "title": "CnGal每周速报（2026年第43周）",
+    "maintext_path": "services/text_file/reports11231.txt",
+    "url": "https://www.cngal.org/articles/index/11231",
+    "type": "weekly_reports",
+    "create_time": "2026-10-25"
+  },
+  {
+    "title": "CnGal每周速报（2026年第42周）",
+    "maintext_path": "services/text_file/reports11127.txt",
+    "url": "https://www.cngal.org/articles/index/11127",
+    "type": "weekly_reports",
+    "create_time": "2026-10-18"
+  },
+  {
+    "title": "CnGal每周速报（2026年第41周）",
+    "maintext_path": "services/text_file/reports11056.txt",
+    "url": "https://www.cngal.org/articles/index/11056",
+    "type": "weekly_reports",
+    "create_time": "2026-10-11"
+  },
+  {
+    "title": "CnGal每周速报（2026年第40周）",
+    "maintext_path": "services/text_file/reports10904.txt",
+    "url": "https://www.cngal.org/articles/index/10904",
+    "type": "weekly_reports",
+    "create_time": "2026-10-04"
+  },
+  {
+    "title": "CnGal每周速报（2026年第39周）",
+    "maintext_path": "services/text_file/reports10735.txt",
+    "url": "https://www.cngal.org/articles/index/10735",
+    "type": "weekly_reports",
+    "create_time": "2026-09-27"
+  },
+  {
+    "title": "CnGal每周速报（2026年第38周）",
+    "maintext_path": "services/text_file/reports10624.txt",
+    "url": "https://www.cngal.org/articles/index/10624",
+    "type": "weekly_reports",
+    "create_time": "2026-09-20"
+  },
+  {
+    "title": "CnGal每周速报（2026年第37周）",
+    "maintext_path": "services/text_file/reports10505.txt",
+    "url": "https://www.cngal.org/articles/index/10505",
+    "type": "weekly_reports",
+    "create_time": "2026-09-13"
+  },
+  {
+    "title": "CnGal每周速报（2026年第36周）",
+    "maintext_path": "services/text_file/reports10398.txt",
+    "url": "https://www.cngal.org/articles/index/10398",
+    "type": "weekly_reports",
+    "create_time": "2026-09-06"
+  },
+  {
+    "title": "CnGal每周速报（2026年第35周）",
+    "maintext_path": "services/text_file/reports10289.txt",
+    "url": "https://www.cngal.org/articles/index/10289",
+    "type": "weekly_reports",
+    "create_time": "2026-08-30"
+  },
+  {
+    "title": "CnGal每周速报（2026年第34周）",
+    "maintext_path": "services/text_file/reports10210.txt",
+    "url": "https://www.cngal.org/articles/index/10210",
+    "type": "weekly_reports",
+    "create_time": "2026-08-23"
+  },
+  {
+    "title": "CnGal每周速报（2026年第33周）",
+    "maintext_path": "services/text_file/reports10087.txt",
+    "url": "https://www.cngal.org/articles/index/10087",
+    "type": "weekly_reports",
+    "create_time": "2026-08-16"
+  },
+  {
+    "title": "CnGal每周速报（2026年第32周）",
+    "maintext_path": "services/text_file/reports9871.txt",
+    "url": "https://www.cngal.org/articles/index/9871",
+    "type": "weekly_reports",
+    "create_time": "2026-08-09"
+  },
+  {
+    "title": "CnGal每周速报（2026年第31周）",
+    "maintext_path": "services/text_file/reports9752.txt",
+    "url": "https://www.cngal.org/articles/index/9752",
+    "type": "weekly_reports",
+    "create_time": "2026-08-02"
+  },
+  {
+    "title": "CnGal每周速报（2026年第30周）",
+    "maintext_path": "services/text_file/reports9672.txt",
+    "url": "https://www.cngal.org/articles/index/9672",
+    "type": "weekly_reports",
+    "create_time": "2026-07-26"
+  },
+  {
+    "title": "CnGal每周速报（2026年第29周）",
+    "maintext_path": "services/text_file/reports9592.txt",
+    "url": "https://www.cngal.org/articles/index/9592",
+    "type": "weekly_reports",
+    "create_time": "2026-07-19"
+  },
+  {
+    "title": "CnGal每周速报（2026年第28周）",
+    "maintext_path": "services/text_file/reports9528.txt",
+    "url": "https://www.cngal.org/articles/index/9528",
+    "type": "weekly_reports",
+    "create_time": "2026-07-12"
+  },
+  {
+    "title": "CnGal每周速报（2026年第27周）",
+    "maintext_path": "services/text_file/reports9453.txt",
+    "url": "https://www.cngal.org/articles/index/9453",
+    "type": "weekly_reports",
+    "create_time": "2026-07-05"
+  },
+  {
+    "title": "CnGal每周速报（2026年第26周）",
+    "maintext_path": "services/text_file/reports9361.txt",
+    "url": "https://www.cngal.org/articles/index/9361",
+    "type": "weekly_reports",
+    "create_time": "2026-06-28"
+  },
+  {
+    "title": "CnGal每周速报（2026年第25周）",
+    "maintext_path": "services/text_file/reports9296.txt",
+    "url": "https://www.cngal.org/articles/index/9296",
+    "type": "weekly_reports",
+    "create_time": "2026-06-21"
+  },
+  {
+    "title": "CnGal每周速报（2026年第24周）",
+    "maintext_path": "services/text_file/reports9164.txt",
+    "url": "https://www.cngal.org/articles/index/9164",
+    "type": "weekly_reports",
+    "create_time": "2026-06-14"
+  },
+  {
+    "title": "CnGal每周速报（2026年第23周）",
+    "maintext_path": "services/text_file/reports9060.txt",
+    "url": "https://www.cngal.org/articles/index/9060",
+    "type": "weekly_reports",
+    "create_time": "2026-06-07"
+  },
+  {
+    "title": "CnGal每周速报（2026年第22周）",
+    "maintext_path": "services/text_file/reports8973.txt",
+    "url": "https://www.cngal.org/articles/index/8973",
+    "type": "weekly_reports",
+    "create_time": "2026-05-31"
+  },
+  {
+    "title": "CnGal每周速报（2026年第21周）",
+    "maintext_path": "services/text_file/reports8891.txt",
+    "url": "https://www.cngal.org/articles/index/8891",
+    "type": "weekly_reports",
+    "create_time": "2026-05-24"
+  },
+  {
+    "title": "CnGal每周速报（2026年第20周）",
+    "maintext_path": "services/text_file/reports8798.txt",
+    "url": "https://www.cngal.org/articles/index/8798",
+    "type": "weekly_reports",
+    "create_time": "2026-05-17"
+  },
+  {
+    "title": "CnGal每周速报（2026年第19周）",
+    "maintext_path": "services/text_file/reports8708.txt",
+    "url": "https://www.cngal.org/articles/index/8708",
+    "type": "weekly_reports",
+    "create_time": "2026-05-10"
+  },
+  {
+    "title": "CnGal每周速报（2026年第18周）",
+    "maintext_path": "services/text_file/reports8638.txt",
+    "url": "https://www.cngal.org/articles/index/8638",
+    "type": "weekly_reports",
+    "create_time": "2026-05-03"
+  },
+  {
+    "title": "CnGal每周速报（2026年第17周）",
+    "maintext_path": "services/text_file/reports8549.txt",
+    "url": "https://www.cngal.org/articles/index/8549",
+    "type": "weekly_reports",
+    "create_time": "2026-04-26"
+  },
+  {
+    "title": "CnGal每周速报（2026年第16周）",
+    "maintext_path": "services/text_file/reports8444.txt",
+    "url": "https://www.cngal.org/articles/index/8444",
+    "type": "weekly_reports",
+    "create_time": "2026-04-19"
+  },
+  {
+    "title": "CnGal每周速报（2026年第15周）",
+    "maintext_path": "services/text_file/reports8363.txt",
+    "url": "https://www.cngal.org/articles/index/8363",
+    "type": "weekly_reports",
+    "create_time": "2026-04-12"
+  },
+  {
+    "title": "CnGal每周速报（2026年第14周）",
+    "maintext_path": "services/text_file/reports8252.txt",
+    "url": "https://www.cngal.org/articles/index/8252",
+    "type": "weekly_reports",
+    "create_time": "2026-04-05"
+  },
+  {
+    "title": "CnGal每周速报（2026年第13周）",
+    "maintext_path": "services/text_file/reports8169.txt",
+    "url": "https://www.cngal.org/articles/index/8169",
+    "type": "weekly_reports",
+    "create_time": "2026-03-29"
+  },
+  {
+    "title": "CnGal每周速报（2026年第12周）",
+    "maintext_path": "services/text_file/reports8118.txt",
+    "url": "https://www.cngal.org/articles/index/8118",
+    "type": "weekly_reports",
+    "create_time": "2026-03-22"
+  },
+  {
+    "title": "CnGal每周速报（2026年第11周）",
+    "maintext_path": "services/text_file/reports8052.txt",
+    "url": "https://www.cngal.org/articles/index/8052",
+    "type": "weekly_reports",
+    "create_time": "2026-03-15"
+  },
+  {
+    "title": "CnGal每周速报（2026年第10周）",
+    "maintext_path": "services/text_file/reports8013.txt",
+    "url": "https://www.cngal.org/articles/index/8013",
+    "type": "weekly_reports",
+    "create_time": "2026-03-08"
+  },
+  {
+    "title": "CnGal每周速报（2026年第9周）",
+    "maintext_path": "services/text_file/reports7956.txt",
+    "url": "https://www.cngal.org/articles/index/7956",
+    "type": "weekly_reports",
+    "create_time": "2026-03-01"
+  },
+  {
+    "title": "CnGal每周速报（2026年第8周）",
+    "maintext_path": "services/text_file/reports7871.txt",
+    "url": "https://www.cngal.org/articles/index/7871",
+    "type": "weekly_reports",
+    "create_time": "2026-02-22"
+  },
+  {
+    "title": "CnGal每周速报（2026年第7周）",
+    "maintext_path": "services/text_file/reports7722.txt",
+    "url": "https://www.cngal.org/articles/index/7722",
+    "type": "weekly_reports",
+    "create_time": "2026-02-15"
+  },
+  {
+    "title": "CnGal每周速报（2026年第6周）",
+    "maintext_path": "services/text_file/reports7613.txt",
+    "url": "https://www.cngal.org/articles/index/7613",
+    "type": "weekly_reports",
+    "create_time": "2026-02-08"
+  },
+  {
+    "title": "CnGal每周速报（2026年第5周）",
+    "maintext_path": "services/text_file/reports7519.txt",
+    "url": "https://www.cngal.org/articles/index/7519",
+    "type": "weekly_reports",
+    "create_time": "2026-02-01"
+  },
+  {
+    "title": "CnGal每周速报（2026年第4周）",
+    "maintext_path": "services/text_file/reports7463.txt",
+    "url": "https://www.cngal.org/articles/index/7463",
+    "type": "weekly_reports",
+    "create_time": "2026-01-25"
+  },
+  {
+    "title": "CnGal每周速报（2026年第3周）",
+    "maintext_path": "services/text_file/reports7368.txt",
+    "url": "https://www.cngal.org/articles/index/7368",
+    "type": "weekly_reports",
+    "create_time": "2026-01-18"
+  },
+  {
+    "title": "CnGal每周速报（2026年第2周）",
+    "maintext_path": "services/text_file/reports7212.txt",
+    "url": "https://www.cngal.org/articles/index/7212",
+    "type": "weekly_reports",
+    "create_time": "2026-01-11"
+  },
+  {
+    "title": "CnGal每周速报（2025年第53周）",
+    "maintext_path": "services/text_file/reports7105.txt",
+    "url": "https://www.cngal.org/articles/index/7105",
+    "type": "weekly_reports",
+    "create_time": "2026-01-04"
+  },
+  {
+    "title": "每周四进度报告时间——",
+    "maintext_path": "services/text_file/reports9157.txt",
+    "url": "https://www.cngal.org/articles/index/9157",
+    "type": "weekly_reports",
+    "create_time": "2026-06-12"
+  },
+  {
+    "title": "每周四标准打卡闪亮登场——",
+    "maintext_path": "services/text_file/reports9095.txt",
+    "url": "https://www.cngal.org/articles/index/9095",
+    "type": "weekly_reports",
+    "create_time": "2026-06-08"
+  },
+  {
+    "title": "cycle制作组 每周四打卡总结",
+    "maintext_path": "services/text_file/reports8990.txt",
+    "url": "https://www.cngal.org/articles/index/8990",
+    "type": "weekly_reports",
+    "create_time": "2026-05-31"
+  },
+  {
+    "title": "cycle制作组每周四打卡总结",
+    "maintext_path": "services/text_file/reports8875.txt",
+    "url": "https://www.cngal.org/articles/index/8875",
+    "type": "weekly_reports",
+    "create_time": "2026-05-23"
+  },
+  {
+    "title": "「重制十七岁」众筹决定与众筹疑问解答",
+    "maintext_path": "services/text_file/reports10679.txt",
+    "url": "https://www.cngal.org/articles/index/10679",
+    "type": "weekly_reports",
+    "create_time": "2026-09-25"
+  },
+  {
+    "title": "新企划《重制十七岁》介绍与常见问题解答",
+    "maintext_path": "services/text_file/reports10034.txt",
+    "url": "https://www.cngal.org/articles/index/10034",
+    "type": "weekly_reports",
+    "create_time": "2026-08-14"
+  },
+  {
+    "title": "【episode#110】过去的老照片",
+    "maintext_path": "services/text_file/reports9962.txt",
+    "url": "https://www.cngal.org/articles/index/9962",
+    "type": "weekly_reports",
+    "create_time": "2026-08-11"
+  },
+  {
+    "title": "自闭制作人在steam上架游戏踩过的深坑分享——小心审核肘击！",
+    "maintext_path": "services/text_file/reports9547.txt",
+    "url": "https://www.cngal.org/articles/index/9547",
+    "type": "weekly_reports",
+    "create_time": "2026-07-12"
+  },
+  {
+    "title": "数字焦虑与数字钝感——大抵是病了",
+    "maintext_path": "services/text_file/reports9497.txt",
+    "url": "https://www.cngal.org/articles/index/9497",
+    "type": "weekly_reports",
+    "create_time": "2026-07-10"
+  },
+  {
+    "title": "端午节前一天的打卡！",
+    "maintext_path": "services/text_file/reports9257.txt",
+    "url": "https://www.cngal.org/articles/index/9257",
+    "type": "weekly_reports",
+    "create_time": "2026-06-19"
+  },
+  {
+    "title": "1秒变异！国产游戏请来伯克利“外援”！居然……",
+    "maintext_path": "services/text_file/reports9233.txt",
+    "url": "https://www.cngal.org/articles/index/9233",
+    "type": "weekly_reports",
+    "create_time": "2026-06-18"
+  },
+  {
+    "title": "【episode#48】杏花与相机",
+    "maintext_path": "services/text_file/reports8743.txt",
+    "url": "https://www.cngal.org/articles/index/8743",
+    "type": "weekly_reports",
+    "create_time": "2026-05-13"
+  },
+  {
+    "title": "深夜更新总结！",
+    "maintext_path": "services/text_file/reports8491.txt",
+    "url": "https://www.cngal.org/articles/index/8491",
+    "type": "weekly_reports",
+    "create_time": "2026-04-24"
+  },
+  {
+    "title": "【招募】有闲余工作室招新+投资｜Steam首发原创Gal《雪子》，寻找能“组一辈子乐队”的同路人",
+    "maintext_path": "services/text_file/reports9747.txt",
+    "url": "https://www.cngal.org/articles/index/9747",
+    "type": "weekly_reports",
+    "create_time": "2026-08-01"
+  },
+  {
+    "title": "本周五作连发，大量新作公开及定档！CnGal美少女游戏情报（第39周）",
+    "maintext_path": "services/text_file/reports10833.txt",
+    "url": "https://www.cngal.org/articles/index/10833",
+    "type": "weekly_reports",
+    "create_time": "2026-10-02"
+  },
+  {
+    "title": "新作上线，试玩更新！CnGal中文美少女游戏情报（第38周）",
+    "maintext_path": "services/text_file/reports10675.txt",
+    "url": "https://www.cngal.org/articles/index/10675",
+    "type": "weekly_reports",
+    "create_time": "2026-09-25"
+  },
+  {
+    "title": "《心象天仪本线》《塑风之恋》发售。CnGal美少女游戏情报(第37周)",
+    "maintext_path": "services/text_file/reports10573.txt",
+    "url": "https://www.cngal.org/articles/index/10573",
+    "type": "weekly_reports",
+    "create_time": "2026-09-17"
+  },
+  {
+    "title": "开学季五作连发！CnGal美少女游戏情报（第36周）",
+    "maintext_path": "services/text_file/reports10469.txt",
+    "url": "https://www.cngal.org/articles/index/10469",
+    "type": "weekly_reports",
+    "create_time": "2026-09-11"
+  },
+  {
+    "title": "新作试玩情报不断，CnGal中文美少女游戏情报（第34+35周）",
+    "maintext_path": "services/text_file/reports10377.txt",
+    "url": "https://www.cngal.org/articles/index/10377",
+    "type": "weekly_reports",
+    "create_time": "2026-09-05"
+  },
+  {
+    "title": "同步一下8.2日cngal茶话会公开的情报",
+    "maintext_path": "services/text_file/reports10169.txt",
+    "url": "https://www.cngal.org/articles/index/10169",
+    "type": "weekly_reports",
+    "create_time": "2026-08-21"
+  },
+  {
+    "title": "傲娇妹妹，还是“问题”女友？CnGal中文美少女游戏情报（第33周）",
+    "maintext_path": "services/text_file/reports10118.txt",
+    "url": "https://www.cngal.org/articles/index/10118",
+    "type": "weekly_reports",
+    "create_time": "2026-08-17"
+  },
+  {
+    "title": "GAL高手、拆迁地球四作连发，CnGal中文美少女游戏情报（第32周）",
+    "maintext_path": "services/text_file/reports10031.txt",
+    "url": "https://www.cngal.org/articles/index/10031",
+    "type": "weekly_reports",
+    "create_time": "2026-08-12"
+  },
+  {
+    "title": "一年一度的国产Galgame展示会！CnGal大召集11th【bilibilionly同人扶持计划】",
+    "maintext_path": "services/text_file/reports9908.txt",
+    "url": "https://www.cngal.org/articles/index/9908",
+    "type": "weekly_reports",
+    "create_time": "2026-08-09"
+  },
+  {
+    "title": "白毛、jk、盒！《里垢女子的非常规攻略法》cngal周年庆宣传视频",
+    "maintext_path": "services/text_file/reports9821.txt",
+    "url": "https://www.cngal.org/articles/index/9821",
+    "type": "weekly_reports",
+    "create_time": "2026-08-06"
+  },
+  {
+    "title": "百合+视觉小说+回合制rpg《王女的复国竞技法则》，cngal周年庆祝视频",
+    "maintext_path": "services/text_file/reports9820.txt",
+    "url": "https://www.cngal.org/articles/index/9820",
+    "type": "weekly_reports",
+    "create_time": "2026-08-06"
+  },
+  {
+    "title": "《众星入海》cngal周年庆视频",
+    "maintext_path": "services/text_file/reports9815.txt",
+    "url": "https://www.cngal.org/articles/index/9815",
+    "type": "weekly_reports",
+    "create_time": "2026-08-06"
+  },
+  {
+    "title": "CNGAL十一周年庆直播来了~ 咱们今晚见！",
+    "maintext_path": "services/text_file/reports9776.txt",
+    "url": "https://www.cngal.org/articles/index/9776",
+    "type": "weekly_reports",
+    "create_time": "2026-08-02"
+  },
+  {
+    "title": "祝cngal 11年週年快樂！祝看板娘11歲生日快樂！！",
+    "maintext_path": "services/text_file/reports9753.txt",
+    "url": "https://www.cngal.org/articles/index/9753",
+    "type": "weekly_reports",
+    "create_time": "2026-08-02"
+  },
+  {
+    "title": "11周年庆直播在即！CnGal中文美少女游戏新作试玩情报（第30周）",
+    "maintext_path": "services/text_file/reports9719.txt",
+    "url": "https://www.cngal.org/articles/index/9719",
+    "type": "weekly_reports",
+    "create_time": "2026-07-27"
+  },
+  {
+    "title": "合法萝莉新作上线，CnGal中文美少女游戏新作试玩情报（第29周）",
+    "maintext_path": "services/text_file/reports9636.txt",
+    "url": "https://www.cngal.org/articles/index/9636",
+    "type": "weekly_reports",
+    "create_time": "2026-07-24"
+  },
+  {
+    "title": "CnGal 11周年直播开催！",
+    "maintext_path": "services/text_file/reports9635.txt",
+    "url": "https://www.cngal.org/articles/index/9635",
+    "type": "weekly_reports",
+    "create_time": "2026-07-24"
+  },
+  {
+    "title": "暑期档升温中！CnGal中文美少女游戏新作试玩情报（第28周）",
+    "maintext_path": "services/text_file/reports9555.txt",
+    "url": "https://www.cngal.org/articles/index/9555",
+    "type": "weekly_reports",
+    "create_time": "2026-07-14"
+  },
+  {
+    "title": "夏促临近尾声，暑期档蓄力中！CnGal新作情报（第27周）",
+    "maintext_path": "services/text_file/reports9485.txt",
+    "url": "https://www.cngal.org/articles/index/9485",
+    "type": "weekly_reports",
+    "create_time": "2026-07-08"
+  },
+  {
+    "title": "欸！CnGal 11岁了",
+    "maintext_path": "services/text_file/reports9397.txt",
+    "url": "https://www.cngal.org/articles/index/9397",
+    "type": "weekly_reports",
+    "create_time": "2026-06-30"
+  },
+  {
+    "title": "本周又有哪些中文美少女游戏发布？CnGal新作试玩情报（第26周）",
+    "maintext_path": "services/text_file/reports9406.txt",
+    "url": "https://www.cngal.org/articles/index/9406",
+    "type": "weekly_reports",
+    "create_time": "2026-06-30"
+  },
+  {
+    "title": "CnGal新作+试玩情报（第24周）",
+    "maintext_path": "services/text_file/reports9405.txt",
+    "url": "https://www.cngal.org/articles/index/9405",
+    "type": "weekly_reports",
+    "create_time": "2026-06-30"
+  },
+  {
+    "title": "对CnGal游戏大赏的记录",
+    "maintext_path": "services/text_file/reports8669.txt",
+    "url": "https://www.cngal.org/articles/index/8669",
+    "type": "weekly_reports",
+    "create_time": "2026-05-08"
+  },
+  {
+    "title": "招募Galgame剧本/文案老师",
+    "maintext_path": "services/text_file/reports11116.txt",
+    "url": "https://www.cngal.org/articles/index/11116",
+    "type": "weekly_reports",
+    "create_time": "2026-10-18"
+  },
+  {
+    "title": "自我介绍",
+    "maintext_path": "services/text_file/reports10999.txt",
+    "url": "https://www.cngal.org/articles/index/10999",
+    "type": "weekly_reports",
+    "create_time": "2026-10-08"
+  },
+  {
+    "title": "【国G观察室】26年9月月报",
+    "maintext_path": "services/text_file/reports10888.txt",
+    "url": "https://www.cngal.org/articles/index/10888",
+    "type": "weekly_reports",
+    "create_time": "2026-10-02"
+  },
+  {
+    "title": "【国产GAL月报-2026年08月】佳作不断的八月都有哪些作品呢？",
+    "maintext_path": "services/text_file/reports10830.txt",
+    "url": "https://www.cngal.org/articles/index/10830",
+    "type": "weekly_reports",
+    "create_time": "2026-09-27"
+  },
+  {
+    "title": "【比特尔特】琉璃塔，琉光图书馆",
+    "maintext_path": "services/text_file/reports10697.txt",
+    "url": "https://www.cngal.org/articles/index/10697",
+    "type": "weekly_reports",
+    "create_time": "2026-09-25"
+  },
+  {
+    "title": "20多天连续发售4部参与的作品，写个文章记录一下一年来的变化",
+    "maintext_path": "services/text_file/reports10452.txt",
+    "url": "https://www.cngal.org/articles/index/10452",
+    "type": "weekly_reports",
+    "create_time": "2026-09-06"
+  },
+  {
+    "title": "【国G观察室】26年8月月报",
+    "maintext_path": "services/text_file/reports10402.txt",
+    "url": "https://www.cngal.org/articles/index/10402",
+    "type": "weekly_reports",
+    "create_time": "2026-09-06"
+  },
+  {
+    "title": "【比特尔特】基地开荒玩法",
+    "maintext_path": "services/text_file/reports10362.txt",
+    "url": "https://www.cngal.org/articles/index/10362",
+    "type": "weekly_reports",
+    "create_time": "2026-09-02"
+  },
+  {
+    "title": "【国产GAL月报-2026年07月】推理？魔法？萝莉！【bilibilionly同人扶持计划】",
+    "maintext_path": "services/text_file/reports10264.txt",
+    "url": "https://www.cngal.org/articles/index/10264",
+    "type": "weekly_reports",
+    "create_time": "2026-08-28"
+  },
+  {
+    "title": "我们说：玩家的支持大于一切",
+    "maintext_path": "services/text_file/reports10259.txt",
+    "url": "https://www.cngal.org/articles/index/10259",
+    "type": "weekly_reports",
+    "create_time": "2026-08-28"
+  },
+  {
+    "title": "【比特尔特】游戏设计节点优化",
+    "maintext_path": "services/text_file/reports10248.txt",
+    "url": "https://www.cngal.org/articles/index/10248",
+    "type": "weekly_reports",
+    "create_time": "2026-08-25"
+  },
+  {
+    "title": "【永恒与星辰与日常/翻唱】永远都陪在我身旁，好吗~❤【bilibilionly同人扶持计划】",
+    "maintext_path": "services/text_file/reports206.txt",
+    "url": "https://www.cngal.org/videos/index/206",
+    "type": "weekly_reports",
+    "create_time": "2026-08-17"
+  },
+  {
+    "title": "【比特尔特】下一条线玩法展示-黑市",
+    "maintext_path": "services/text_file/reports10090.txt",
+    "url": "https://www.cngal.org/articles/index/10090",
+    "type": "weekly_reports",
+    "create_time": "2026-08-16"
+  },
+  {
+    "title": "《中国式地雷女》第一期创作者激励计划",
+    "maintext_path": "services/text_file/reports9921.txt",
+    "url": "https://www.cngal.org/articles/index/9921",
+    "type": "weekly_reports",
+    "create_time": "2026-08-10"
+  },
+  {
+    "title": "【比特尔特】下一条线玩法展示-放置点击",
+    "maintext_path": "services/text_file/reports9910.txt",
+    "url": "https://www.cngal.org/articles/index/9910",
+    "type": "weekly_reports",
+    "create_time": "2026-08-10"
+  },
+  {
+    "title": "【CnGal11周年庆】浮生似梦，偿尽劫波 | WindFiledGames制作《乌合之罪》最新30秒片段",
+    "maintext_path": "services/text_file/reports9807.txt",
+    "url": "https://www.cngal.org/articles/index/9807",
+    "type": "weekly_reports",
+    "create_time": "2026-08-06"
+  },
+  {
+    "title": "【CnGal11周年庆】&【bilibilionly同人扶持计划】《虚轴实刃-Virtual Axis Real Blade》片段",
+    "maintext_path": "services/text_file/reports9806.txt",
+    "url": "https://www.cngal.org/articles/index/9806",
+    "type": "weekly_reports",
+    "create_time": "2026-08-06"
+  },
+  {
+    "title": "[游戏二宣/画师招募]洛天依同人galgame二宣（以后将继续为大家带来进度！）",
+    "maintext_path": "services/text_file/reports9793.txt",
+    "url": "https://www.cngal.org/articles/index/9793",
+    "type": "weekly_reports",
+    "create_time": "2026-08-02"
+  },
+  {
+    "title": "Cngal11周年直播，我们竟然有六款游戏参加？",
+    "maintext_path": "services/text_file/reports9779.txt",
+    "url": "https://www.cngal.org/articles/index/9779",
+    "type": "weekly_reports",
+    "create_time": "2026-08-02"
+  },
+  {
+    "title": "比特尔特剧情模式全流程",
+    "maintext_path": "services/text_file/reports9786.txt",
+    "url": "https://www.cngal.org/articles/index/9786",
+    "type": "weekly_reports",
+    "create_time": "2026-08-02"
+  }
+]

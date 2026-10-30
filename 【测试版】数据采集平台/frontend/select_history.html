@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/style.css">           
+        <title>数据采集</title>
+    </head>
+
+    <body>
+        <div id="all">
+            <div id="upper_part">  <!--标题块与选择数据源：cngal网站-->
+
+                <div id="title">
+                    <img src="/img/ZhongFuLou.png">
+                    <p>历史数据检索</p>
+                </div>
+
+                <select id="choose_source">
+                    <option value="" disabled selected hidden>请选择数据源</option>
+                    <option>cngal网站</option>
+                </select>
+
+            </div>
+
+            <div id="central_head">  <!--选择想要的数据与筛选条件-->
+
+                <div id="select_condition">请选择您的查询条件：</div>
+                <div id="user_choose">  <!--位置1：放置采集数据类型：cngal网站(周报|文章|评论)-->
+
+
+
+                    <div id="all_userselect">
+                        <div class="user_select">
+                            
+                            <div id="choose_dbtype">
+                                <select>
+                                        <option value="" disabled selected hidden>请选择查询类别</option>
+                                        <option>周报</option>
+                                        <option>游戏</option>
+                                        <option>文章</option>
+                                        <option>词条</option>
+                                        <option>感想</option>
+                                        <option>攻略</option>
+                                        <option>访谈</option>
+                                        <option>动态</option>
+                                        <option>评测</option>
+                                        <option>周边文章</option>
+                                        <option>公告</option>
+                                        <option>杂谈</option>
+                                        <option>二创</option>
+                                        <option>视频</option>
+                                </select>
+                            </div>
+                            <div id="choose_year">
+                                <select>
+                                    <option value="" disabled selected hidden>请选择查询年份</option>
+                                    <option>2026</option>
+                                    <option>2025</option>
+                                    <option>2024</option>
+                                    <option>2023</option>
+                                    <option>2022</option>
+                                    <option>2021</option>
+                                </select>
+                            </div>
+
+                            <div id="choose_month">
+                                <select>
+                                    <option value="" disabled selected hidden>起始月份</option>
+                                    <option>12</option>
+                                    <option>11</option>
+                                    <option>10</option>
+                                    <option>9</option>
+                                    <option>8</option>
+                                    <option>7</option>
+                                    <option>6</option>
+                                    <option>5</option>
+                                    <option>4</option>
+                                    <option>3</option>
+                                    <option>2</option>
+                                    <option>1</option>
+                                </select>
+                                <p>-</p>
+                                <select>
+                                    <option value="" disabled selected hidden>结束月份</option>
+                                    <option>12</option>
+                                    <option>11</option>
+                                    <option>10</option>
+                                    <option>9</option>
+                                    <option>8</option>
+                                    <option>7</option>
+                                    <option>6</option>
+                                    <option>5</option>
+                                    <option>4</option>
+                                    <option>3</option>
+                                    <option>2</option>
+                                    <option>1</option>
+                                </select>
+                            </div>
+
+                            <div id="get"></div>
+                        </div>
+                        <div id="more_conditions">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div id="start">
+                    <button id="add_condition" class="start"><img src="/img/添加.png"> 添加条件</button>
+                    <button id="reset_condition" class="start"><img src="/img/重置.png"> 重置筛选</button>
+                    <button id="select_db" class="start"><img src="/img/查询清单库.png"> 开始检索</button>
+                    <button id="get_excel" class="start"><img src="/img/导出表格.png"> 生成文件</button>
+                </div>
+            </div>
+
+            <div id="central_body">  <!--展示table与文件内容-->
+
+                <div id="show_table">  <!--展示table-->
+
+                    <table id="cngal_weekly_table">  <!--周报表-->
+
+                        <thead>
+
+                            <tr>
+                                <th>文章标题</th>
+                                <th>文章类型</th>
+                                <th>发布时间</th>
+                                <th>正文文件路径</th>
+                                <th>文章地址</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+                <div id="show_file">  <!--展示文件内容-->
+                   
+                    <div id="file">
+                    </div>
+
+
+                </div>
+
+            </div>
+
+            <div id="lower_part">  <!--日志-->
+
+                <div class="log">欢迎使用信息采集系统。</div>
+                <div class="log">评论采集默认采集最新评论，查找往期评论数据可使用[采集历史]功能。</div>
+
+            </div>
+        </div>
+
+        <script src="/plugin/jquery-4.0.0.min.js"></script>
+        <script src="/js/ui.js"></script>
+        <script src="/js/api.js"></script>
+        <script src="/js/main.js"></script>
+
+    </body>
+    
+</html>

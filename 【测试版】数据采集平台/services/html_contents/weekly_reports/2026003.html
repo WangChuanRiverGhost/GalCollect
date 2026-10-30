@@ -1,0 +1,1178 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="utf-8">
+    <script async="" src="https://scripts.clarity.ms/0.8.72/clarity.js"></script><script>
+        (() => {
+            const match = document.cookie.match(/(?:^|;\s*)cg-theme=([^;]*)/);
+            let theme = match?.[1];
+            if (theme !== 'dark' && theme !== 'light') {
+                try { theme = localStorage.getItem('cg-theme'); } catch { }
+                if (theme === 'dark' || theme === 'light') {
+                    document.cookie = 'cg-theme=' + theme + '; path=/; max-age=31536000; samesite=lax';
+                    try { localStorage.removeItem('cg-theme'); } catch { }
+                }
+            }
+            document.documentElement.dataset.theme = theme === 'dark' || theme === 'light'
+                ? theme : matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            try { localStorage.removeItem('cg-theme'); } catch { }
+        })();
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="galgame,cngal,国产galgame,中文galgame,gal,二次元,国产gal,中文gal">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <link rel="icon" href="favicon.wb7x0tdnrd.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.wb7x0tdnrd.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="icon-512.bnzhpffzn5.png">
+
+    <meta name="sogou_site_verification" content="rdtePt6zM1">
+    <meta name="shenma-site-verification" content="966d1197093bc0c3cb96125cfd07c5bc_1632156168">
+    <meta name="360-site-verification" content="5640406dc9f1d06cee13b5f90b581abf">
+
+    <base href="/">
+
+    
+    <link rel="search" type="application/opensearchdescription+xml" target="_blank" class="external-link" href="https://app.cngal.org/_content/CnGalWebSite.Shared/OpenSearch.xml" title="CnGal资料站">
+
+    
+    <link rel="stylesheet" href="_content/CnGalWebSite.MainSite.Shared/styles/design-tokens.r9bl8498ul.css">
+    <link rel="stylesheet" href="_content/CnGalWebSite.MainSite.Shared/CnGalWebSite.MainSite.Shared.bp8r3dxrxh.bundle.scp.css">
+    <link rel="stylesheet" href="CnGalWebSite.MainSite.nip1dwbebw.styles.css">
+    <script type="importmap">{
+  "imports": {
+    "./_content/CnGalWebSite.MainSite.Shared/CnGalWebSite.MainSite.Shared.lib.module.js": "./_content/CnGalWebSite.MainSite.Shared/CnGalWebSite.MainSite.Shared.i94omyjqab.lib.module.js",
+    "./_content/CnGalWebSite.MainSite.Shared/Components/DesignSystem/CgBarChart.razor.js": "./_content/CnGalWebSite.MainSite.Shared/Components/DesignSystem/CgBarChart.6gg576tmx1.razor.js",
+    "./_content/CnGalWebSite.MainSite.Shared/Components/DesignSystem/CgCarousel.razor.js": "./_content/CnGalWebSite.MainSite.Shared/Components/DesignSystem/CgCarousel.tjz3f9uwvx.razor.js",
+    "./_content/CnGalWebSite.MainSite.Shared/Components/DesignSystem/CgHumanMachineVerification.razor.js": "./_content/CnGalWebSite.MainSite.Shared/Components/DesignSystem/CgHumanMachineVerification.yqtzts1kqi.razor.js",
+    "./_content/CnGalWebSite.MainSite.Shared/Components/DesignSystem/CgImageGallery.razor.js": "./_content/CnGalWebSite.MainSite.Shared/Components/DesignSystem/CgImageGallery.ws63pbn524.razor.js",
+    "./_content/CnGalWebSite.MainSite.Shared/Components/DesignSystem/CgImageUpload.razor.js": "./_content/CnGalWebSite.MainSite.Shared/Components/DesignSystem/CgImageUpload.luf4y2zpgp.razor.js",
+    "./_content/CnGalWebSite.MainSite.Shared/Components/DesignSystem/CgLineChart.razor.js": "./_content/CnGalWebSite.MainSite.Shared/Components/DesignSystem/CgLineChart.ms73ldzae6.razor.js",
+    "./_content/CnGalWebSite.MainSite.Shared/Components/DesignSystem/CgMarkdownEditor.razor.js": "./_content/CnGalWebSite.MainSite.Shared/Components/DesignSystem/CgMarkdownEditor.2ilt8s5zl7.razor.js",
+    "./_content/CnGalWebSite.MainSite.Shared/Components/DesignSystem/CgModal.razor.js": "./_content/CnGalWebSite.MainSite.Shared/Components/DesignSystem/CgModal.x7q0r9xain.razor.js",
+    "./_content/CnGalWebSite.MainSite.Shared/Components/DesignSystem/CgPieChart.razor.js": "./_content/CnGalWebSite.MainSite.Shared/Components/DesignSystem/CgPieChart.1lg9k6l00h.razor.js",
+    "./_content/CnGalWebSite.MainSite.Shared/Components/DesignSystem/CgToast.razor.js": "./_content/CnGalWebSite.MainSite.Shared/Components/DesignSystem/CgToast.3wctnsoqkl.razor.js",
+    "./_content/CnGalWebSite.MainSite.Shared/Components/Features/Expo/GridCard.razor.js": "./_content/CnGalWebSite.MainSite.Shared/Components/Features/Expo/GridCard.y3pffbtqtz.razor.js",
+    "./_content/CnGalWebSite.MainSite.Shared/Components/Features/Kanban/KanbanRoot.razor.js": "./_content/CnGalWebSite.MainSite.Shared/Components/Features/Kanban/KanbanRoot.ycx7tg0zql.razor.js",
+    "./_content/CnGalWebSite.MainSite.Shared/Components/Features/Lottery/Draw/LotteryAnimationCard.razor.js": "./_content/CnGalWebSite.MainSite.Shared/Components/Features/Lottery/Draw/LotteryAnimationCard.gx7qutjy8i.razor.js",
+    "./_content/CnGalWebSite.MainSite.Shared/Pages/Entry/CnGalGenerationPage.razor.js": "./_content/CnGalWebSite.MainSite.Shared/Pages/Entry/CnGalGenerationPage.6pob5wxx5r.razor.js",
+    "./_content/CnGalWebSite.MainSite.Shared/scripts/canvas-controller.js": "./_content/CnGalWebSite.MainSite.Shared/scripts/canvas-controller.m41mc06li0.js",
+    "./_content/CnGalWebSite.MainSite.Shared/scripts/component-lifecycle.js": "./_content/CnGalWebSite.MainSite.Shared/scripts/component-lifecycle.pcsl8npv4a.js",
+    "./_content/CnGalWebSite.MainSite.Shared/scripts/dialog.js": "./_content/CnGalWebSite.MainSite.Shared/scripts/dialog.6l24qgv4ed.js",
+    "./_content/CnGalWebSite.MainSite.Shared/scripts/edit-nav.js": "./_content/CnGalWebSite.MainSite.Shared/scripts/edit-nav.iwpxp8ncop.js",
+    "./_content/CnGalWebSite.MainSite.Shared/scripts/geetest-loader.js": "./_content/CnGalWebSite.MainSite.Shared/scripts/geetest-loader.sddycs1rlt.js",
+    "./_content/CnGalWebSite.MainSite.Shared/scripts/site-shell.js": "./_content/CnGalWebSite.MainSite.Shared/scripts/site-shell.goheptj6q9.js",
+    "./_content/CnGalWebSite.MainSite.Shared/scripts/third-party-assets.js": "./_content/CnGalWebSite.MainSite.Shared/scripts/third-party-assets.yax1g3ogek.js",
+    "./_content/CnGalWebSite.MainSite.Shared/scripts/umami-track.js": "./_content/CnGalWebSite.MainSite.Shared/scripts/umami-track.vj7c6l374u.js",
+    "./_framework/blazor.server.js": "./_framework/blazor.server.7d17r9czpp.js",
+    "./_framework/blazor.web.js": "./_framework/blazor.web.xmryko9e6j.js"
+  },
+  "integrity": {
+    "./_content/CnGalWebSite.MainSite.Shared/CnGalWebSite.MainSite.Shared.i94omyjqab.lib.module.js": "sha256-lnmF2kz/AusW+6qsVuWRAxOxNS5sSO60RAdJE1TV3J8=",
+    "./_content/CnGalWebSite.MainSite.Shared/CnGalWebSite.MainSite.Shared.lib.module.js": "sha256-lnmF2kz/AusW+6qsVuWRAxOxNS5sSO60RAdJE1TV3J8=",
+    "./_content/CnGalWebSite.MainSite.Shared/Components/DesignSystem/CgBarChart.6gg576tmx1.razor.js": "sha256-eo51Fwr52aCMx6SU8HTbK659KJZGkZMaFdW307jVMzg=",
+    "./_content/CnGalWebSite.MainSite.Shared/Components/DesignSystem/CgBarChart.razor.js": "sha256-eo51Fwr52aCMx6SU8HTbK659KJZGkZMaFdW307jVMzg=",
+    "./_content/CnGalWebSite.MainSite.Shared/Components/DesignSystem/CgCarousel.razor.js": "sha256-uelB+HgpvCprSzHlbTd5ty37GKsuaJHR3lwB2sf3HKM=",
+    "./_content/CnGalWebSite.MainSite.Shared/Components/DesignSystem/CgCarousel.tjz3f9uwvx.razor.js": "sha256-uelB+HgpvCprSzHlbTd5ty37GKsuaJHR3lwB2sf3HKM=",
+    "./_content/CnGalWebSite.MainSite.Shared/Components/DesignSystem/CgHumanMachineVerification.razor.js": "sha256-pkGnHyHKq7yuDp+Lfdcxw+6CHaGY1WHuyzpMY57rYrc=",
+    "./_content/CnGalWebSite.MainSite.Shared/Components/DesignSystem/CgHumanMachineVerification.yqtzts1kqi.razor.js": "sha256-pkGnHyHKq7yuDp+Lfdcxw+6CHaGY1WHuyzpMY57rYrc=",
+    "./_content/CnGalWebSite.MainSite.Shared/Components/DesignSystem/CgImageGallery.razor.js": "sha256-0EU0/FYFoSvX1XD3kqr9zL3s9+FJkp9mIthK+IocS6w=",
+    "./_content/CnGalWebSite.MainSite.Shared/Components/DesignSystem/CgImageGallery.ws63pbn524.razor.js": "sha256-0EU0/FYFoSvX1XD3kqr9zL3s9+FJkp9mIthK+IocS6w=",
+    "./_content/CnGalWebSite.MainSite.Shared/Components/DesignSystem/CgImageUpload.luf4y2zpgp.razor.js": "sha256-w7xIGPicijvrEglN71TV7D9NlXXaHk+s8q1bC3MVFGg=",
+    "./_content/CnGalWebSite.MainSite.Shared/Components/DesignSystem/CgImageUpload.razor.js": "sha256-w7xIGPicijvrEglN71TV7D9NlXXaHk+s8q1bC3MVFGg=",
+    "./_content/CnGalWebSite.MainSite.Shared/Components/DesignSystem/CgLineChart.ms73ldzae6.razor.js": "sha256-NoP6ROO0AXhfmM274Z4Bhh9GkGwONWGxwcilSuAZG+U=",
+    "./_content/CnGalWebSite.MainSite.Shared/Components/DesignSystem/CgLineChart.razor.js": "sha256-NoP6ROO0AXhfmM274Z4Bhh9GkGwONWGxwcilSuAZG+U=",
+    "./_content/CnGalWebSite.MainSite.Shared/Components/DesignSystem/CgMarkdownEditor.2ilt8s5zl7.razor.js": "sha256-5uWElXyj/ofgEz33W1KD7c1UmZRcXXhuHDQXDo2wjg4=",
+    "./_content/CnGalWebSite.MainSite.Shared/Components/DesignSystem/CgMarkdownEditor.razor.js": "sha256-5uWElXyj/ofgEz33W1KD7c1UmZRcXXhuHDQXDo2wjg4=",
+    "./_content/CnGalWebSite.MainSite.Shared/Components/DesignSystem/CgModal.razor.js": "sha256-vdPhlFoDBSth4bqInG7ftjnm1PsgvwKvF/n8F1V9iTQ=",
+    "./_content/CnGalWebSite.MainSite.Shared/Components/DesignSystem/CgModal.x7q0r9xain.razor.js": "sha256-vdPhlFoDBSth4bqInG7ftjnm1PsgvwKvF/n8F1V9iTQ=",
+    "./_content/CnGalWebSite.MainSite.Shared/Components/DesignSystem/CgPieChart.1lg9k6l00h.razor.js": "sha256-y4fIr2iiM3OFVfDMeTzdWyseRSu/zEN3sQXbQQUdju4=",
+    "./_content/CnGalWebSite.MainSite.Shared/Components/DesignSystem/CgPieChart.razor.js": "sha256-y4fIr2iiM3OFVfDMeTzdWyseRSu/zEN3sQXbQQUdju4=",
+    "./_content/CnGalWebSite.MainSite.Shared/Components/DesignSystem/CgToast.3wctnsoqkl.razor.js": "sha256-fbJv2cA4npmeGNGU9Md5gOUnBuX2bIS7H6sDeiGxbOw=",
+    "./_content/CnGalWebSite.MainSite.Shared/Components/DesignSystem/CgToast.razor.js": "sha256-fbJv2cA4npmeGNGU9Md5gOUnBuX2bIS7H6sDeiGxbOw=",
+    "./_content/CnGalWebSite.MainSite.Shared/Components/Features/Expo/GridCard.razor.js": "sha256-Igi/k77BAzeRpi0f6GlsLlKc023Q1LpcuBIATHBVDY0=",
+    "./_content/CnGalWebSite.MainSite.Shared/Components/Features/Expo/GridCard.y3pffbtqtz.razor.js": "sha256-Igi/k77BAzeRpi0f6GlsLlKc023Q1LpcuBIATHBVDY0=",
+    "./_content/CnGalWebSite.MainSite.Shared/Components/Features/Kanban/KanbanRoot.razor.js": "sha256-Xh7Yw/rl0ou/3nlc7KihPZrXKGMX+g4OOCLiXQ/DpV0=",
+    "./_content/CnGalWebSite.MainSite.Shared/Components/Features/Kanban/KanbanRoot.ycx7tg0zql.razor.js": "sha256-Xh7Yw/rl0ou/3nlc7KihPZrXKGMX+g4OOCLiXQ/DpV0=",
+    "./_content/CnGalWebSite.MainSite.Shared/Components/Features/Lottery/Draw/LotteryAnimationCard.gx7qutjy8i.razor.js": "sha256-pMyKvmb7/rpsU1HTQLiNMaxbuqIJ5xqg5829hXAyXL4=",
+    "./_content/CnGalWebSite.MainSite.Shared/Components/Features/Lottery/Draw/LotteryAnimationCard.razor.js": "sha256-pMyKvmb7/rpsU1HTQLiNMaxbuqIJ5xqg5829hXAyXL4=",
+    "./_content/CnGalWebSite.MainSite.Shared/Pages/Entry/CnGalGenerationPage.6pob5wxx5r.razor.js": "sha256-ykals6IWtwtuFBGTOMrIeSdS7bN96EmaZiP4WoXdjtU=",
+    "./_content/CnGalWebSite.MainSite.Shared/Pages/Entry/CnGalGenerationPage.razor.js": "sha256-ykals6IWtwtuFBGTOMrIeSdS7bN96EmaZiP4WoXdjtU=",
+    "./_content/CnGalWebSite.MainSite.Shared/scripts/canvas-controller.js": "sha256-yiRVrWFPGp7FJtm+irkBgyOCUxaMYr04aLlpqcU82E4=",
+    "./_content/CnGalWebSite.MainSite.Shared/scripts/canvas-controller.m41mc06li0.js": "sha256-yiRVrWFPGp7FJtm+irkBgyOCUxaMYr04aLlpqcU82E4=",
+    "./_content/CnGalWebSite.MainSite.Shared/scripts/component-lifecycle.js": "sha256-N2mgKh1UdRapYTSbyt+UNVS9xriN5AjbrSqgiyooXIo=",
+    "./_content/CnGalWebSite.MainSite.Shared/scripts/component-lifecycle.pcsl8npv4a.js": "sha256-N2mgKh1UdRapYTSbyt+UNVS9xriN5AjbrSqgiyooXIo=",
+    "./_content/CnGalWebSite.MainSite.Shared/scripts/dialog.6l24qgv4ed.js": "sha256-5o86AAgTf9nkCuTtyLHzdh4nx5oVnIGXfcQAlC7cSTw=",
+    "./_content/CnGalWebSite.MainSite.Shared/scripts/dialog.js": "sha256-5o86AAgTf9nkCuTtyLHzdh4nx5oVnIGXfcQAlC7cSTw=",
+    "./_content/CnGalWebSite.MainSite.Shared/scripts/edit-nav.iwpxp8ncop.js": "sha256-Ykrfmu/uhSFfiQzWMvwfTLytJsCJdzaEiPdZqeJE+y8=",
+    "./_content/CnGalWebSite.MainSite.Shared/scripts/edit-nav.js": "sha256-Ykrfmu/uhSFfiQzWMvwfTLytJsCJdzaEiPdZqeJE+y8=",
+    "./_content/CnGalWebSite.MainSite.Shared/scripts/geetest-loader.js": "sha256-QMRe+EEHZToFZm4fPMcTFAl1s9TvmrGkKfnucNA6HxQ=",
+    "./_content/CnGalWebSite.MainSite.Shared/scripts/geetest-loader.sddycs1rlt.js": "sha256-QMRe+EEHZToFZm4fPMcTFAl1s9TvmrGkKfnucNA6HxQ=",
+    "./_content/CnGalWebSite.MainSite.Shared/scripts/site-shell.goheptj6q9.js": "sha256-ALLuuiPvq4mdjkIDXlux/PebC7MZh/jZW+S7TG3zxaU=",
+    "./_content/CnGalWebSite.MainSite.Shared/scripts/site-shell.js": "sha256-ALLuuiPvq4mdjkIDXlux/PebC7MZh/jZW+S7TG3zxaU=",
+    "./_content/CnGalWebSite.MainSite.Shared/scripts/third-party-assets.js": "sha256-2trGIObWfyMu1+XyBFqFHSkBcfQRjKT/n3NA+OHg8Qc=",
+    "./_content/CnGalWebSite.MainSite.Shared/scripts/third-party-assets.yax1g3ogek.js": "sha256-2trGIObWfyMu1+XyBFqFHSkBcfQRjKT/n3NA+OHg8Qc=",
+    "./_content/CnGalWebSite.MainSite.Shared/scripts/umami-track.js": "sha256-xSQhPhXELW7jjvcZXl54VLvjTRecZ6Y66mdPMvzTUe8=",
+    "./_content/CnGalWebSite.MainSite.Shared/scripts/umami-track.vj7c6l374u.js": "sha256-xSQhPhXELW7jjvcZXl54VLvjTRecZ6Y66mdPMvzTUe8=",
+    "./_framework/blazor.server.7d17r9czpp.js": "sha256-Vb4iIk2vqqfrDwg6Hlx9xP81SundHQhc7BOhqiIEWcE=",
+    "./_framework/blazor.server.js": "sha256-Vb4iIk2vqqfrDwg6Hlx9xP81SundHQhc7BOhqiIEWcE=",
+    "./_framework/blazor.web.js": "sha256-lzvG5lB44syquBYZAhwQpL2QQJFwWCVT94Ir+jZx2P8=",
+    "./_framework/blazor.web.xmryko9e6j.js": "sha256-lzvG5lB44syquBYZAhwQpL2QQJFwWCVT94Ir+jZx2P8="
+  }
+}</script>
+    <title>搜索 - CnGal 中文GalGame资料站</title><meta name="description" content="CnGal资料站的建站目的是收集，索引国产gal及中文化galgame资料、文章、攻略，为galgame同好们提供方便。">
+    <meta itemprop="name" content="搜索 - CnGal 中文GalGame资料站">
+    <meta itemprop="image" content="https://app.cngal.org/_content/CnGalWebSite.Shared/images/logo.png"><script async="" src="https://www.clarity.ms/tag/buu31hy6os"></script><script async="" src="https://umami.cngal.top/script.js" data-website-id="c190d5e2-f859-430c-8463-be388f6875b0" data-tag="mainsite" data-performance="true"></script></head>
+
+<body><div class="cg-layout" b-bh5voylcdx=""><header class="cg-layout__header" b-bh5voylcdx=""><div class="cg-topbar" b-bh5voylcdx=""><div class="cg-topbar__left" b-bh5voylcdx=""><button class="cg-topbar__menu-toggle" aria-label="打开导航菜单" data-cg-action="drawer-open" b-bh5voylcdx=""><svg class="cg-mdi-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" b-7pdrvwg029=""><path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" b-7pdrvwg029=""></path></svg></button>
+
+                <a class="cg-brand" href="/" b-bh5voylcdx=""><img class="cg-brand__icon" src="favicon.wb7x0tdnrd.ico" alt="CnGal" b-bh5voylcdx="">
+                    <h2 class="cg-brand__text" b-bh5voylcdx="">CnGal资料站</h2></a>
+
+                <nav class="cg-topbar__nav" aria-label="主导航" b-bh5voylcdx=""><a href="/discount" b-bh5voylcdx="">游戏折扣</a>
+                    <a href="/lotteries/home" b-bh5voylcdx="">抽奖</a>
+                    <a href="/square" b-bh5voylcdx="">广场</a>
+                    <a href="/sharegames" b-bh5voylcdx="">分享游玩记录</a></nav></div>
+
+            <div class="cg-topbar__right" b-bh5voylcdx=""><a href="/search" class="cg-topbar__search" aria-label="搜索词条、制作组" b-bh5voylcdx=""><svg class="cg-mdi-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" b-7pdrvwg029=""><path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" b-7pdrvwg029=""></path></svg></a>
+
+                <button class="cg-theme-toggle" data-cg-action="theme-toggle" aria-label="切换颜色主题" b-5wczevfbwm=""><svg class="cg-mdi-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" b-7pdrvwg029=""><path d="M7.5,2C5.71,3.15 4.5,5.18 4.5,7.5C4.5,9.82 5.71,11.85 7.53,13C4.46,13 2,10.54 2,7.5A5.5,5.5 0 0,1 7.5,2M19.07,3.5L20.5,4.93L4.93,20.5L3.5,19.07L19.07,3.5M12.89,5.93L11.41,5L9.97,6L10.39,4.3L9,3.24L10.75,3.12L11.33,1.47L12,3.1L13.73,3.13L12.38,4.26L12.89,5.93M9.59,9.54L8.43,8.81L7.31,9.59L7.65,8.27L6.56,7.44L7.92,7.35L8.37,6.06L8.88,7.33L10.24,7.36L9.19,8.23L9.59,9.54M19,13.5A5.5,5.5 0 0,1 13.5,19C12.28,19 11.15,18.6 10.24,17.93L17.93,10.24C18.6,11.15 19,12.28 19,13.5M14.6,20.08L17.37,18.93L17.13,22.28L14.6,20.08M18.93,17.38L20.08,14.61L22.28,17.15L18.93,17.38M20.08,12.42L18.94,9.64L22.28,9.88L20.08,12.42M9.63,18.93L12.4,20.08L9.87,22.27L9.63,18.93Z" b-7pdrvwg029=""></path></svg></button>
+                <div class="cg-topbar__actions" b-bh5voylcdx=""><a class="cg-auth-login" href="/authentication/login?returnUrl=%2Fsearch%3FText%3Dcngal%25E6%25AF%258F%25E5%2591%25A8%25E9%2580%259F%25E6%258A%25A5%26Sort%3DPubulishTime%2520desc%26Times%3D1767196800000-1798732800000%26Page%3D3" b-bh5voylcdx=""><svg class="cg-mdi-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" b-7pdrvwg029=""><path d="M12,19.2C9.5,19.2 7.29,17.92 6,16C6.03,14 10,12.9 12,12.9C14,12.9 17.97,14 18,16C16.71,17.92 14.5,19.2 12,19.2M12,5A3,3 0 0,1 15,8A3,3 0 0,1 12,11A3,3 0 0,1 9,8A3,3 0 0,1 12,5M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12C22,6.47 17.5,2 12,2Z" b-7pdrvwg029=""></path></svg>
+                                <span b-bh5voylcdx="">登录</span></a></div></div></div></header>
+
+    <div id="cg-drawer-backdrop" class="cg-drawer-backdrop" data-cg-action="drawer-close" b-bh5voylcdx=""></div>
+        <nav id="cg-drawer" class="cg-drawer" aria-label="移动端导航" b-bh5voylcdx=""><div class="cg-drawer__header" b-bh5voylcdx=""><a class="cg-brand" href="/" b-bh5voylcdx=""><img class="cg-brand__icon" src="favicon.wb7x0tdnrd.ico" alt="CnGal" b-bh5voylcdx="">
+                    <h2 class="cg-brand__text" b-bh5voylcdx="">CnGal资料站</h2></a>
+                <button class="cg-drawer__close" aria-label="关闭导航菜单" data-cg-action="drawer-close" b-bh5voylcdx=""><svg class="cg-mdi-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" b-7pdrvwg029=""><path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" b-7pdrvwg029=""></path></svg></button></div>
+            <div class="cg-drawer__links" b-bh5voylcdx=""><a href="/" data-cg-action="drawer-close" b-bh5voylcdx=""><svg class="cg-mdi-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" b-7pdrvwg029=""><path d="M12 5.69L17 10.19V18H15V12H9V18H7V10.19L12 5.69M12 3L2 12H5V20H11V14H13V20H19V12H22" b-7pdrvwg029=""></path></svg>
+                    <span b-bh5voylcdx="">主页</span></a></div>
+
+            <div class="cg-drawer__divider" b-bh5voylcdx=""></div>
+            <div class="cg-drawer__section-title" b-bh5voylcdx="">周年庆活动</div>
+            <div class="cg-drawer__links" b-bh5voylcdx=""><a href="/expo/lottery" data-cg-action="drawer-close" b-bh5voylcdx=""><svg class="cg-mdi-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" b-7pdrvwg029=""><path d="M9.06,1.93C7.17,1.92 5.33,3.74 6.17,6H3A2,2 0 0,0 1,8V10A1,1 0 0,0 2,11H11V8H13V11H22A1,1 0 0,0 23,10V8A2,2 0 0,0 21,6H17.83C19,2.73 14.6,0.42 12.57,3.24L12,4L11.43,3.22C10.8,2.33 9.93,1.94 9.06,1.93M9,4C9.89,4 10.34,5.08 9.71,5.71C9.08,6.34 8,5.89 8,5A1,1 0 0,1 9,4M15,4C15.89,4 16.34,5.08 15.71,5.71C15.08,6.34 14,5.89 14,5A1,1 0 0,1 15,4M2,12V20A2,2 0 0,0 4,22H20A2,2 0 0,0 22,20V12H13V20H11V12H2Z" b-7pdrvwg029=""></path></svg>
+                    <span b-bh5voylcdx="">预约抽奖</span></a>
+                <a href="/expo/anniversary" data-cg-action="drawer-close" b-bh5voylcdx=""><svg class="cg-mdi-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" b-7pdrvwg029=""><path d="M20,14H4V8H9.08L7,10.83L8.62,12L11,8.76L12,7.4L13,8.76L15.38,12L17,10.83L14.92,8H20M20,19H4V17H20M9,4A1,1 0 0,1 10,5A1,1 0 0,1 9,6A1,1 0 0,1 8,5A1,1 0 0,1 9,4M15,4A1,1 0 0,1 16,5A1,1 0 0,1 15,6A1,1 0 0,1 14,5A1,1 0 0,1 15,4M20,6H17.82C17.93,5.69 18,5.35 18,5A3,3 0 0,0 15,2C13.95,2 13.04,2.54 12.5,3.35L12,4L11.5,3.34C10.96,2.54 10.05,2 9,2A3,3 0 0,0 6,5C6,5.35 6.07,5.69 6.18,6H4C2.89,6 2,6.89 2,8V19C2,20.11 2.89,21 4,21H20C21.11,21 22,20.11 22,19V8C22,6.89 21.11,6 20,6Z" b-7pdrvwg029=""></path></svg>
+                    <span b-bh5voylcdx="">直播抽号</span></a></div>
+
+            <div class="cg-drawer__divider" b-bh5voylcdx=""></div>
+            <div class="cg-drawer__section-title" b-bh5voylcdx="">设置</div>
+            <div class="cg-drawer__links" b-bh5voylcdx=""><button class="cg-drawer__theme-btn" data-cg-action="theme-toggle" aria-label="切换颜色主题" b-bh5voylcdx=""><svg class="cg-mdi-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" b-7pdrvwg029=""><path d="M7.5,2C5.71,3.15 4.5,5.18 4.5,7.5C4.5,9.82 5.71,11.85 7.53,13C4.46,13 2,10.54 2,7.5A5.5,5.5 0 0,1 7.5,2M19.07,3.5L20.5,4.93L4.93,20.5L3.5,19.07L19.07,3.5M12.89,5.93L11.41,5L9.97,6L10.39,4.3L9,3.24L10.75,3.12L11.33,1.47L12,3.1L13.73,3.13L12.38,4.26L12.89,5.93M9.59,9.54L8.43,8.81L7.31,9.59L7.65,8.27L6.56,7.44L7.92,7.35L8.37,6.06L8.88,7.33L10.24,7.36L9.19,8.23L9.59,9.54M19,13.5A5.5,5.5 0 0,1 13.5,19C12.28,19 11.15,18.6 10.24,17.93L17.93,10.24C18.6,11.15 19,12.28 19,13.5M14.6,20.08L17.37,18.93L17.13,22.28L14.6,20.08M18.93,17.38L20.08,14.61L22.28,17.15L18.93,17.38M20.08,12.42L18.94,9.64L22.28,9.88L20.08,12.42M9.63,18.93L12.4,20.08L9.87,22.27L9.63,18.93Z" b-7pdrvwg029=""></path></svg>
+                    <span b-bh5voylcdx="">夜间模式</span></button></div>
+
+            <div class="cg-drawer__divider" b-bh5voylcdx=""></div>
+                    <div class="cg-drawer__footer" b-bh5voylcdx=""><a class="cg-drawer__login-link" href="/authentication/login?returnUrl=%2Fsearch%3FText%3Dcngal%25E6%25AF%258F%25E5%2591%25A8%25E9%2580%259F%25E6%258A%25A5%26Sort%3DPubulishTime%2520desc%26Times%3D1767196800000-1798732800000%26Page%3D3" b-bh5voylcdx=""><svg class="cg-mdi-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" b-7pdrvwg029=""><path d="M11 7L9.6 8.4L12.2 11H2V13H12.2L9.6 15.6L11 17L16 12L11 7M20 19H12V21H20C21.1 21 22 20.1 22 19V5C22 3.9 21.1 3 20 3H12V5H20V19Z" b-7pdrvwg029=""></path></svg>
+                            <span b-bh5voylcdx="">登录 / 注册</span></a></div></nav>
+
+    <main class="cg-layout__main" b-bh5voylcdx="">
+        <div class="cg-layout__container" b-bh5voylcdx=""><article class="content" b-bh5voylcdx="">
+
+
+<div class="search-page" b-oo2kih165r=""><div class="search-page__header" b-oo2kih165r=""><h1 class="search-page__title" b-oo2kih165r="" tabindex="-1">搜索</h1>
+        <p class="search-page__desc" b-oo2kih165r="">在 CnGal 资料站中搜索游戏、角色、文章、标签等内容</p></div>
+
+    <form method="get" action="/search" class="search-page__search-bar" b-oo2kih165r=""><input type="hidden" name="Times" value="1767196800000-1798732800000" b-oo2kih165r=""><input type="hidden" name="Sort" value="PubulishTime desc" b-oo2kih165r=""><div class="search-page__input-wrapper" b-oo2kih165r=""><svg class="cg-mdi-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" b-7pdrvwg029=""><path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" b-7pdrvwg029=""></path></svg>
+            <input type="text" name="Text" class="search-page__input" placeholder="输入关键词搜索..." value="cngal每周速报" b-oo2kih165r=""><a href="/search?Sort=PubulishTime%20desc&amp;Times=1767196800000-1798732800000" class="search-page__clear-btn" aria-label="清除搜索" b-oo2kih165r=""><svg class="cg-mdi-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" b-7pdrvwg029=""><path d="M12,2C17.53,2 22,6.47 22,12C22,17.53 17.53,22 12,22C6.47,22 2,17.53 2,12C2,6.47 6.47,2 12,2M15.59,7L12,10.59L8.41,7L7,8.41L10.59,12L7,15.59L8.41,17L12,13.41L15.59,17L17,15.59L13.41,12L17,8.41L15.59,7Z" b-7pdrvwg029=""></path></svg></a></div>
+        <button type="submit" class="search-page__search-btn" b-oo2kih165r="">
+            搜索
+        </button></form>
+
+    <div class="search-filter-panel" b-oz2to1adx5=""><div class="search-filter-panel__section" b-oz2to1adx5=""><h3 class="search-filter-panel__section-title" b-oz2to1adx5=""><svg class="cg-mdi-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" b-7pdrvwg029=""><path d="M6,13H18V11H6M3,6V8H21V6M10,18H14V16H10V18Z" b-7pdrvwg029=""></path></svg>
+            类型
+        </h3>
+
+        <div class="search-filter-panel__group" b-oz2to1adx5=""><span class="search-filter-panel__group-label" b-oz2to1adx5="">词条</span>
+            <div class="search-filter-panel__tags" b-oz2to1adx5=""><a href="/search?Text=cngal%E6%AF%8F%E5%91%A8%E9%80%9F%E6%8A%A5&amp;Sort=PubulishTime%20desc&amp;Types=Entry&amp;Times=1767196800000-1798732800000" class="search-filter-panel__tag " b-oz2to1adx5="">词条</a><a href="/search?Text=cngal%E6%AF%8F%E5%91%A8%E9%80%9F%E6%8A%A5&amp;Sort=PubulishTime%20desc&amp;Types=Game&amp;Times=1767196800000-1798732800000" class="search-filter-panel__tag " b-oz2to1adx5="">游戏</a><a href="/search?Text=cngal%E6%AF%8F%E5%91%A8%E9%80%9F%E6%8A%A5&amp;Sort=PubulishTime%20desc&amp;Types=Role&amp;Times=1767196800000-1798732800000" class="search-filter-panel__tag " b-oz2to1adx5="">角色</a><a href="/search?Text=cngal%E6%AF%8F%E5%91%A8%E9%80%9F%E6%8A%A5&amp;Sort=PubulishTime%20desc&amp;Types=ProductionGroup&amp;Times=1767196800000-1798732800000" class="search-filter-panel__tag " b-oz2to1adx5="">组织</a><a href="/search?Text=cngal%E6%AF%8F%E5%91%A8%E9%80%9F%E6%8A%A5&amp;Sort=PubulishTime%20desc&amp;Types=Staff&amp;Times=1767196800000-1798732800000" class="search-filter-panel__tag " b-oz2to1adx5="">Staff</a></div></div>
+
+        <div class="search-filter-panel__group" b-oz2to1adx5=""><span class="search-filter-panel__group-label" b-oz2to1adx5="">文章</span>
+            <div class="search-filter-panel__tags" b-oz2to1adx5=""><a href="/search?Text=cngal%E6%AF%8F%E5%91%A8%E9%80%9F%E6%8A%A5&amp;Sort=PubulishTime%20desc&amp;Types=Article&amp;Times=1767196800000-1798732800000" class="search-filter-panel__tag " b-oz2to1adx5="">文章</a><a href="/search?Text=cngal%E6%AF%8F%E5%91%A8%E9%80%9F%E6%8A%A5&amp;Sort=PubulishTime%20desc&amp;Types=Tought&amp;Times=1767196800000-1798732800000" class="search-filter-panel__tag " b-oz2to1adx5="">感想</a><a href="/search?Text=cngal%E6%AF%8F%E5%91%A8%E9%80%9F%E6%8A%A5&amp;Sort=PubulishTime%20desc&amp;Types=Strategy&amp;Times=1767196800000-1798732800000" class="search-filter-panel__tag " b-oz2to1adx5="">攻略</a><a href="/search?Text=cngal%E6%AF%8F%E5%91%A8%E9%80%9F%E6%8A%A5&amp;Sort=PubulishTime%20desc&amp;Types=Interview&amp;Times=1767196800000-1798732800000" class="search-filter-panel__tag " b-oz2to1adx5="">访谈</a><a href="/search?Text=cngal%E6%AF%8F%E5%91%A8%E9%80%9F%E6%8A%A5&amp;Sort=PubulishTime%20desc&amp;Types=News&amp;Times=1767196800000-1798732800000" class="search-filter-panel__tag " b-oz2to1adx5="">动态</a><a href="/search?Text=cngal%E6%AF%8F%E5%91%A8%E9%80%9F%E6%8A%A5&amp;Sort=PubulishTime%20desc&amp;Types=Evaluation&amp;Times=1767196800000-1798732800000" class="search-filter-panel__tag " b-oz2to1adx5="">评测</a><a href="/search?Text=cngal%E6%AF%8F%E5%91%A8%E9%80%9F%E6%8A%A5&amp;Sort=PubulishTime%20desc&amp;Types=PeripheralArticle&amp;Times=1767196800000-1798732800000" class="search-filter-panel__tag " b-oz2to1adx5="">周边文章</a><a href="/search?Text=cngal%E6%AF%8F%E5%91%A8%E9%80%9F%E6%8A%A5&amp;Sort=PubulishTime%20desc&amp;Types=Notice&amp;Times=1767196800000-1798732800000" class="search-filter-panel__tag " b-oz2to1adx5="">公告</a><a href="/search?Text=cngal%E6%AF%8F%E5%91%A8%E9%80%9F%E6%8A%A5&amp;Sort=PubulishTime%20desc&amp;Types=OtherArticle&amp;Times=1767196800000-1798732800000" class="search-filter-panel__tag " b-oz2to1adx5="">杂谈</a><a href="/search?Text=cngal%E6%AF%8F%E5%91%A8%E9%80%9F%E6%8A%A5&amp;Sort=PubulishTime%20desc&amp;Types=Fan&amp;Times=1767196800000-1798732800000" class="search-filter-panel__tag " b-oz2to1adx5="">二创</a></div></div>
+
+        <div class="search-filter-panel__group" b-oz2to1adx5=""><span class="search-filter-panel__group-label" b-oz2to1adx5="">其他</span>
+            <div class="search-filter-panel__tags" b-oz2to1adx5=""><a href="/search?Text=cngal%E6%AF%8F%E5%91%A8%E9%80%9F%E6%8A%A5&amp;Sort=PubulishTime%20desc&amp;Types=Tag&amp;Times=1767196800000-1798732800000" class="search-filter-panel__tag " b-oz2to1adx5="">标签</a><a href="/search?Text=cngal%E6%AF%8F%E5%91%A8%E9%80%9F%E6%8A%A5&amp;Sort=PubulishTime%20desc&amp;Types=Video&amp;Times=1767196800000-1798732800000" class="search-filter-panel__tag " b-oz2to1adx5="">视频</a><a href="/search?Text=cngal%E6%AF%8F%E5%91%A8%E9%80%9F%E6%8A%A5&amp;Sort=PubulishTime%20desc&amp;Types=Periphery&amp;Times=1767196800000-1798732800000" class="search-filter-panel__tag " b-oz2to1adx5="">周边</a><a href="/search?Text=cngal%E6%AF%8F%E5%91%A8%E9%80%9F%E6%8A%A5&amp;Sort=PubulishTime%20desc&amp;Types=SetorAlbumEtc&amp;Times=1767196800000-1798732800000" class="search-filter-panel__tag " b-oz2to1adx5="">设定集</a><a href="/search?Text=cngal%E6%AF%8F%E5%91%A8%E9%80%9F%E6%8A%A5&amp;Sort=PubulishTime%20desc&amp;Types=Ost&amp;Times=1767196800000-1798732800000" class="search-filter-panel__tag " b-oz2to1adx5="">原声集</a><a href="/search?Text=cngal%E6%AF%8F%E5%91%A8%E9%80%9F%E6%8A%A5&amp;Sort=PubulishTime%20desc&amp;Types=Set&amp;Times=1767196800000-1798732800000" class="search-filter-panel__tag " b-oz2to1adx5="">套装</a><a href="/search?Text=cngal%E6%AF%8F%E5%91%A8%E9%80%9F%E6%8A%A5&amp;Sort=PubulishTime%20desc&amp;Types=OtherPeriphery&amp;Times=1767196800000-1798732800000" class="search-filter-panel__tag " b-oz2to1adx5="">其他周边</a></div></div></div>
+
+    <div class="search-filter-panel__section" b-oz2to1adx5=""><h3 class="search-filter-panel__section-title" b-oz2to1adx5=""><svg class="cg-mdi-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" b-7pdrvwg029=""><path d="M9,10H7V12H9V10M13,10H11V12H13V10M17,10H15V12H17V10M19,3H18V1H16V3H8V1H6V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5A2,2 0 0,0 19,3M19,19H5V8H19V19Z" b-7pdrvwg029=""></path></svg>
+            时间
+        </h3>
+        <div class="search-filter-panel__tags" b-oz2to1adx5=""><a href="/search?Text=cngal%E6%AF%8F%E5%91%A8%E9%80%9F%E6%8A%A5&amp;Sort=PubulishTime%20desc&amp;Times=1767196800000-1798732800000&amp;Times=1609430400000-1640966400000" class="search-filter-panel__tag " b-oz2to1adx5="">2021</a><a href="/search?Text=cngal%E6%AF%8F%E5%91%A8%E9%80%9F%E6%8A%A5&amp;Sort=PubulishTime%20desc&amp;Times=1767196800000-1798732800000&amp;Times=1640966400000-1672502400000" class="search-filter-panel__tag " b-oz2to1adx5="">2022</a><a href="/search?Text=cngal%E6%AF%8F%E5%91%A8%E9%80%9F%E6%8A%A5&amp;Sort=PubulishTime%20desc&amp;Times=1767196800000-1798732800000&amp;Times=1672502400000-1704038400000" class="search-filter-panel__tag " b-oz2to1adx5="">2023</a><a href="/search?Text=cngal%E6%AF%8F%E5%91%A8%E9%80%9F%E6%8A%A5&amp;Sort=PubulishTime%20desc&amp;Times=1767196800000-1798732800000&amp;Times=1704038400000-1735660800000" class="search-filter-panel__tag " b-oz2to1adx5="">2024</a><a href="/search?Text=cngal%E6%AF%8F%E5%91%A8%E9%80%9F%E6%8A%A5&amp;Sort=PubulishTime%20desc&amp;Times=1767196800000-1798732800000&amp;Times=1735660800000-1767196800000" class="search-filter-panel__tag " b-oz2to1adx5="">2025</a><a href="/search?Text=cngal%E6%AF%8F%E5%91%A8%E9%80%9F%E6%8A%A5&amp;Sort=PubulishTime%20desc" class="search-filter-panel__tag search-filter-panel__tag--active" b-oz2to1adx5="">2026</a></div></div>
+
+    <div class="search-filter-panel__section search-filter-panel__section--inline" b-oz2to1adx5=""><h3 class="search-filter-panel__section-title" b-oz2to1adx5=""><svg class="cg-mdi-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" b-7pdrvwg029=""><path d="M3,13H15V11H3M3,6V8H21V6M3,18H9V16H3V18Z" b-7pdrvwg029=""></path></svg>
+            排序
+        </h3>
+        <div class="search-filter-panel__tags" b-oz2to1adx5=""><a href="/search?Text=cngal%E6%AF%8F%E5%91%A8%E9%80%9F%E6%8A%A5&amp;Times=1767196800000-1798732800000" class="search-filter-panel__tag " b-oz2to1adx5="">默认排序</a><a href="/search?Text=cngal%E6%AF%8F%E5%91%A8%E9%80%9F%E6%8A%A5&amp;Sort=LastEditTime%20desc&amp;Times=1767196800000-1798732800000" class="search-filter-panel__tag " b-oz2to1adx5="">最后编辑时间</a><a href="/search?Text=cngal%E6%AF%8F%E5%91%A8%E9%80%9F%E6%8A%A5&amp;Sort=PubulishTime%20desc&amp;Times=1767196800000-1798732800000" class="search-filter-panel__tag search-filter-panel__tag--active" b-oz2to1adx5="">发布时间</a><a href="/search?Text=cngal%E6%AF%8F%E5%91%A8%E9%80%9F%E6%8A%A5&amp;Sort=CreateTime%20desc&amp;Times=1767196800000-1798732800000" class="search-filter-panel__tag " b-oz2to1adx5="">创建时间</a><a href="/search?Text=cngal%E6%AF%8F%E5%91%A8%E9%80%9F%E6%8A%A5&amp;Sort=ReaderCount%20desc&amp;Times=1767196800000-1798732800000" class="search-filter-panel__tag " b-oz2to1adx5="">热度</a><a href="/search?Text=cngal%E6%AF%8F%E5%91%A8%E9%80%9F%E6%8A%A5&amp;Sort=PubulishTime&amp;Times=1767196800000-1798732800000" class="search-filter-panel__tag search-filter-panel__tag--active search-filter-panel__tag--order" b-oz2to1adx5=""><svg class="cg-mdi-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" b-7pdrvwg029=""><path d="M19 7H22L18 3L14 7H17V21H19M2 17H12V19H2M6 5V7H2V5M2 11H9V13H2V11Z" b-7pdrvwg029=""></path></svg>
+                    逆序</a></div></div></div><p class="search-page__results-info" b-oo2kih165r="">
+                找到 3236 条结果
+            </p><div class="search-page__results" b-oo2kih165r=""><a href="/articles/index/9060" class="search-result-card" b-swm99zdmqo=""><div class="search-result-card__image-link" b-swm99zdmqo=""><img src="https://tucang.cngal.top/api/image/show/2593be61d7f8097a5835d21f6ee23cf4?https://image.cngal.org/images/upload/20260531/45db508408fcf981ed4b3fa41f3a4dde995855f1.png" alt="CnGal每周速报（2026年第23周）" class="search-result-card__image" loading="lazy" b-swm99zdmqo=""></div><div class="search-result-card__body" b-swm99zdmqo=""><div class="search-result-card__header" b-swm99zdmqo=""><span class="search-result-card__type-badge search-result-card__type-badge--article" b-swm99zdmqo="">文章</span>
+            <span class="search-result-card__title" b-swm99zdmqo="">CnGal每周速报（2026年第23周）</span></div><p class="search-result-card__brief" b-swm99zdmqo="">★ DaCapoSOFT - Dacapo Soft 公开《凝视》游戏企划第一弹情报
+★ PygmaGame - 泳装练习生？裙子已经不能再短了！新作《花鸟水月》夏季泳装公开
+★ emanon制作组 - 【episode#69】周末
+★ 暗色神具的魔王 - 色纸 定制包装盒打样预览！ ~~ 即将发货 
+★ 双色巷道 - 【江湖纪事】——《飞花剑》研发近况·贰
+★ 苍蓝の風 - 国G日记（2026年5月）
+★ 利莉尔Lilier - 《拉斯普特的龙与魔女》DEMO即将推出
+★ 玄影工作室 - 西幻养成gal《恋爱吧，骷髅王!》公主立绘草图已出～
+★ 栖霞日记 - 栖霞日记游戏开发日志2026.5.31 
+★ 苍蓝の风 - 国G日记（5月31日增刊）
+★ GunBracket - 祝各位六一快乐！
+★ 来自灰舟 - ......再见
+★ 被炒的炒饭 - 今天是六一儿童节！@33祖传上色 送来了可爱的贺图
+★ PlanC社 - 不管你实际年龄多少岁，你总会是某个人心中的宝宝
+★ 烂荔枝制作组 - 【六一·宜嫁娶】落叶捎来讯息，黄油罐头续作消息公布
+★ 土豆花制作组 - 《永恒与星辰与日常》合法萝莉Galgame主题曲OP公布！定档7月17日！
+★ 百里嘻声 - 关于我们游戏女主的形象变化……（黑丝是如何打败光腿的…）
+★ 可味玩 - 《蓝琥珀》奇幻恋爱新作商店页公开！
+★ emanon制作组 - 【episode#70】儿童节的特别礼物
+★ 乌络游戏-祁木良 - 国G《世界终焉之时》UI实机视频
+★ 我是亚理 - 柔蒂亚克｜情报日志
+★ 灵动漫画工作室 - 《我才不会被女孩子欺负呢》游戏中剧情动画《绝对少女主权宣言》PV预告（国产AVG游戏视频）
+★ StationWorks官方 - ​《Starry - 巡星之旅》制作进度汇报
+★ Plones - 我们的独立游戏里居然有这么多儿童？六一快乐，立绘上新和盘点～
+★ 忘雪社 - 忘雪社5月月报
+★ 小鲤工作室 - 儿童节发泳装会有棒棒糖做奖励吗
+★ 繁星相位制作组 - 『无法看清的礼物』
+★ 青礼社Bendetizoin - 别这样，我会忘不掉这一天的。
+★ M坨恰 - 独立视觉小说《天使解体》制作决定  原作《少女仅余日》
+★ ZeroZen工作室 - 在肘击Steam审核后，希望大家给我们一个机会！！！
+★ cycle制作组 - 六一儿童节快乐！
+★ 电气白兰社 - 六一快乐！来张校园Galgame新CG图透：神秘眼镜黑丝女…
+★ crysta_氺晶 - 《極书院》角色介绍1｜谁不喜欢这样的傲娇反差少女泥
+★ 绮陌项目组 - 师生恋题材国G凉面爱情故事demo过审了
+★ 被炒的炒饭 - 我爱你，你爱我，胶囊恋人甜蜜蜜
+★ 比特尔特制作组 - 【国G观察室】26年5月月报
+★ アキナ・ランドール - 【renpy】选项分支、跳转、好感度数值、条件句判定、不可选、隐藏选、随机选、持久化数据多周目与特殊......
+★ 呐呐呐的林杏子 - 建了个Naninovel用户群（329739745）
+★ emanon制作组 - 【episode#71】甜筒冰淇淋
+★ HyacinthHeart - 对皇帝殿下，忠！诚！ 帝国：对应者 EP02
+★ 无心汉 - 因steam认证包含成人内容，《铜刀银剑》将以16+形式上架
+★ 雪楔制作组 - 黑白色的神秘少女——“？？？”立绘统一完成
+★ 幼刀丛雨-有地绫 - 恋语星缘Demo2.0现已正式发布！
+★ Warmmu - “就让我的眼，伴随她的心房”关系性百合《光与影之恋》Demo PV《点心》
+★ StationWorks官方 - 【Galgame + 奥术】《痴情妹妹纱雪的兄控日记》试玩版现已登陆Steam
+★ 精文工作室 - 【妖恋西游】众筹周边发货中！
+★ 好运风市区 - 新作《待到来时，赴约而至》男女主立绘展示
+★ 可味玩Kawayiplay - 《妹控计划》Demo版会顺利过审嘛？
+★ AsicxArt-芯片社 - 茉莉祝各位小伙伴旗开得胜，万事如愿💯
+★ 百里嘻声 - 大雷！我们游戏的唯二的美术理念之一！！
+★ 电浆落独游工作室 - 游戏入围开拓芯决赛，但在毕业前背负了100个周边fumo的巨债！
+★ 联结互动 - sks！第二位女主新立绘公开！
+★ 海伦幻想制作组 - 美少女！旮旯给木！新作的发售前夜！！
+★ 小橘子糖_official - 电波上司究竟是女铜还是恐铜？【番外·二】
+★ 乌络游戏-祁木良 - 关于世界终焉之时的一些问题汇总与答疑
+★ emanon制作组 - 【episode#73】风听见的约定
+★ cycle制作组 - 每周四标准打卡闪亮登场——
+★ 阿空qwq在做游戏版 - 在电影院跟男友求婚成功后，我做了一个女追男的纯爱galgame
+★ 我是亚理 - 可恶！被硬控了
+★ 海伦幻想HelenFantasy - 我们的新游戏发售啦！
+★ 被炒的炒饭 - 只是缺爱-崩老头、拼好抱和《胶囊恋人》
+★ 竹书子 - 【国g】葡萄味的女孩子，大家会喜欢吗
+★ 幻象Gal - 西幻真后宫Gal《孤狼之春》本周制作进展
+★ emanon制作组 - 【episode#74】无声电影
+★ 琉璃花糖 - 《光与影之恋》Demo已发布
+★ 看板娘推荐 - 【🚫普通玩家止步】这个夏天，给女儿一次集中曝光的机会？
+★ 风域游戏 - 一个猎奇向插画师的自述
+★ 豆腐社Official - 《宿管少女》本月开发日志（5.5-6.5）
+★ Ritsuai_Official - 旮旯game创作者的新选择： Kirikiri KAGeXpress 3.0 Next Gen.
+★ Livety格子酱 - 国轻改《我们纯真的青春》游戏配乐工程走带Part.1 乐观积极篇
+★ 栖霞日记 - 栖霞日记角色配音测试：胜胜
+★ 10lulu - 今天是《心象天仪本线》商店公开一周年！
+★ 电浆落独游工作室 - 创建了四个月的大学生独游工作室，我们近况/数据如何？
+★ 繁星相位制作组 - 这是一篇道歉帖，抱歉哇T^T
+★ 北京黎羽科技-GKLKK - 《光与影之恋》制作组祝各位考生金榜题名，
+★ 百里嘻声 - 我们的游戏demo上线啦！！！！！
+★ 利莉尔Lilier - 《拉斯普特的龙与魔女》蒸汽朋克突袭现实啦！！
+★ emanon制作组 - 【episode#75】那年的高考（1）——高考加油特别篇
+★ 零创游戏-嵇零 - 《饿殍》官方小说加印庆贺！
+★ 瞌睡的坐标 - 说来夏天穿着这身，她难道不热么
+★ Orscat工作室 - 当你干完了一个项目，接下来该做的是……
+★ PygmaGame - 没有丝袜，但有腿环。你喜欢这种泳装吗？《花鸟水月》新CG公开
+★ 17角的小屋 - 《苍灰残响》6月初开发进度汇报
+★ ZeroZen工作室 - 《溺光症》上线啦！谢谢你的等待！！！
+★ 神光源君 - 纯爱王道向gal《只属于我们的世界》steam商店页面公布！
+</p><div class="search-result-card__meta" b-swm99zdmqo=""><span class="search-result-card__meta-item" b-swm99zdmqo=""><svg class="cg-mdi-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" b-7pdrvwg029=""><path d="M12,9A3,3 0 0,1 15,12A3,3 0 0,1 12,15A3,3 0 0,1 9,12A3,3 0 0,1 12,9M12,4.5C17,4.5 21.27,7.61 23,12C21.27,16.39 17,19.5 12,19.5C7,19.5 2.73,16.39 1,12C2.73,7.61 7,4.5 12,4.5M3.18,12C4.83,15.36 8.24,17.5 12,17.5C15.76,17.5 19.17,15.36 20.82,12C19.17,8.64 15.76,6.5 12,6.5C8.24,6.5 4.83,8.64 3.18,12Z" b-7pdrvwg029=""></path></svg>
+                    4554</span><span class="search-result-card__meta-item" b-swm99zdmqo=""><svg class="cg-mdi-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" b-7pdrvwg029=""><path d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z" b-7pdrvwg029=""></path></svg>
+                    2026-06-07</span></div></div></a><a href="/articles/index/8973" class="search-result-card" b-swm99zdmqo=""><div class="search-result-card__image-link" b-swm99zdmqo=""><img src="https://tucang.cngal.top/api/image/show/7357343fb7f87fb0f1f82f0bf04fd2cf?https://image.cngal.org/images/upload/20260524/fcecdf5cc9a85be2fd06000d6ef01ff0fe860644.png" alt="CnGal每周速报（2026年第22周）" class="search-result-card__image" loading="lazy" b-swm99zdmqo=""></div><div class="search-result-card__body" b-swm99zdmqo=""><div class="search-result-card__header" b-swm99zdmqo=""><span class="search-result-card__type-badge search-result-card__type-badge--article" b-swm99zdmqo="">文章</span>
+            <span class="search-result-card__title" b-swm99zdmqo="">CnGal每周速报（2026年第22周）</span></div><p class="search-result-card__brief" b-swm99zdmqo="">★ Hamstachio - 听说大家喜欢鸭子坐，于是让画师连夜给姐姐制作了一版草图......
+★ 玄影工作室 - 西幻轻喜剧风养成gal女神立绘已出！评论抽送cdk~
+★ 冯柠工作站 - 【OC Galgame】狐之梦：序章 试玩版发布
+★ 百里嘻声 - 我说白毛就得配白丝！！！
+★ 幻象Gal - 西幻真宫Gal《孤狼之春》近期进展汇报
+★ 虚妄喵 - 拒绝敷衍！独立游戏周边也要打废几十版~你感觉哪个最好看？
+★ 糕薯科技 - 半夜抓到了翻自家院墙的小毛贼？小妹妹，不想我报官的话~
+★ emanon制作组 - 【episode#63】甜，与糖
+★ 月下喵制作组 - 【妹系gal】活泼开朗的同班同学“小野音”
+★ 黎羽科技LicoGame - 【官方攻略】未完信䇳：纸鸢 全结局攻略
+★ 蔚律之都_official - 力挽狂澜！制作组差点全裸土下座？
+★ 瞌睡的坐标 - 天气炎热？我们需要更多清凉！❄️
+★ 考研上岸制作组 - 正经学霸陪你考研？（裤袜有无）《不上岸不恋爱》情报公开（2）
+★ 海伦幻想HelenFantasy - 我们的游戏6月5日发售！
+★ StationWorks官方 - StationWorks制作小日志
+★ 失业者联盟游戏制作组 - 这是一场，跨越了二十年的烟花。
+★ GAL高手制作组 - 《难道你是GAL高手》——小黑盒心愿单5000达成，非常感谢！
+★ 繁花飄零 - 【自制galgame】《致•我梦中的爱丽丝》序章
+★ 栖霞日记 - 寻找擅长视觉小说类型游戏UI制作的老师! 
+★ 狐语 - 今天原声集上架！有想法小伙伴们记得支持一下哦
+★ 百里嘻声 - 关于我被一部搞笑日漫影响所以决定做搞笑gal这件事……
+★ crysta_氺晶 - 我做的游戏demo上线了 T v T（体验送key）
+★ 《爱相集》游戏制作组 - 从零开始的galgame制作生活！我们为什么做gal？
+★ emanon制作组 - 【episode#64】错过的假期
+★ 卯月游戏 - 太久没更新啦，出来冒个泡，机影没跑路还在研发中～
+★ 万词破 - 最浪漫的背单词游戏——《万词破-单词女友》最终宣传片
+★ 乌络游戏-祁木良 - 妹妹人设图大放送！
+★ 纯真之人innocent - 拥抱~ 往日画风版 ~
+★ Hamstachio - 动漫里的桥段是真的！真的会有天降美少女说着我听不懂的语言来帮我做游戏！
+★ 蔚律之都_official - 咱快马加鞭迅速做出游戏官网的论坛功能啦~
+★ 黎羽科技LicoGame - 百合AVG新作|光与影之恋免费送的周边发货啦！附游戏Demo上线时间
+★ emanon制作组 - 【episode#65】星期二的漫长午后
+★ 乌络游戏-祁木良 - 平日里就像妈妈一样的大姐姐也会有心事吗？
+★ 百里嘻声 - 关于我们制作组在美术踩坑上那点事……
+★ SnailTime制作组 - 《我们纯真的青春》游戏设置相关
+★ 再演工作室RErevue - 《我与你共度的七日》定档618！正式版新增二周目，卖多少合适？
+★ 精文工作室 - 【妖恋西游】众筹周边制品更新
+★ 雪楔制作组 - 摩点众筹金额突破三万，非常感谢大家！
+★ emanon制作组 - 【episode#66】星期三的上午
+★ AsicxArt-芯片社 - 系好安全带！
+★ Warmmu - "我们究竟……是什么关系……"百合AVG《光与影之恋》小剧场1
+★ 瞌睡的坐标 - 只是两张坐姿的CG【永樱CG制作过程】
+★ 瞌睡的坐标 - 【系梦社晚报第一期】我们接下来要干吗
+★ SnailTime制作组 - 《我们纯真的青春》开发日志1：为什么做这款游戏
+★ 挚爱解体之因制作组 - 《挚爱解体之因》即将参加 Steam 悬疑游戏节！
+★ TeamLLS - 亲爱的玩家们，大家好~
+★ 中国式相亲官方 - 【中国式相亲 × 魔法工艺 × 同步音律喵赛克】捆绑包现已上线！
+★ 失业者联盟游戏制作组 - 震惊！这个galgame的音乐组有整整十几号人！是人性的扭曲还是…
+★ Hamstachio - 【早八签到处】《炸鸡块与天使》即将参与悬疑游戏节......
+★ 沉寂的先知者 - 我们的游戏又参展了♡
+★ 可味玩Kawayiplay - 《妹控计划》制作规模公开！
+★ 被炒的炒饭 - 素材齐全了！感谢各位！
+★ 万词破 - 《万词破-单词女友》正式版，今晚8点，Steam平台全球首发！背单词也可以超级有趣，浪漫，有激励性！
+★ 百里嘻声 - demo过审啦！将在6月6号中午12:00上线！关注我们后续可抽奖哟~
+★ 绘恋企划屋 - 我的傲娇妹妹 MY TSUNDERE SISTER 角色PV
+★ 心室二F - 《她在烟花中消失的夜晚》登陆Steam！
+★ XiAoRaN_Channel - 是无背景的新作主菜单UI哇 ww
+★ 乌络游戏-祁木良 - 做gal这几个月来，我走了多少弯路？
+★ SnailTime制作组 - 《我们纯真的青春》众筹上线， 绝版实体书等你来拿！
+★ SnailTime制作组 - 四时之序，纯真重启！国产纯爱泣系 Galgame《我们纯真的青春》，Demo 终于要来了！
+★ cycle制作组 - cycle制作组 每周四打卡总结
+★ 符离游戏FuliGames - Steam首发折扣最后24小时，《女儿国的诅咒》好像真的没爆雷？
+★ 秋日の夏恋 - 进入游戏页面一览
+★ Clsta梦蘿 - 我衣服竟然让bug卡没了？！
+★ 幻象Gal - 西幻真后宫Gal《孤狼之春》| 几张新CG
+★ 零创游戏 - 文化出海！《饿殍：明末千里行》改编漫画即将连载！
+★ 被炒的炒饭 - 大了就过了？-关于只有大尺寸才能上Steam这件事
+★ 我是亚理 - 干员介绍｜情报员努努
+★ 百里嘻声 - 搞笑avg游戏《超时空怪盗》pv已公布~
+★ 共振翎_盛筵狂徒 - 是AVG还是CRPG？5月开发进度来了
+★ emanon制作组 - 【episode#67】健忘症
+★ AliceFuture-佳夜 - 《盛夏症候群》参加了风域举办的悬疑推理节
+★ 瞳电游工作室 - 彼方的她周边零售下架通知
+★ 风域游戏 - Steam悬疑游戏节正式开幕！
+★ 电浆落独游工作室 - 办公室恋情？女同性恨？关于我们独游是真百还是轻百的问题
+★ 幻想叙事工作室 - steam恋爱恐怖游戏《侵染：有你存在的夏日》demo已上线！夏日尽头，等你宣判
+★ Chlor_氯丙嗪 - ◆个人独游demo◆1.0.1更新内容流程展示
+★ Regor工作室 - 【天文Gal】《羽星》Demo发布
+★ 乌络游戏-祁木良 - Q版人物形象大公开！
+★ WAKU社-藤子すぎ - 拿掉饭盒才能品尝被袜裤包裹着的美味#2
+★ 繁星相位制作组 - 『饲养染的30days』知识小科普 #15呼吸性碱中毒
+★ 钟夏游戏 - 感谢渟谰美术馆接受我们提供的藏品！
+★ 猫咪派对Nekoparty - 最“伟大”的决策！为什么我会做一款国产Galgame！
+★ emanon制作组 - 【episode#68】花语
+★ 玄影工作室 - 西幻轻喜剧养成gal男主立绘首爆——恋爱吧，骷髅王!
+★ 电浆落独游工作室 - 随手把demo上架tap，结果获得了上万下载，周边两天就被卖断货
+★ MagicaLuv - 关于制作组与《冬日树》版本迭代的说明
+★ 向日葵之歌Official - 14
+★ 向日葵之歌Official - Galgame《向日葵之歌》线下试玩demo实况
+★ 乌络游戏-祁木良 - 两人团队，如何做出一款galgame？
+</p><div class="search-result-card__meta" b-swm99zdmqo=""><span class="search-result-card__meta-item" b-swm99zdmqo=""><svg class="cg-mdi-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" b-7pdrvwg029=""><path d="M12,9A3,3 0 0,1 15,12A3,3 0 0,1 12,15A3,3 0 0,1 9,12A3,3 0 0,1 12,9M12,4.5C17,4.5 21.27,7.61 23,12C21.27,16.39 17,19.5 12,19.5C7,19.5 2.73,16.39 1,12C2.73,7.61 7,4.5 12,4.5M3.18,12C4.83,15.36 8.24,17.5 12,17.5C15.76,17.5 19.17,15.36 20.82,12C19.17,8.64 15.76,6.5 12,6.5C8.24,6.5 4.83,8.64 3.18,12Z" b-7pdrvwg029=""></path></svg>
+                    1340</span><span class="search-result-card__meta-item" b-swm99zdmqo=""><svg class="cg-mdi-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" b-7pdrvwg029=""><path d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z" b-7pdrvwg029=""></path></svg>
+                    2026-05-31</span></div></div></a><a href="/articles/index/8891" class="search-result-card" b-swm99zdmqo=""><div class="search-result-card__image-link" b-swm99zdmqo=""><img src="https://tucang.cngal.top/api/image/show/57c4cb272fb439e7ea87f6468a0328cf?https://image.cngal.org/images/upload/20260517/3762ccb8dd85d18a023812369be9d68493493d51.jpg" alt="CnGal每周速报（2026年第21周）" class="search-result-card__image" loading="lazy" b-swm99zdmqo=""></div><div class="search-result-card__body" b-swm99zdmqo=""><div class="search-result-card__header" b-swm99zdmqo=""><span class="search-result-card__type-badge search-result-card__type-badge--article" b-swm99zdmqo="">文章</span>
+            <span class="search-result-card__title" b-swm99zdmqo="">CnGal每周速报（2026年第21周）</span></div><p class="search-result-card__brief" b-swm99zdmqo="">★ 零创游戏 - 《哀鸿：城破十日记》移动端发售定档！
+★ 乌络游戏-祁木良 - 世界终焉之时主界面live2d效果现已公布！
+★ GAL高手制作组 - 废萌GAL配乐【难道你是GAL高手】韩小澄个人曲
+★ 悖论科技 - 萝莉领导！配音完成！《黄莓C》角色介绍｜
+★ ZeroZen工作室 - 《溺光症》准备发售!
+★ 考研上岸制作组 - 白丝雌小鬼陪你考研？《不上岸不恋爱》情报公开
+★ emanon制作组 - 【episode#56】再靠近你一点点
+★ 系梦社-瞌睡的坐标 - ？你是说我们做了一款殡仪馆为主场景的GAL？
+★ StationWorks官方 - 夏天到了，和妹妹一起吃冰棒吧~
+★ 向日葵之歌Official - 12
+★ 悖论科技 - 辛苦了！《黄莓C》开发工作阶段性结束！
+★ emanon制作组 - 【episode#57】口腔溃疡
+★ SnailTime制作组 - 【国 G 新作】纯爱校园泣系《我们纯真的青春》Demo即将提交审核
+★ Lost_Seed - 〓〓〓参展通知｜成都百合Only〓〓〓
+★ 落星MeteoriteFall - 我在末世开后宫！《落星》steam史低限时开启！千万不要错过啦 ~
+★ 符离游戏FuliGames - 我们的GalGame发售三天了，没有暴雷，我却要跟大家告别了
+★ 系梦社-瞌睡的坐标 - 老大我们真的要画特殊cg吗
+★ 囚兔CageRabbit - 说明一下最近的情况；；
+★ 被炒的炒饭 - 可能STEAM的审核，不喜欢JK制服
+★ 乌络游戏-祁木良 - 猜猜女主穿的是什么鞋子捏？
+★ 落星MeteoriteFall - 我在末世开后宫！《落星》steam史低开启同时，还研究了新的技术
+★ 钟夏游戏 - 《中国式地雷女》定档7.13发售！板砖漫谈制作杂谈①
+★ GAL高手制作组 - 《难道你是GAL高手》——本作的小雷含量高达...75％！？
+★ emanon制作组 - 【episode#58】口腔溃疡防治指南
+★ 未完成Justice - 国产免费悬疑galgame《空之歌》story.1 宣传pv
+★ 栖霞日记 - 栖霞日记BGM11 杭帮面馆
+★ 栖霞日记 - BGM10 步行街
+★ 瞌睡的坐标 - 那朵兰花 ，停留在了十八岁
+★ 眼镜娘卫兵ztz233 - 笨蛋！就算不是520我也爱你。
+★ emanon制作组 - 【episode#59】纸条与邀约
+★ 狐语 - 整理了下新视频的素材，居然已经做了这么多了
+★ Warmmu - "我觉得和你们在一起……就挺好的。"百合AVG《光与影之恋》角色PV——楚鹤白
+★ Warmmu - 琉璃花糖最新官网
+★ PygmaGame - 萝莉、白丝、婚纱！《海蓝星之梦》免费dlc一键赠送！
+★ 竹书子 - 【国G】关于520不去约会就只能做galgame了这档事
+★ 电浆落独游工作室 - 东北大学线下游戏试玩会，诚邀各位同好入座！
+★ 17角的小屋 - 《苍灰残响》可爱的海洋生物
+★ 猫猫毛工坊 - 「天琴 我这样真能吸引大家点进来吗」
+★ 好运风_天意不可违 - 《青鸟》全新happy end——另一种鸟儿归巢的可能
+★ 异乡情缘制作组 - 《异乡情缘Demo》大更新，制作组杂谈，游玩抽限定周边，内容超七小时
+★ 不恋爱就完蛋了 - 《不恋爱就完蛋了》问答
+★ 纯真之人innocent - 拥抱
+★ Pygma山鬼工坊 - 游戏【花鸟水月】原创音乐 | 这是一杯充满爱意的女仆咖啡！
+★ Clsta梦蘿 - 收到了画师送的520礼物~
+★ 无心汉 - 521快乐！今天来发张草图
+★ SnailTime制作组 - 进度同步｜为了更好的画面，《我们纯真的青春》Demo 小幅延期
+★ emanon制作组 - 【episode#60】巧克力派
+★ ZeroZen工作室 - 《溺光症》 准备发售!
+★ 繁星相位制作组 - “那是我所期许的理想”
+★ 漾夕制作组 - 周边 ~ 色纸打样完成！~
+★ 瞳电游工作室 - 《彼方的她-Aliya》xHOBBYWON|即将登陆线下！
+★ 海伦幻想HelenFantasy - 天降美少女睡在我家沙发上！？国gal《再见，犹丽迪茜》PV首发！
+★ 海伦幻想HelenFantasy - 我们的第三部作品已上线steam啦～
+★ Cycle制作组 - cycle制作组每周四打卡总结
+★ 雪楔制作组 - 倒计时阶段，众筹确认明日下午六点开启
+★ 万词破 - 《万词破-单词女友》定档5月28日晚8点
+★ 零创游戏 - 《哀鸿：城破十日记》移动端现已正式上线！
+★ 豆腐社Official - 【宿管少女】众筹￥30000阶段目标达成！
+★ 被炒的炒饭 - 躺平？竟然不许！《胶囊恋人》PV
+★ 骨钉工作室 - 庭院和吹笛人来BitSummit啦
+★ 雪楔制作组 - 可攻略女主——羽师夜立绘更新
+★ NexusGames - 一年之际，说点想说的
+★ 《爱相集》游戏制作组 - 工期爆炸！原来写一个好的galgame故事这么花时间
+★ emanon制作组 - 【episode#61】夏天、橘子汽水
+★ 夜火游戏-狐语 - 我还是想做一个和女鬼姐姐谈恋爱的游戏
+★ 电浆落独游工作室 - 科幻解密RPG《余烬列车》众筹预热开启！
+★ WAKU社-藤子すぎ - 传统养生法，精神每一天
+★ 镜辞游戏 - 《星之桂冠》| 女主角介绍 Vol.3 孙晓蔓
+★ 符离游戏FuliGames - 首发一周卖了多少份，国GAL《女儿国的诅咒》回本了吗？
+★ HyacinthHeart - 【AVG/原创】欢迎来到后人类时代！！！ 帝国：对应者 EP01
+★ emanon制作组 - 【episode#62】暴雨
+★ 雪楔制作组 - 首日众筹金额2w，非常感谢大家的支持！
+★ 钟夏游戏 - 《中国式地雷女》众筹延期通知
+★ PygmaGame - 《苏菲》 纯爱悬疑新作预告公开
+★ 呐呐呐的林杏子 - 猫愿日记众筹延长＆Demo预告
+★ 电浆落独游工作室 - 科幻！轻百合！解谜RPG！余烬列车DEMO已正式公开！
+★ 忘雪社 - 仅你一人周边现已上架爱发电&amp;摩点
+★ xwu碳 - 关于《冬日树》四周年预售周边
+</p><div class="search-result-card__meta" b-swm99zdmqo=""><span class="search-result-card__meta-item" b-swm99zdmqo=""><svg class="cg-mdi-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" b-7pdrvwg029=""><path d="M12,9A3,3 0 0,1 15,12A3,3 0 0,1 12,15A3,3 0 0,1 9,12A3,3 0 0,1 12,9M12,4.5C17,4.5 21.27,7.61 23,12C21.27,16.39 17,19.5 12,19.5C7,19.5 2.73,16.39 1,12C2.73,7.61 7,4.5 12,4.5M3.18,12C4.83,15.36 8.24,17.5 12,17.5C15.76,17.5 19.17,15.36 20.82,12C19.17,8.64 15.76,6.5 12,6.5C8.24,6.5 4.83,8.64 3.18,12Z" b-7pdrvwg029=""></path></svg>
+                    1506</span><span class="search-result-card__meta-item" b-swm99zdmqo=""><svg class="cg-mdi-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" b-7pdrvwg029=""><path d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z" b-7pdrvwg029=""></path></svg>
+                    2026-05-24</span></div></div></a><a href="/articles/index/8798" class="search-result-card" b-swm99zdmqo=""><div class="search-result-card__image-link" b-swm99zdmqo=""><img src="https://tucang.cngal.top/api/image/show/a2aa01d22c4abb90e91d1ec2d9bb13ee?https://image.cngal.org/images/upload/20260510/9d462d92b1d4b85510d011e0ac15cdba1ea14603.jpg" alt="CnGal每周速报（2026年第20周）" class="search-result-card__image" loading="lazy" b-swm99zdmqo=""></div><div class="search-result-card__body" b-swm99zdmqo=""><div class="search-result-card__header" b-swm99zdmqo=""><span class="search-result-card__type-badge search-result-card__type-badge--article" b-swm99zdmqo="">文章</span>
+            <span class="search-result-card__title" b-swm99zdmqo="">CnGal每周速报（2026年第20周）</span></div><p class="search-result-card__brief" b-swm99zdmqo="">★ 万词破 - 《万词破-单词女友》制作组名单！四年开发路，感谢伙伴们的不离不弃！
+★ 绫地宁宁家的小丛雨 - 被遗忘的过去
+★ emanon制作组 - 【episode#49】母亲节特辑
+★ SnailTime制作组 - 《我们纯真的青春》游戏实录
+★ 藥屋ibuprofen - 意识形态疯人院、咖啡与少女旅行 -《童话镇》STEAM商店页面上线
+★ Sign碎冠篇 - 爱你老妈，今天见
+★ 钟夏游戏 - 恋爱AVG《中国式地雷女》L2D+口型实机演示，这动画呃...
+★ PygmaGame - 吊带白丝女仆？成为女仆店高手？新作《花鸟水月》角色情报公开
+★ 被炒的炒饭 - 人物介绍，冒号（不是）
+★ FilterGame遊戲開發 - 处理了四百个音档后，我的游戏有了配音【AirBoost 天空机士】
+★ emanon制作组 - 【episode#50】晚归的猫
+★ StationWorks官方 - 《巡星之旅》一周制作小日志
+★ 繁星相位制作组 - 『请调整天线』
+★ 好运风_天意不可违 - 文青病？绿帽癖？不妨来看看独立个人制作的免费gal，将于本周五正式上线steam！
+★ 豆腐社Official - 现在和画师沟通角色表情性格的时候——
+★ 可味玩Kawayiplay - 《钟塔》史低折扣中！
+★ 被炒的炒饭 - Ciallo～(∠・ω&lt; )⌒☆&nbsp;语音收藏功能实装！
+★ Clsta梦蘿 - 身体色温和湿润度对比
+★ 青梅社-海獭 - 家庭餐厅是什么败犬刷新地吗？【败犬栖居的晴空日常】败犬女主同人galgame游戏片段
+★ 悖论科技 - 拷打制作组｜游戏什么时候发售？为什么制作进度这么慢？
+★ 糕薯科技 - 众筹成功致谢，又让我们讨到饭了喵
+★ AliceFuture-佳夜 - 【开发日志】我直接喊“妈妈……错啦，是奶奶！
+★ 零创游戏 - 《哀鸿：城破十日记》周边上新公告
+★ emanon制作组 - 【episode#51】小艺，晚安
+★ 紫罗兰菲兹 - 如果青梅的记忆每天都会归零，你会如何修改她的日记？《泡沫记忆》第一天剧情流程演示
+★ MagicaLuv - 「我们是谁？」——社团/制作组全员介绍！
+★ 17角的小屋 - 《苍灰残响》5月中旬开发进度汇报
+★ 小鲤工作室 - 亲爱的饱饱们今天是护士节哟
+★ 夏榕-F - 感谢赴宴感谢选择，《盛筵狂徒：Choice OR》愿望单里程碑纪念
+★ 小橘子糖_official - 【重力百合gal】这种女鬼上位之后抓小三抓得最狠了
+★ 北京黎羽科技-GKLKK - 白嫖赛博鸡蛋活动大总结！给各位观测者们的情报通知
+★ 百里嘻声-灵芝 - &lt;&lt;超时空怪盗&gt;&gt;steam商店界面已开启！
+★ 好运风_天意不可违 - 独立个人免费gal《青鸟》剧情PV（现已上线steam平台）
+★ Nekoday - 朱门优：各位初次见面。或者说，好久不见！
+★ Cycle制作组 - 《群青绽放》主界面定夺
+★ Regor工作室 - 【天文钢琴科研Gal】羽星-林无月人物卡
+★ 悖论科技 - 工作完成！配音公开！《黄莓C》角色介绍｜
+★ 月乃社 - 从“看故事”到“活进去”：《情满办公室》的新作之路
+★ 联结互动 - 泳装立绘公开！
+★ 瞌睡的坐标 - 嘿咻，嘿咻！终于成功啦！(≧∇≦)
+
+★ 百里嘻声 - 我们为什么要做一款搞笑游戏？
+★ LSAusa - 新作已上线
+★ emanon制作组 - 【episode#53】借这场雨，悄悄靠近你
+★ 瞌睡的坐标 - 呜哇！小小来给另一个世界的哥哥姐姐们“甩”安装包啦！
+★ 钟夏游戏 - 一滴泪参演的游戏够不够中国式？【我在B站做游戏-情景叙事赛道】
+★ Faber_符离游戏 - 恋爱冒险Galgame《女儿国的诅咒 》，5月15日正式发售！
+★ 愤怒的大叔 - 自研引擎！你见过的最完善的 Galgame 可视化编辑器
+★ 好运风_天意不可违 - 《青鸟》DLC制作决定
+★ 被炒的炒饭 - 那好啊，他过江我也过江
+★ 夏沫风铃w - （自制galgame）翁星新生后，与风堇的日常（同人二创）
+★ 悖论科技 - 配音完成！《黄莓C》角色介绍｜白莓
+★ 北京黎羽科技-GKLKK - 2361愿望单破1W感谢！贺图求关注喵~
+★ 瞌睡的坐标 - 我们的《永眠之匣，雪上之樱》提交商店审核了！
+★ emanon制作组 - 【episode#54】三千心愿单达成，说说一些制作组近况。
+★ XiAoRaN_Channel - 『倘若世界失去颜色』
+★ 骨钉工作室 - 《犹格索托斯的庭院》今年夏天登录Switch
+★ 电浆落独游工作室 - 在我们的AI游戏中，AI是精神病，"我"是人机
+★ 百里嘻声 - 礼服选择黑丝还是白丝？
+★ Cycle制作组 - 迟到一天的游戏制作进度报告
+★ 符离游戏FuliGames - 《女儿国的诅咒》正式上线！首发85折后只要28元！
+★ ula卷心菜 - 今天是5月16号，是苏幼晴宝宝的生日，让我们祝她生日快乐~
+★ 土豆花制作组 - 【开发日志】小小身影现已更新后日谈小剧场
+★ 栖霞日记 - 栖霞日记的SF概念设计
+★ 被炒的炒饭 - 《胶囊恋人》角色介绍！阮小柒前来报到！
+★ 猫咪派对Nekoparty - 【2025年入国G】（一）最伟大的决策！为什么我会做国产Galgame！
+★ 悖论科技 - 《黄莓C》角色介绍｜夏玟
+★ 黎羽科技LicoGame - 《光与影之恋》摩点8000元支持感谢！
+★ Hollowings制作组 - 第一次做多语言版本框架测试
+★ 瞌睡的坐标 - 腼腆的小女孩，与天使赐予的魔法
+★ 幻象Gal - 西幻真宫Gal《孤狼之春》| 点哪个菜才能留在男主身边呢？
+★ StationWorks官方 - ​《Starry - 巡星之旅》  制作进度汇报
+★ PygmaGame - 白丝金毛萝莉？还让你喊妈妈？新作《花鸟水月》角色情报公开
+★ emanon制作组 - 【episode#55】小雨转大雨
+★ 瞌睡的坐标 - 涩涩的cg就应该涩涩
+★ SnailTime制作组 - 《我们纯真的青春》游戏实录第二期
+★ 千冥灵-Akane - 祝小苏幼晴生日快乐~🎂🎉🎉🎉❤️
+★ 好运风_天意不可违 - 制作人浅谈《青鸟the azure one》结局
+★ 好运风_天意不可违 - 如果《青鸟》更新HE，你能接受吗？
+</p><div class="search-result-card__meta" b-swm99zdmqo=""><span class="search-result-card__meta-item" b-swm99zdmqo=""><svg class="cg-mdi-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" b-7pdrvwg029=""><path d="M12,9A3,3 0 0,1 15,12A3,3 0 0,1 12,15A3,3 0 0,1 9,12A3,3 0 0,1 12,9M12,4.5C17,4.5 21.27,7.61 23,12C21.27,16.39 17,19.5 12,19.5C7,19.5 2.73,16.39 1,12C2.73,7.61 7,4.5 12,4.5M3.18,12C4.83,15.36 8.24,17.5 12,17.5C15.76,17.5 19.17,15.36 20.82,12C19.17,8.64 15.76,6.5 12,6.5C8.24,6.5 4.83,8.64 3.18,12Z" b-7pdrvwg029=""></path></svg>
+                    3471</span><span class="search-result-card__meta-item" b-swm99zdmqo=""><svg class="cg-mdi-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" b-7pdrvwg029=""><path d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z" b-7pdrvwg029=""></path></svg>
+                    2026-05-17</span></div></div></a><a href="/articles/index/8708" class="search-result-card" b-swm99zdmqo=""><div class="search-result-card__image-link" b-swm99zdmqo=""><img src="https://tucang.cngal.top/api/image/show/ba91a44b24ee65b7d473ebb0e85caecc?https://image.cngal.org/images/upload/20260503/70c0dfe62db9aad345cc6a77535d7d0a60042177.jpeg" alt="CnGal每周速报（2026年第19周）" class="search-result-card__image" loading="lazy" b-swm99zdmqo=""></div><div class="search-result-card__body" b-swm99zdmqo=""><div class="search-result-card__header" b-swm99zdmqo=""><span class="search-result-card__type-badge search-result-card__type-badge--article" b-swm99zdmqo="">文章</span>
+            <span class="search-result-card__title" b-swm99zdmqo="">CnGal每周速报（2026年第19周）</span></div><p class="search-result-card__brief" b-swm99zdmqo="">★ 绫地宁宁家的小丛雨 - 黑丝？裤袜！
+★ 悖论科技 - 五一不休息！加班送福利！DEMO开发中！全力做游戏！
+★ 菲愀酱 - 《游戏宅与青春女》OST已经于steam平台发布啦！
+★ Pygma山鬼工坊 - 游戏【花鸟水月】原创音乐 | 您能为吾身描绘言语边界之外的世界吗？
+★ 沉寂的先知者 - 那些没写进游戏里的事：《光明王传说》创作笔记
+★ emanon制作组 - 【episode#42】猫咪，还有小艺
+★ 月下喵制作组 - 从学校表白墙到mhs，制作组第一笔学费…
+★ 比特尔特制作组 - 五一期间升级了下美术
+★ 游学者狐狸 - 祝大家五一节快乐
+★ Regor工作室 - 天文钢琴Gal《羽星》Steam页面上线
+★ 邻家码农真昼酱 - 力大砖飞：WebGAL 4.6 内核实时预览体验
+★ Plones - 沈阳百O结算画面，我C3得了MVP（不）！为什么5.4才发呢？因为……
+★ 夏榕-F - 乐土王姬，邀你共赴一场末日盛筵
+★ PygmaGame - 黑丝过膝袜？还是未落榜的美术生？【花鸟水月】角色情报公开
+★ 绫地宁宁家的小丛雨 - 新情报！2.0 demo即将来袭！
+★ XiAoRaN_Channel - 『饲养染的30DAYS』是官方解析哇ww！
+★ emanon制作组 - 【episode#43】雨桐的春天，与小艺的风
+★ 小橘子糖_official - 【重百gal】孤独的妹食家之姐姐的大手发力了
+★ 小鲤工作室 - 假期结束了，定制的抱枕也到了~
+★ 冬瓜社 - [崩坏三]同人Galgame开发日志-角色动画系统！
+★ 酸浆果工作室 - 琥珀末日参加steam牌组构建游戏节！以及感谢GAF的大家！
+★ アキナ・ランドール - renpy音频混响和其它音频相关的基础用法
+★ 北京黎羽科技-GKLKK - 黎羽科技、黎羽游戏等权属关系解析
+★ 符离游戏FuliGames - 游戏上线前，我们对包体进行了优化，仅需1.3G便可下载！
+★ 共振翎_盛筵狂徒 - 感谢赴宴，盛筵狂徒：ChoiceOR愿望单突破1100！！
+★ 月乃社 - 《情满办公室》商店界面公开！模拟经营！来成为都市传奇吧！
+★ 豆腐社Official - 《宿管少女》本月开发日志（4.15-5.5）
+★ Sign碎冠篇 - CP32圆满结束
+★ 灵虚之幽 - 《某一年四季 音声版》已提前一天在steam发售
+★ DaCapoSOFT - 《凝视》出场角色前瞻性视觉设计稿
+★ 《爱相集》游戏制作组 - 【爱相集LoveAlbum|角色故事】秋 | 黄昏街角
+★ StationWorks官方 - StationWorks 2026年本家新绘风展示
+★ emanon制作组 - 【episode#44】初夏，慢慢靠近你。
+★ 栖霞日记 - 栖霞日记登场人物介绍2
+★ 栖霞日记 - 栖霞日记登场人物介绍1
+★ 压鸭呀 - 自制galgame《 梅雨 》全流程实况
+★ Railgun--Forever - 【南开大学26C++】成为真正的galgame大神——基于qt6开发的一款galgame开发软件
+★ 混沌之神虚妄喵 - 买断二游1周年！玩家喊做的功能真做了？！实机演示首发【我在B站做游戏-美术音乐赛道】
+★ Warmmu - "还是只要是寂寞的人，你就看不下去吗？"百合AVG《光与影之恋》角色PV——于琳
+★ Nekoday - 【重要通知】众筹圆满结束，感谢支持！共解锁11项追加！
+★ emanon制作组 - 【episode#45】晚餐
+★ 菱爱一生 - 四川成都comiday30同人展活动将于5月7日19点开启摊位申请。
+★ 钟夏游戏 - 《中国式地雷女》众筹成功鸣谢-致每一位真诚的支持者
+★ 红石小林 - 与八奈见的一日午餐【败犬栖居的晴空日常】败犬女主同人galgame
+★ Cycle制作组 - Cycle制作组周四打卡时间——
+★ 被炒的炒饭 - 抽象纯情小辣妹！欢乐的日常向GAL《胶囊恋人》，商店页面已发布~
+★ 黎羽科技LicoGame - 虽然但是...纸鸢一周年纪念周边展示 !（3）
+★ Cycle制作组 - 《群青绽放》主界面拍摄幕后
+★ emanon制作组 - 【episode#46】扭捏的小孩
+★ 灵动漫画工作室 - 《我才不会被女孩子欺负呢》游戏“艾米”角色PV
+★ 乌络游戏-祁木良 - 你是说，我们的男主是个（罗厉）萝莉？
+★ 彼界岛Bronjland - 我们的游戏似乎缺少一个人物介绍…
+★ 被炒的炒饭 - 打工治疗文青病？负能量爆棚然后被自己写的女主角治愈了！
+★ 壁水羽 - 您的黑白双丝已到货，用前记得撕膜！
+★ 秋日の夏恋 - 游戏平面设计图
+★ 乌络游戏-祁木良 - 重新设计了游戏logo
+★ 可味玩Kawayiplay - 全寄了！《钟塔》游戏周边现已上架
+★ emanon制作组 - 【episode#47】拖延症
+★ 风域游戏 - 悬疑游戏节内容扩展，欢迎大家前来报名！
+★ 零创游戏 - 《哀鸿：城破十日记》Q版指针&amp;壁纸解锁
+★ 瞳电游工作室 - 《彼方的她—Aliya》xHOBBYWON 发货及现货通知
+★ 矢的直明 - MoonEyes月眼 新作公布「夏至未来」
+★ 符离游戏FuliGames - 还有一周就要发售了，《女儿国的诅咒》在SteamDeck上也能玩了！
+★ 繁星相位制作组 - “碳榴弹”
+★ 虚妄喵 - 19000像素超高清！白毛红瞳画师兔兔抱枕预览~
+★ 万词破 - 四年单词游戏开发路，感谢一路支持！望我们不孤独您的期待！《万词破-单词女友》感谢名单更新！
+★ 崎托 - 完全免费游戏《23:61》亏本送周边啦！参与就能白嫖！包邮免费领
+★ MagicaLuv - 做周边花了多少米？成本分享！
+★ 异乡情缘制作组单凌心 - 整了好久，终于解决难题了live2d效果立绘马上来了
+★ Hamstachio - 我们从另一个方向削弱了姐姐的裙子......
+★ 青梅社-海獭 - 自来水领域大神！？不，我才是【败犬栖居的晴空日常】败犬女主同人galgame
+★ 琉璃花糖 - 什么！看百合贴贴能直接领周边？！！光与影之恋福利活动来啦
+★ Orscat工作室 - 图集DLC已上线，还有关于下一作的思考
+★ 10lulu - 【作曲约稿开放中】
+★ emanon制作组 - 【episode#48】杏花与相机
+★ 零创游戏 - 感谢玩家“九八大卡”！约稿图公示！
+★ StationWorks官方 - 200组插画即将在本月完成！《Starry-巡星之旅》四月制作日志
+★ 忘雪社 - 忘雪社近况&amp;成百摊宣
+★ 小鲤工作室 - 两万关注感谢，献上免费泳装皮肤哟
+★ LSAusa - 发售日确定 ～
+★ 黎羽科技LicoGame - 实体OST，日历，动态钥匙扣......纸鸢二期周边来啦！
+</p><div class="search-result-card__meta" b-swm99zdmqo=""><span class="search-result-card__meta-item" b-swm99zdmqo=""><svg class="cg-mdi-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" b-7pdrvwg029=""><path d="M12,9A3,3 0 0,1 15,12A3,3 0 0,1 12,15A3,3 0 0,1 9,12A3,3 0 0,1 12,9M12,4.5C17,4.5 21.27,7.61 23,12C21.27,16.39 17,19.5 12,19.5C7,19.5 2.73,16.39 1,12C2.73,7.61 7,4.5 12,4.5M3.18,12C4.83,15.36 8.24,17.5 12,17.5C15.76,17.5 19.17,15.36 20.82,12C19.17,8.64 15.76,6.5 12,6.5C8.24,6.5 4.83,8.64 3.18,12Z" b-7pdrvwg029=""></path></svg>
+                    2571</span><span class="search-result-card__meta-item" b-swm99zdmqo=""><svg class="cg-mdi-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" b-7pdrvwg029=""><path d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z" b-7pdrvwg029=""></path></svg>
+                    2026-05-10</span></div></div></a><a href="/articles/index/8638" class="search-result-card" b-swm99zdmqo=""><div class="search-result-card__image-link" b-swm99zdmqo=""><img src="https://tucang.cngal.top/api/image/show/c8a247c1c44e15c2cda52d9576fc9774?https://image.cngal.org/images/upload/20260426/31b74d5d1b95772b591af98a1979cf9815960fd7.jpg" alt="CnGal每周速报（2026年第18周）" class="search-result-card__image" loading="lazy" b-swm99zdmqo=""></div><div class="search-result-card__body" b-swm99zdmqo=""><div class="search-result-card__header" b-swm99zdmqo=""><span class="search-result-card__type-badge search-result-card__type-badge--article" b-swm99zdmqo="">文章</span>
+            <span class="search-result-card__title" b-swm99zdmqo="">CnGal每周速报（2026年第18周）</span></div><p class="search-result-card__brief" b-swm99zdmqo="">★ 共振翎_盛筵狂徒 - 你好，巫行云|单机AVG《盛筵狂徒》巫行云角色PV发布
+★ q浅唱q - Renpy的插件压缩包下载
+★ 小鲤应援会 - 报告主人！像素模拟经营游戏【宠物街金鱼姬】众筹开启！
+★ 绫地宁宁家的小丛雨 - 好奇怪的表情呢，这是在干嘛
+★ 幻象Gal - 西幻真宫Gal《孤狼之春》| 莉迪亚的新差分
+★ 无心汉 - 黑丝仙子和她的白袜师尊，武侠美少女！
+★ PygmaGame - 白丝！师生！仿生人！还有DLC情报进度更新！
+★ 繁星相位制作组 - 坚持献血11月，能获得什么？
+★ 夏榕-F - 你好，巫行云|无限流·文字冒险·盛筵狂徒|女主角色PV发布
+★ OriginCourtyard - 上线倒计时：1天
+★ 不恋爱就完蛋了 -  久等了！全新后日谈dlc现已正式上线
+★ 好运风_天意不可违 - 《青鸟The Azure One》游戏主题曲——《别来无恙》
+★ emanon制作组 - 【episode＃36】樱花，樱花
+★ 山工程-ShanProject - 【山工程4月月报】久等了！
+★ Pygma山鬼工坊 - 视觉小说游戏【花鸟水月】原创音乐| 主人要来一杯阿芙加朵吗？
+★ 绫地宁宁家的小丛雨 - 关于我在游戏里塞了个手机系统这件事
+★ koko制作组 - 我们的文字叙事游戏《酒馆女仆的日常》试玩版上线了！
+★ 蔚律之都_official - 定档五月！快来看看免费可爱的角色SD吧～
+★ Cycle制作组 - 万春第一中学普通部新校服缝制中！
+★ 栖霞日记 - 设计了栖霞日记主角胜胜的新Q版造型
+★ 青礼社Bendetizoin - 《墨缇斯：霾影季度》已在Steam发售！
+★ 《爱相集》游戏制作组 - 【爱相集LoveAlbum】雪音
+★ 狐语 - 《聊斋：画皮鬼》与《幻想乡：有罪推定》推出了国G尊者捆绑包！
+★ 月乃社 - kiss CG里混进了一张奇怪的差分……
+★ FuYo_mkn - p主不写歌跑去做养成系gal了…
+★ emanon制作组 - 【episode#37】春日旅行，面馆吃面指北，兰州篇（二）
+★ 北京黎羽科技-GKLKK - 5000达成感谢喵！琉璃花糖制作组新作！
+★ 挚爱解体之因制作组 - 《挚爱解体之因》新史低参与Steam浪漫物语市集活动
+★ 绫地宁宁家的小丛雨 - CG揭秘第二弹
+★ OriginCourtyard - 我们的游戏《无名者》现已正式发售！
+★ 可味玩Kawayiplay - 《透明的她与真实的我》将参与Steam【浪漫物语市集】主题活动！
+★ 栖霞日记 - 龙司玥的新Q版造型草稿
+★ 梦结界工作室 - 『买个可乐饼吧！』发行两周年&amp;百万下载纪念！
+★ 落星MeteoriteFall - 《落星》去年众筹的抱枕打样实体公布 ~
+★ 《爱相集》游戏制作组 - 【爱相集LoveAlbum|角色故事】雷华 | 月下
+★ 栖霞日记 - 发布一个新角色
+★ 咖啡叔の音乐工坊 - [原创]视觉小说游戏配乐作品展示《虚忆定格》OST（2022）
+★ CASCHAGAMES - 《诡闻斋》史低参加东方游戏文化周
+★ 黎羽科技LicoGame - Steam【浪漫物语市集】主题特卖即将开启
+★ emanon制作组 - 【episode#38】春日旅行，兰州百合宴，兰州篇（三）
+★ 栖霞日记 - 制作人试着调整一下角色Q版
+★ 风域游戏 - 关于《无名者》首发折扣未生效的说明
+★ 北京黎羽科技-GKLKK - 百合AVG《光与影之恋》琉璃花糖制作组新作首爆PV发布
+★ Sign碎冠篇 - Sign参展CP32！与魔女，哦祭り漫步
+★ PygmaGame - 落榜美术生也来当gal主角？新作《花鸟水月》商店已公开！
+★ 联结互动官方 - 正式版审核中
+★ 小橘子糖_official - 【重力百合gal】女鬼的引力太沉重了★新剧情追加！
+★ Nekoday - 【紧急通知】DEMO上线时间调整（延期）说明
+★ 邻家码农真昼酱 - WebGAL on Steam
+★ KIDFansClub - 【候鸟】叶雨潇，生日快乐！
+★ 绘恋企划屋 - 《我的傲娇妹妹》商店页面发布
+★ 博西游戏 - 开发者日志 -- 《繁枝跃窗》试玩版延期同时招会制作演出的伙伴
+★ 灵动漫画工作室 - 国产galgame《我才不会被女孩子欺负呢》游戏“小灵通”角色PV
+★ Cycle制作组 - Cycle制作组周四保留节目之打卡
+★ Cycle制作组 - 万春学校校服定稿公开
+★ 深空磨坊 - 框架开源&amp;人员招募：来制作独属于你的游戏引擎吧！
+★ 《爱相集》游戏制作组 - 【爱相集LoveAlbum|角色故事】 日向 | 清晨公园
+★ 被炒的炒饭 - 快五一了，五一期间打个折，顺便这几天也可以开始宣传新作！
+★ 黑耀耀_officialてす - 黑耀耀的素材小屋开源音乐素材官网正式上线
+★ 迷梦幽夜工作室 - 我们决定以日记的形式制作《林中女巫》的DLC
+★ TeamLLS - 📢奇沧村最新通知：五月中旬，广州番禺线下测试人员招募中！ 
+★ 风域游戏 - 《无名者》首发折扣已恢复！
+★ 利莉尔Lilier - 《拉斯普特的龙与魔女》众筹决定！
+★ 绘恋企划屋 - LSP劳动节·五一黄金周主题活动
+★ emanon制作组 - 【episode＃40】春日旅行，黄河与中山桥，兰州篇（五）
+★ Noi_N - 画风这么可爱？！一定是萌萌的废萌作吧！悬疑AVG《里垢女子的非常规攻略法》PV2发布！【我在B站做游......
+★ Flowtopia花海社 - 字少事大，我们将参加CP32！
+★ 虚妄喵 - 游戏凉凉但头像特别火？的游戏一周年！送实体画册+血泪重制文案
+★ 莉噗Lipu - 【自制Galgame丨双结局】少女、雨天与秘密 — 全流程
+★ OriginCourtyard - 2026.4.30，报春花。
+★ 比特尔特制作组 - 【国G观察室】26年4月月报
+★ 井底游戏制作组 - 《井底》进度更新+玩家回馈抽奖
+★ 混沌之神虚妄喵 - 《叛逆神魂》5月1日 一周年啦！约了一张玉足贺图犒劳大家！（多人图等游戏回本了安...
+★ 符离游戏FuliGames - 从被锁国区到过审，《女儿国的诅咒》将于5月15日正式发售！
+★ 被炒的炒饭 - 劳动节！新的女主角来报到！
+★ Nekoday - 劳动节快乐丨这是你赶早八的样子吗
+★ lambofgame - 五一快乐，以及近期状况
+★ 零创游戏 - 《哀鸿：城破十日记》社区物品已上线！
+★ 《爱相集》游戏制作组 - 【爱相集LoveAlbum|节日贺图】劳动节快乐！
+★ emanon制作组 - 【episode#41】薄荷味的晚风
+★ 樱野悠 - 和美少女们一起度过五一吧！
+★ 繁星相位制作组 - “天使”-其二
+★ 聆听雨点的声音 - 快节奏的今天，"电波系"为何依旧有吸引力？【聆听电台17】
+★ StationWorks官方 - 祝大家五一劳动节快乐
+★ SnailTime制作组 - 《我们纯真的青春》王佳慈服装展示
+★ 硝熊社🐻 - 《言谎2》介绍
+★ 雪楔制作组 - 建群啦
+★ 绮陌项目组 - 发个demo的网盘链接
+★ 黄昏的种子 - 美少女RPG新作独立游戏开发《苍灰残响》-UI菜单演示part1
+★ 恩波聆曲 - 【国产AVG恩波聆曲开发日志】目前的立绘，表情差分，背景与CG
+★ emanon制作组 - 【episode生日特辑】祝世界上最可爱的小刺猬，生日快乐
+★ 硝熊社🐻 - 《言谎2》角色介绍（2）
+</p><div class="search-result-card__meta" b-swm99zdmqo=""><span class="search-result-card__meta-item" b-swm99zdmqo=""><svg class="cg-mdi-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" b-7pdrvwg029=""><path d="M12,9A3,3 0 0,1 15,12A3,3 0 0,1 12,15A3,3 0 0,1 9,12A3,3 0 0,1 12,9M12,4.5C17,4.5 21.27,7.61 23,12C21.27,16.39 17,19.5 12,19.5C7,19.5 2.73,16.39 1,12C2.73,7.61 7,4.5 12,4.5M3.18,12C4.83,15.36 8.24,17.5 12,17.5C15.76,17.5 19.17,15.36 20.82,12C19.17,8.64 15.76,6.5 12,6.5C8.24,6.5 4.83,8.64 3.18,12Z" b-7pdrvwg029=""></path></svg>
+                    1713</span><span class="search-result-card__meta-item" b-swm99zdmqo=""><svg class="cg-mdi-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" b-7pdrvwg029=""><path d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z" b-7pdrvwg029=""></path></svg>
+                    2026-05-03</span></div></div></a><a href="/articles/index/8549" class="search-result-card" b-swm99zdmqo=""><div class="search-result-card__image-link" b-swm99zdmqo=""><img src="https://tucang.cngal.top/api/image/show/32f95f7535eed1507fa291260a0e8c6a?https://image.cngal.org/images/upload/20260420/b009cfcd585ec329369895a3d130e3e04b38fb32.png" alt="CnGal每周速报（2026年第17周）" class="search-result-card__image" loading="lazy" b-swm99zdmqo=""></div><div class="search-result-card__body" b-swm99zdmqo=""><div class="search-result-card__header" b-swm99zdmqo=""><span class="search-result-card__type-badge search-result-card__type-badge--article" b-swm99zdmqo="">文章</span>
+            <span class="search-result-card__title" b-swm99zdmqo="">CnGal每周速报（2026年第17周）</span></div><p class="search-result-card__brief" b-swm99zdmqo="">★ 绘诗社PoetryCanvas - "陛下，您醒了？"一觉起来四个古风大汉站在床头看着你。
+★ 考研上岸制作组 - 白丝可爱滴捏
+★ 橘子糖游戏制作组 - 【轻百gal开发日志】老大，青梅一吃醋就秒开战斗脸怎么破
+★ 梦结界工作室 - 梦结界正在参加BGM游戏展线上活动！
+★ 雪楔制作组 - 《雪楔》开发秘闻——刹那的立绘“进化”
+★ 青礼社Bendetizoin - 《墨缇斯：霾影季度》定档PV | “现在”就是我的家园
+★ 忘雪社 - 忘雪社简介&amp;成员招募
+★ 不恋爱就完蛋了 - 《不恋爱就完蛋了》dlc更新预告
+★ 奈绪_IshizakiNao - 原创Galgame《无垢之恋 -绽放于春之花海-》 正式PV
+★ 彼岸云方_Official - 对不起 我们错了
+★ Plones - 江南皮革厂倒闭，美工妹子和小姨子跑路了，独游组长一个人P图摊宣
+★ emanon制作组 - 【episode#30】你是我的太妃糖
+★ Sign碎冠篇 - 少女们漫步于舞台之上（三）：阳汐
+★ 《爱相集》游戏制作组 - 【爱相集LoveAlbum|角色情报】日向hinata
+★ 栖霞日记 - 栖霞日记的世界观和故事梗概
+★ 橘子糖游戏制作组 - 【轻百gal开发日志】老大，我和上司好像变成搞笑女铜了喵……
+★ 拔丝柠檬制作组 - 目前进度
+★ 幻象Gal - 做自己的英雄：从二游玩家到Gal制作人
+★ OriginCourtyard - “乐园之声。” ——鸢【角色设定·八】
+★ 繁星相位制作组 - “光环”
+★ 零创游戏 - 《哀鸿：城破十日记》真结局动态回眸CG上线
+★ PlanC社 - 又一款国G要开众筹"骗钱"了吗？……今天聊聊一些国G的现状……
+★ 乌络游戏-祁木良 - 居然还有人做国G？
+★ 糕薯科技 - 你这圣女贞德怎么这么像saber啊
+★ 酸浆果工作室 - 《琥珀末日》即将参展4.25上海独游only！
+★ Nekoday - 木绪那智：身为Leaf的死忠粉，在发售当天就买了《To Heart》
+★ 橘香仲夏_莱姆制作组 - 🍊《橘香仲夏》确认参展游戏「玩力场」！
+★ emanon制作组 - 【episode#31】夜潮生，成对影
+★ 豆腐社Official - 【宿管少女】众筹￥10000阶段目标达成！
+★ 虚妄喵 - 二游？但不氪抽！看板娘系统前瞻！还加量不加价~肉鸽开发中！
+★ 枫桐子夜 - 【先行情报】在旮旯给木里学医怎么说？
+★ 小橘子糖_official - 【轻百gal开发日志】老大，什么叫伪人妹妹恨不得为我诞下一子？
+★ 脑白金squck - 希望成为旮旯给木美术大神！咕咕嘎嘎！！
+★ 无心汉 - 面纱，玉笛，单腿袜，武侠必吃榜之在逃公主！
+★ 乌络游戏-祁木良 - 人！要摸摸我的耳朵吗？
+★ 比特尔特制作组 - 《比特尔特岛》设定集预告
+★ 乌络游戏-祁木良 - 独立游戏《世界终焉之时 - Endfaryth》先行PV现已公布
+★ PlanC社 - 众筹首日2w1！由衷感谢大家！
+★ 黎羽科技LicoGame - 光与影之恋周边活动常见问题QA
+★ emanon制作组 - 【episode#32】午间
+★ 风域游戏 - 相约广百！《无名者》明信片免费送！
+★ Nekoday - 在夏夜绽放的光——致夏日花火制作委员会的齐浩康
+★ 糕薯科技 - 性格跳脱爱恶作剧还不在意出身的贵族千金，真挺不错的吧？
+★ 雪楔制作组 - 《雪楔》原创音乐——《晴空之上》
+★ 符离游戏FuliGames - 终于解国区了，不过我们的游戏还要再次提交审核。
+★ 《爱相集》游戏制作组 - 【爱相集LoveAlbum|角色情报】秋aki
+★ cycle制作组 - 深夜更新总结！
+★ PlanC社 - 众筹第二日达到3W！公开表情包已解锁！
+★ 呐呐呐的林杏子 - 一人一室一猫娘，原创Galgame《Neko Diary🐾 猫愿日记》PV公开！
+★ emanon制作组 - 【episode#33】春天的饭团（上）
+★ 小橘子糖_official - 【轻百gal开发日志】女主是女配的主人，女配是女主的配偶！！！
+★ Xso_official - 广百免费发放《不恋爱就完蛋了》无料
+★ 绘诗社PoetryCanvas - 挂画、明信片做好咯！
+★ 黎羽科技LicoGame - 预售3000达成感谢喵！游戏免费领周边的活动来啦！
+★ AsicxArt-芯片社 - 藤蔓缠绕着时光，
+★ 风域游戏 - 虚=不实？悬疑推理视觉小说《灰色视症》页面公开！
+★ 中国式相亲制作组 - 《中国式相亲》我们去游戏玩力场啦！
+★ Plones普伦内斯 - ZH RPG沈阳Yuri Only3摊宣
+★ 深空磨坊 - 【末语引擎】镜头和景深动画演示 &amp; 扩展性示例 
+★ 菲愀酱 - 《游戏宅与青春女》已经上线！首周折扣价17.6元！
+★ emanon制作组 - 【episode#34】春天的饭团（下）
+★ 糕薯科技 - 烈火与王冠角色介绍：摄政女王安妮
+★ Nekoday - 泡沫冬景续作《世纪末之诗》主要角色语音试听｜试玩开启倒计时6日 
+★ 矢的直明 - 我决定带着250日元的全新Mirage进军日本市场 Dev12
+★ 零创游戏 - 《哀鸿：城破十日记》IF结局已上线
+★ 瞳电游工作室 - 二周年快乐！
+★ Humi_Official - 【公告】关于 HumiGal / HumiHumi 服务暂停的说明
+★ Nekoday - 《世纪末之诗》众筹周边效果图第二弹来嘞~
+★ StationWorks官方 - 《Starry - 巡星之旅》 制作进度汇报
+★ Hollowings制作组 - 新坑的海报居然就这样搞定了
+★ OriginCourtyard - 上线倒计时：3天
+★ Lost_Seed - 【追加贩卖】LOST SEED官方设定集
+★ 好运风_天意不可违 - 青鸟demo已上架Steam
+★ Hamstachio - 【官方整活】把姐姐变成了doro的形状
+★ 繁星相位制作组 - “温暖的冬”
+★ 比特尔特制作组 - 设定集和下一条线的角色剪影
+★ Orscat工作室 - 【开发日志】吕布和董…和未来的更新计划
+★ AliceFuture_佳夜 - 【开发日志】佳夜哥能赢吗？《盛夏症候群》阶段性报告
+★ 风域游戏 - 《无名者》上线倒计时2天！
+★ emanon制作组 - 【episode#35】春日旅行，；兰州篇（一）
+★ 黎羽科技LicoGame - 纸鸢一周年纪念周边展示（1）
+★ 翠羽社 - 为了宣传二次元画师周边，我竟然做了一部短篇galgame?
+★ 《爱相集》游戏制作组 - 【爱相集LoveAlbum | 水莲】
+★ GunBracket - 【文字冒险游戏】魂穿明末扬州，如何在城破后活下去？
+★ SnailTime制作组 - 《我们纯真的青春》角色先导PV—刘铭
+★ 栖霞日记 - 关于游戏内容方向调整及更新延期的说明
+★ 虚妄喵 - 成本翻3倍，但不加价的智斗限定“设定集”内页预览终于出了！
+★ XiAoRaN_Channel - 『饲养染的30days』所用音乐素材列表
+★ 黎羽科技LicoGame - 0.4.39更新说明
+★ 小橘子糖_official - 【重力百合gal】怎么会有女主的性取向是妹妹啊！！！
+</p><div class="search-result-card__meta" b-swm99zdmqo=""><span class="search-result-card__meta-item" b-swm99zdmqo=""><svg class="cg-mdi-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" b-7pdrvwg029=""><path d="M12,9A3,3 0 0,1 15,12A3,3 0 0,1 12,15A3,3 0 0,1 9,12A3,3 0 0,1 12,9M12,4.5C17,4.5 21.27,7.61 23,12C21.27,16.39 17,19.5 12,19.5C7,19.5 2.73,16.39 1,12C2.73,7.61 7,4.5 12,4.5M3.18,12C4.83,15.36 8.24,17.5 12,17.5C15.76,17.5 19.17,15.36 20.82,12C19.17,8.64 15.76,6.5 12,6.5C8.24,6.5 4.83,8.64 3.18,12Z" b-7pdrvwg029=""></path></svg>
+                    2088</span><span class="search-result-card__meta-item" b-swm99zdmqo=""><svg class="cg-mdi-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" b-7pdrvwg029=""><path d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z" b-7pdrvwg029=""></path></svg>
+                    2026-04-26</span></div></div></a><a href="/articles/index/8444" class="search-result-card" b-swm99zdmqo=""><div class="search-result-card__image-link" b-swm99zdmqo=""><img src="https://tucang.cngal.top/api/image/show/8407a3045adc49e089b2feeb9b312ff6?https://image.cngal.org/images/upload/20260412/6809b0d937e8ff74475160568a1514c11509ecdf.jpeg" alt="CnGal每周速报（2026年第16周）" class="search-result-card__image" loading="lazy" b-swm99zdmqo=""></div><div class="search-result-card__body" b-swm99zdmqo=""><div class="search-result-card__header" b-swm99zdmqo=""><span class="search-result-card__type-badge search-result-card__type-badge--article" b-swm99zdmqo="">文章</span>
+            <span class="search-result-card__title" b-swm99zdmqo="">CnGal每周速报（2026年第16周）</span></div><p class="search-result-card__brief" b-swm99zdmqo="">★ WAKU社-藤子すぎ - 关于我偷裤袜，被自家角色打昏迷七七45天这件事
+★ 豆腐社Official - 都怪你们总说什么大水袋、奶代的，这下真是水袋了
+★ 《爱相集》游戏制作组 - 【爱相集LoveAlbum|制作组QA】没有众筹的国gal，不来看看吗
+★ 朝曦asahi - 亲爱的小伙伴们：
+★ 灵虚之幽 - 我决定把我的新作改为免费游戏
+★ 好运风_天意不可违 - 《青鸟The Azure One》女主角之二夏帆表情差分展示
+★ emanon制作组 - 【episode#23】依恋
+★ OriginCourtyard - CG展示|“她曾仰望的光辉。”
+★ AliceFuture-佳夜 - 【开发日志】存档界面演示
+★ 被炒的炒饭 - 小涵生日快乐
+★ 柚原堂 - 【圖片分享】唐愛央玩滑滑梯。
+★ 月食图书室_独立游戏 - ⬛⬛⬛ 观察报告 2026-4-13 23:61
+★ 豆腐社Official - 你的意思是……你不知道我是精分性转失忆宿管大妈？
+★ 博西游戏 - 《繁枝跃窗》l2d展示--林雾台
+★ 蔚律之都_official - 如图P4、P5厚码求放过
+★ emanon制作组 - 【episode#24】前世
+★ 夏榕-F - 重画吧，游戏封面图，为了找准你的游戏调性
+★ 繁星相位制作组 - 『理，快回家！』
+★ AsicxArt-芯片社 - 阴雨绵绵，
+★ W工作室-先史昊 - 声韵之恋开发日志（3）
+★ 风域游戏 - 【免费短篇】情景音声×广播剧，《某一年四季》定档4月17日！
+★ 常夏椰子_ - 乐队+跨性别题材自制视觉小说《不佳乐队》实机demo演示
+★ Flowtopia花海社 - 娇小的妹妹，思念的心情
+★ Orscat工作室 - 不众筹，不整烂活，还要反向跳票。
+★ 博西游戏 - 《繁枝跃窗》人物l2d展示--徐桐安
+★ 《爱相集》游戏制作组 - 【爱相集LoveAlbum|角色情报】水莲suiren
+★ 糕薯科技 - 首日众筹致谢~以及有点高兴的太早了
+★ LSP客服娘锐评 - 《再见断刀》与《幻想乡：有罪推定》推出限时捆绑包！
+★ OriginCourtyard - “十二夜歌。”——语烛【角色设定·六】
+★ 豆腐社Official - 你可能没见过我做的gal，但你一定见过我设计的“女魔王”
+★ Nekoday - 籐太："喜欢翘课去街机店刷分。"
+★ emanon制作组 - 【episode#25】夜夜不相忘
+★ 空箱Skyward - 大二学生7天手搓神秘百合AVG|《夏天的候鸟，你的身影》全流程实况
+★ OriginCourtyard - “她跋涉过城市与荒原，自众生之间穿行而过。”
+★ 壁水羽 - 立绘居然有“物理效果”！还能动态可交互？！
+★ 橘音_雅虎 - 新作《神明也没猜到结局》已上线
+★ Orscat工作室 - 这叫轻百？这怎么说都有点重了吧。
+★ 孤克恩 - 添加新阵营
+★ 豆腐社Official - 社畜大姐姐的精髓，恰在浓郁的班味儿酿出那丝淡淡的死感
+★ 博西游戏 - 《繁枝跃窗》人物l2d展示--莫浩铭
+★ 灰烬天国 - 女主角的不同服装大放送！
+★ 琉璃花糖 - 新作《光与影之恋》Coming Soon
+★ 绘恋企划屋 - 《我的傲娇妹妹》制作组决定！
+★ StationWorks官方 - [梦咲有绪-表情包_举心]很高兴应SuikaSoft的小心八木唯老师邀请参与了《我的高冷女友》的续作......
+★ Nekoday - 被延续的名字，二十年的回声
+★ 繁星相位制作组 - 『鸟弹』
+★ 屠星陈 - 单人gal开发日志【未保存的明天】9月4日
+★ Sign碎冠篇 - 急赤白脸地打开RE0发现OP名字撞车了
+★ 李子冬瓜 - 用txt做出整个galgame - godot galframe 教程 进阶篇(2)
+★ 囧Z - 新时代（骑）士妓之恋，免费国产游戏《蜉蝣》开始官宣
+★ 《爱相集》游戏制作组 - 【爱相集LoveAlbum|角色情报】雪音yukine
+★ emanon制作组 - 【episode#26】苦昼短
+★ 豆腐社Official - 也许，这孩子能自己乖乖变成猫娘
+★ 好运风_天意不可违 - “少年不止热血和爱情”——免费AVG《青鸟The Azure One》剧情PV
+★ OriginCourtyard - CG展示|“初见，或是……”
+★ Clsta梦蘿 - 《四合》大百科-惘界与幻
+★ 悖论科技 - 美术优化？CG更新！请你吃蛋炒饭啦！
+★ emanon制作组 - 【episode#27】约定（上）
+★ 北京黎羽科技-GKLKK - 黎羽发行新作情报公开，免费领游戏周边啦！
+★ 月食图书室_独立游戏 - 《23:61 ~ 三角悖论~ 》 
+★ Nekoday - 泡沫冬景续作《世纪末之诗》4月30日试玩开启
+★ 玖石社Jrock-Studio - 【虚轴实刃｜角色档案・金铃】
+★ Whilist-Re_Go - フォーカスロスト feat.重音テト【拆迁地球及爱情事故（日语OP）】
+★ AsicxArt-芯片社 - 风雨过后，街角小店旁的花悄然绽放。
+★ SnailTime制作组 - 《我们纯真的青春》试玩版先导PV——steam商店页已经开启！
+★ 镜辞游戏 - 《星之桂冠》| 乔晴晴 × 龙曳月，正式登场
+★ 繁星相位制作组 - ASA-“天使”
+★ Hamstachio - 关于姐姐的好感度条
+★ 悖论科技 - 白毛红瞳？越多越好！新角色即将更新！
+★ 可味玩Kawayiplay - 《妹控计划》企划开宣！接下来的时间里，和妹妹一起做什么好呢？
+★ 无心汉 - 大水袋？能装水才叫大水代！
+★ 风域游戏 - 【免费短篇】情景音声×广播剧，《某一年四季》正式上线！
+★ 樱野悠 - 请把广播调至深夜电台，聆听只属于你的频率
+★ 橘音_雅虎 - Tap果然是独立开发者的大爹
+★ 雪楔制作组 - 最神秘的女主角.jpg
+★ 深空磨坊 - 开源视觉小说引擎【末语引擎】示例游戏&amp;amp;系统演示
+★ 矢的直明 - 「Mirage Episode：1 Rewrite」即将推出
+★ Orscat工作室 - 绝不通马桶，旮旯给木里不是这样的。
+★ 末日后一天企划组 - 「千遥」 
+★ PygmaGame - 白丝裤袜！仿生人！还有美术优化，cg更新？好像被卡住了？
+★ GAL高手制作组 - 《难道你是GAL高手》—— 同桌是不会画大雷的美少女画师！？
+★ emanon制作组 - 【episode#28】特别篇：约定（下）
+★ 小鲤工作室 - 众筹一万达标感谢~自选锅底系列上线，小鲤等你来投料~~
+★ 《爱相集》游戏制作组 - 【爱相集LoveAlbum|角色情报】雷华raika
+★ 糕薯科技 - 视觉小说，但背景是英法百年战争。英法可真是一对苦命鸳鸯啊
+★ OriginCourtyard - “留守者。”——汐【角色设定·七】
+★ 诺提拉观测所 - 好哇！《旮旯大神-美术原画包》正式发布咯~
+★ 熵联天创 - 开发团队来喽！——《邻家之钥》开发团队熵联天创的Q&amp;amp;A
+★ 不恋爱就完蛋了 - 【游戏实况】和女友一周年纪念日
+★ 夏榕-F - 《盛筵狂徒》：在春天遇见第十六届【北京国际电影节】游戏展~
+</p><div class="search-result-card__meta" b-swm99zdmqo=""><span class="search-result-card__meta-item" b-swm99zdmqo=""><svg class="cg-mdi-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" b-7pdrvwg029=""><path d="M12,9A3,3 0 0,1 15,12A3,3 0 0,1 12,15A3,3 0 0,1 9,12A3,3 0 0,1 12,9M12,4.5C17,4.5 21.27,7.61 23,12C21.27,16.39 17,19.5 12,19.5C7,19.5 2.73,16.39 1,12C2.73,7.61 7,4.5 12,4.5M3.18,12C4.83,15.36 8.24,17.5 12,17.5C15.76,17.5 19.17,15.36 20.82,12C19.17,8.64 15.76,6.5 12,6.5C8.24,6.5 4.83,8.64 3.18,12Z" b-7pdrvwg029=""></path></svg>
+                    5024</span><span class="search-result-card__meta-item" b-swm99zdmqo=""><svg class="cg-mdi-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" b-7pdrvwg029=""><path d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z" b-7pdrvwg029=""></path></svg>
+                    2026-04-19</span></div></div></a><a href="/articles/index/8363" class="search-result-card" b-swm99zdmqo=""><div class="search-result-card__image-link" b-swm99zdmqo=""><img src="https://tucang.cngal.top/api/image/show/d8713b7c594e0cd2bc18a5ea49e65604?https://image.cngal.org/images/upload/20260406/3ed046fe2efa9c8b252bb99252b96b9bc5c990c2.png" alt="CnGal每周速报（2026年第15周）" class="search-result-card__image" loading="lazy" b-swm99zdmqo=""></div><div class="search-result-card__body" b-swm99zdmqo=""><div class="search-result-card__header" b-swm99zdmqo=""><span class="search-result-card__type-badge search-result-card__type-badge--article" b-swm99zdmqo="">文章</span>
+            <span class="search-result-card__title" b-swm99zdmqo="">CnGal每周速报（2026年第15周）</span></div><p class="search-result-card__brief" b-swm99zdmqo="">★ Hamstachio - 为了让大家能和姐姐谈恋爱，我们找来了专业的编剧
+★ XiAoRaN_Channel - 是故事解析哇！剧透警告T^T
+★ 幻象Gal - 西幻真宫Gal《孤狼之春》剧本完成啦
+★ emanon制作组 - 【episode#17】灵感枯竭季
+★ 西也子SaiYa - 【独立游戏】视觉小说《异界少女的轮回血契》预告片丨欢迎各位来参加血契！
+★ Orscat工作室 - 【开发日志/Q&amp;A】这应该是最后一篇开发日志了！
+★ 北京黎羽科技-GKLKK - 未完信笺纸鸢官方周边来啦！预售开启ing
+★ 夜间巡航值机台 - 【gal】拆迁地球及爱情事故 宣传PV1
+★ 魂钢国产galgame第一 - 希望有志同道合的朋友来测试我们的游戏！
+★ 比特尔特制作组 - 【国G观察室】26年3月月报
+★ emanon制作组 - 【episode#18】特别篇：火锅边的茉莉香
+★ 绫地宁宁家的小丛雨 - 饭桌下的秘密
+★ 豆腐社Official - 这款国G雷点拉满，但仍然敢向您做出以下承诺！
+★ 但丁心臟_ - 【独立Galgame】 ♡少女超市｜ 请在超市里选购一位你喜欢的少女吧～ ｜demo试玩版预览【我在......
+★ 可味玩Kawayiplay - 首周好评率98%的国G！《钟塔》之后，我们会做些什么？
+★ 呐呐呐制作组 - 国G编剧会梦见穿黑丝配包臀短裙的短发猫娘吗？猫愿日记开发分享
+★ 豆腐社Official - 澄清：我们真的是好变百！
+★ emanon制作组 - 【episode#19】在冬天
+★ 无效名游戏社 - NTR+文青病+坏女人的galgame的Demo
+★ 繁星相位制作组 - 是久别的晚间闲谈！另外还有下一步的打算...
+★ AsicxArt-芯片社 - 犹豫的指尖轻触玻璃，
+★ Flowtopia花海社 - 和月柠在大海边……
+★ 博西游戏 - 《繁枝跃窗》人物事件BGM第一弹
+★ 交小西Channel - 恋爱泡馍OST《长》正式发布！CV名单首次披露~
+★ emanon制作组 - 【episode#20】特别篇：雨未停时，雨已停
+★ 《爱相集》游戏制作组 - 【爱相集LoveAlbum|角色情报】花见hanami
+★ 漾夕制作组 - 终于有可以公开展示的抱枕了！~~（完整图在内）
+★ 橘音 - 久等啦！《神明也没猜到结局》4月15日9点上线Steam！
+★ Nekoday - 有人发现我们众筹档位命名彩蛋吗？🎬
+★ 糕薯科技 - 被创飞后见到了兽耳娘死神？既然如此，我避大运锋芒？
+★ OmoKana_desu - 【文字PV】《为你献上花束》国产恋爱视觉小说 宣传PV1
+★ 豆腐社Official - 关于《宿管少女》的演示版呈现面和正式开发计划
+★ 暗色神具的魔王 - 终于有可以公开展示的抱枕了！
+★ 虚妄喵 - 内容加量不加价！想要多看哪个后宫剧情你说了算！升级虚幻5？！
+★ 雪楔制作组 - 《雪楔》——摔倒的鸟羽
+★ 狐语 - 大家帮我选一选，哪个版本的好一些呢
+★ 瞳电游工作室 - 【巡春回响】《彼方的她-Aliya》二周年特别活动
+★ 屠星陈 - 单人gal开发日志【未保存的明天】9月3日
+★ 豆腐社Official - 挺勤奋一丫头，可惜选了天坑专业
+★ 博西游戏 - 繁枝跃窗人物l2d展示--岑稚水
+★ 灵虚之幽 - 我们更新了英文版
+★ 糕薯科技 - 好心人，你愿意收养这只fufu，给她一个家嘛
+★ emanon制作组 - 【episode#21】花花宇宙
+★ OriginCourtyard - “圣星百合。”——弥楠【角色设定·五】
+★ 玖石社JrockStudio - 修了47天BUG，到底在修什么？《虚轴实刃》开发进度汇报
+★ Nekoday - 【濑户口廉也】番外DLC创作感言：“挂壁的时候，最爱啃法棍”
+★ StationWorks官方 - 《Starry -巡星之旅》制作进度汇报
+★ 沉寂的先知者 - 信仰是国家的第一生产力
+★ 豆腐社Official - 裤袜越亮，踹人越狠
+★ 零创游戏 - 《哀鸿：城破十日记》首周致谢与致歉
+★ 暗色神具的魔王 - 赛薇亚拉的抱枕底色图！~
+★ 豆腐社Official - 大家好！《宿管少女☆不会被坑》众筹目前已于4月10日13:00在MODIAN上线，爱好者们可以在平台......
+★ 蓕朩蓕骉 - 第二弹PV发布！一个人做的长篇国G【我在b站做游戏-情景叙事赛道】
+★ 落星MeteoriteFall - 我在末世开后宫《落星》小型更新来袭~~兔子装扮免费DLC已上线
+★ 风域游戏 - 科幻+轻百！悬疑解谜RPG《余烬列车》Steam页面公开！
+★ 万词破 - 美女陪你背单词！过四六级！成年人单词游戏-正式版前沿报道！
+★ emanon制作组 - 小城茉莉demo上线，故事的第一章
+★ 《爱相集》游戏制作组 - 【爱相集LoveAlbum|制作组QA】
+★ Nekoday - 濑户口来写“成人礼”？DLC写手对应主题公开！众筹80万达成！
+★ 诺提拉观测所 - 只有玩Galgame才能成为人上人的游戏，Steam、手机双端发布！
+★ 霓诺网络 - 4月「研发日志」
+★ 忘雪社 - 总结，介绍以及未来
+★ 异乡情缘制作组单凌心 - 打卡day107
+★ Lost_Seed - 参展通知｜26年参展一览
+★ SnailTime制作组 - 《我们纯真的青春》角色先导PV—陈雨瑶
+★ PlanC社 - 《白线》Demo2现已公布！带来大量更新！
+★ 豆腐社Official - 风纪委员一定是好女孩吗？
+★ Plan-C社 - 《白线》赛车X校园题材Galgame主题曲PV公布！
+★ 海之风味酱 - 〖全新废萌作〗难道你是GAL高手！？PV
+★ 钟夏游戏 - 众筹试玩demo更新！L2D实装+爱香线全新剧情！
+★ PygmaGame - 白丝！仿生人！师生！裤袜！还有DLC消息！
+★ 风域游戏 - 风域游戏X广州BGM游戏展参展确认！
+★ 幻想叙事工作室 - 独游工作室首作《侵染：有你存在的夏日》demo已上架～欢迎试玩
+★ emanon制作组 - 【episode#22】特别篇：地上的星，心上的灯
+★ 繁星相位制作组 - 『理，早安』
+★ 屠星陈 - 单人gal开发日志【未保存的明天】9月3日？？
+</p><div class="search-result-card__meta" b-swm99zdmqo=""><span class="search-result-card__meta-item" b-swm99zdmqo=""><svg class="cg-mdi-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" b-7pdrvwg029=""><path d="M12,9A3,3 0 0,1 15,12A3,3 0 0,1 12,15A3,3 0 0,1 9,12A3,3 0 0,1 12,9M12,4.5C17,4.5 21.27,7.61 23,12C21.27,16.39 17,19.5 12,19.5C7,19.5 2.73,16.39 1,12C2.73,7.61 7,4.5 12,4.5M3.18,12C4.83,15.36 8.24,17.5 12,17.5C15.76,17.5 19.17,15.36 20.82,12C19.17,8.64 15.76,6.5 12,6.5C8.24,6.5 4.83,8.64 3.18,12Z" b-7pdrvwg029=""></path></svg>
+                    4045</span><span class="search-result-card__meta-item" b-swm99zdmqo=""><svg class="cg-mdi-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" b-7pdrvwg029=""><path d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z" b-7pdrvwg029=""></path></svg>
+                    2026-04-12</span></div></div></a><a href="/articles/index/8252" class="search-result-card" b-swm99zdmqo=""><div class="search-result-card__image-link" b-swm99zdmqo=""><img src="https://tucang.cngal.top/api/image/show/fce26c708160755017669f101cd1a64b?https://image.cngal.org/images/upload/20260329/361a110c2c7281b8b3b56f691d8b9054fa58db67.jpg" alt="CnGal每周速报（2026年第14周）" class="search-result-card__image" loading="lazy" b-swm99zdmqo=""></div><div class="search-result-card__body" b-swm99zdmqo=""><div class="search-result-card__header" b-swm99zdmqo=""><span class="search-result-card__type-badge search-result-card__type-badge--article" b-swm99zdmqo="">文章</span>
+            <span class="search-result-card__title" b-swm99zdmqo="">CnGal每周速报（2026年第14周）</span></div><p class="search-result-card__brief" b-swm99zdmqo="">★ OriginCourtyard - 我重生了，这一世……
+★ Orscat工作室 - 【开发日志】我打识质存在？真的假的？
+★ 熵联天创 - 《邻家之钥》实机演示
+★ AsicxArt-芯片社 - 无数日夜的温柔照料，才能将这盆小松细细打理出清雅姿态。
+★ 不恋爱就完蛋了 - 【四格漫画】俗话说，风水轮流转…
+★ 可味玩 - 可味玩新作《钟塔》发售倒计时3天！
+★ Hikarizon - 《无尽远方的油菜花海》延期公告
+★ Sign碎冠篇 - 拍点宅家小诗
+★ 忘雪社 - 摊宣！广百&amp;湘百
+★ 不完全调和少女 - ​呜哇哦吼咦唉喔！？
+★ SnailTime制作组 - 《我们纯真的青春》角色先导PV—林巧曼
+★ DCZ_GAME - 一个人做游戏的班级！但是不是一个人！！
+★ 屠星陈 - 单人gal开发日志【未保存的明天】9月1日
+★ XiAoRaN_Channel - 我们的游戏在TapTap上线啦！好耶ww
+★ 可味玩 - 可味玩新作《钟塔》发售倒计时2天！
+★ Mirreams - 《恋与未歇之雨》DLC感谢名单最终版
+★ 博西游戏 - 开发者日志--书籍分享
+★ 风域游戏 - Steam悬疑游戏节定档5月29日！欢迎各制作组前来报名~
+★ Lost_Seed - 【参展】上海清明橘园会参展！
+★ 暗色神具的魔王 - 我的国产galgame请到了顶级的日语配音！日配声优的详细介绍。
+★ 空夜月NanaYa - 《空月夜：三重预言诗》自制国产Galgame演示Demo
+★ 钟夏游戏 - 《中国式地雷女》众筹样品展示第二部分（镭射票、徽章、色纸、透卡、拍立得）
+★ 可味玩Kawayiplay - 泣系Galgame《钟塔》发售倒计时1天！
+★ 蔚律之都_official - 《蔚律之都》声优情报1
+★ 比特尔特制作组 - 【国G观察室】第8期-主角和开局
+★ 虽陨 - 《旧时光/新天地》开发日志3：【养成玩法】从设计到落地
+★ 随风念影Channel - 十年磨一剑，只为二次元
+★ 芝士钻头 - 【没钱也要做gal】视觉小说背景零成本制作 实拍照片简单处理
+★ 博西游戏 - 开发者日志--灵感来源及节奏设计
+★ emanon制作组 - 【episode#11】我家的孩子
+★ 戏壤游戏Archie - 《幻想乡：有罪推定》更新内容
+★ 异乡情缘制作组单凌心 - 打卡day98：众筹终于开启啦
+★ SUSUSUBE - 我的独立Galgame Demo更新了，新增40分钟试玩内容
+★ 蓕朩蓕骉 - 【剧情展示】苏蜷蜷初登场！丨Chapter1
+★ 土豆花制作组 - 《小小的身影，重叠的内心》动画化决定！
+★ 可味玩Kawayiplay - 我们真的在愚人节发售了游戏《钟塔》！
+★ 虽陨 - 4年烧光50万？这款讲游戏行业的Galgame，如今怎样了？
+★ PlanC社 - 《白线》将上线dlsite，并同步推出日语版本配音和神秘补丁~
+★ Sign碎冠篇 - 到最后还是做了这个艰难的决定
+★ Mirreams - 关于镜梦游戏在纳斯达克上市的公告
+★ 帽子社Hat-Soft - 悲报，《Web少女编程学院》将改名为《猫娘恋爱物语》
+★ PlanC社 - 4月抽奖贴！庆祝摩点开始预热~
+★ 磷光工作室的沙哥 - 国产诚哥能否逃脱柴刀的命运？！
+★ Pygma山鬼工坊 - 【关于《花鸟水月》女主角阵容追加的公告】
+★ 呐呐呐制作组 - 孩子们想我了吗？国G又双叒众筹了！猫愿🐾日记众筹开启
+★ emanon制作组 - 【episode#13】恋恋笔记本
+★ 被炒的炒饭 - 4月1日，适合发消息！@33祖传上色 负责的小白兔电商的后续作品即将推出！
+★ 零创游戏-嵇零 - 即将发售！我们将投入十万元作为二创激励！
+★ 可味玩 - 国产美少女游戏《钟塔》众筹感谢名单
+★ dan书机 - 《琳琳》續作制作決定！
+★ Flowtopia花海社 - 《幻蝶：双生对立的少女》主界面实机演示
+★ 月食图书室_独立游戏 - 各位好，月食图书室已经和星在文化中心（原万代南梦宫文化中心）达成合作
+★ 乘月楼工作室 - 好久不见大家，抱歉久等了！
+★ AsicxArt-芯片社 - 早春好时光～
+★ StationWorks官方 - 愚人节快乐~
+★ 无心汉 - 狙击王世界！《铜刀银剑》将被改编为3D开放世界，已获版号！
+★ OriginCourtyard - 游戏情报|《鸽子的烹饪方式》正式定档！
+★ 10lulu - Galgame《心象天仪本线》战斗系统首曝&amp;amp;战斗用BGM试听
+★ 暗色神具的魔王 - 新模式开发中！~Ciallo～(∠・ω&amp;lt; )⌒★模式！暗色神具的魔王
+★ 随风念影Channel - 泣系美少女游戏《钟塔》ED：「三色堇的夏天」
+★ Nekoday - 《世纪末之诗》特别企划：20个番外DLC制作决定！
+★ 無限未知 - 【Demo上线】重铸国G荣光，我辈义不容辞！《高考移民：常安转校生》试玩Demo已上线
+★ Hamstachio - 《星星落下的夜晚》将追加姐弟恋情节
+★ 绫地宁宁家的小丛雨 - 愚人节小剧场（这是一个关于洗头的故事）
+★ lambofgame - 新作预告！《我老婆真在这里你看不见吗》女主立绘公开
+★ Xso_official - 悬疑adv游戏《恋爱就完了》震撼发售！
+★ 月乃社 - 新作预告！坏消息：缝了，好消息：全缝了！
+★ 繁星相位制作组 - 『饲养染的30DAYS』知识小科普：关于这一切的背后故事
+★ 呐呐呐的林杏子 - 10小时众筹数破4k，感谢大家支持
+★ 比特尔特制作组 - 【国G观察室】26年1月月报
+★ Clsta梦蘿 - 百合avg：雨落受伤了，帮她消消毒吧
+★ 呐呐呐制作组 - 众筹达到100%破5000.00，感谢125位玩家支持（更新玩法介绍）
+★ emanon制作组 - 【episode#14】灯塔水母
+★ 弥散记忆 - 《恋爱音游痴》开发进度解禁！
+★ 竹书子 - 【国G】完成一部作品才亏了四位数，我们还是很厉害的嘛
+★ 灵虚之幽 - 【视觉小说】《某一年四季》预告PV
+★ 风域游戏 - 救赎系西幻百合AVG《无名者》定档4月27日！
+★ 蓕朩蓕骉 - 【剧情展示】小绿＆邪酱丨Chapter1
+★ 糕薯科技 - 没有美少女游戏的制作组不是好发行商，我们需要更多美少女游戏！
+★ 雪楔制作组 - 《雪楔》bgm——《出卖了全世界的人》
+★ Hamstachio - 可以和姐姐谈恋爱的桌面宠物游戏！商店页正式公开！
+★ PlanC社 - 摩点预热开启，欢迎各位观众前来参与
+★ 菲愀酱 - 1天后放假，21天后游戏发售，321天后，我们会在哪里？
+★ GAL高手制作组 - 《难道你是GAL高手》——本作唯一黑丝担当！关于白毛的人设创作
+★ emanon制作组 - 【episode#15】风吹来的讯息
+★ 狐语 - 依旧在顽强生存，过清明节的话可能要明年了
+★ 月乃社 - 色稿完成，kissCG！以及…她眼中的你~
+★ 夏榕-F - 盛筵狂徒4月更新计划
+★ 舒逸酱 - 国产独立游戏GALGAME《夏日之吻》公开
+★ 好运风_天意不可违 -  分享图片
+★ 符离游戏FuliGames - 疑似被Steam钓鱼审核，导致我们的游戏被锁国区
+★ 零创游戏-嵇零 - 《哀鸿》/《哀鸿：城破十日记》游戏主题曲
+★ 豆腐社Official - 致敬传奇员工Mary！谈谈《宿管少女》的现状和我们的后续计划
+★ 零创游戏 - 《哀鸿：城破十日记》已正式发售！
+★ StationWorks官方 - 制作四年，插图终于绘制到最后部分了！《巡星之旅》制作日志
+★ 呐呐呐制作组 - 分享来自 33paradox 老师的贺图
+★ likeyou游戏 - 《恋爱猪脚饭》摩点二期众筹支持者感谢名单
+★ SnailTime制作组 - 《我们纯真的青春》角色先导PV—王佳慈
+★ 灵虚之幽 - 新作品发售时间已经确定了
+★ PygmaGame - 白丝！仿生人！师生！裤袜！还有读评论！（第一期）
+★ 悖论科技 - 什么？持续送裤袜！新场景公开？黑白裤袜赠送中！
+★ 赤航韶行 - 【国GAL历史存档计划】Hollowings制作组2026.4.3直播回放
+★ 比特尔特制作组 - 【国G观察室】26年2月月报
+★ 零创游戏-嵇零 - （非官方）哀鸿首日感谢信，也是向媒体和主播朋友的邀请信。
+★ 博西游戏 - 繁枝跃窗人物部分l2d展示
+★ emanon制作组 - 【episode#16】青草地
+★ 绫地宁宁家的小丛雨 - 回家
+★ 孤克恩 - 关于女主モク ギョウゲツ（默晓月）人设变化说明
+★ 帽子社Hat-Soft - 为什么我的女主全部没有任何婚恋史，除了你外没有见过任何异性
+★ 忘雪社 - 忘雪社3月月报
+★ 面包店的面包 - 《天使过家家》游戏主界面音乐
+★ 屠星陈 - 单人gal开发日志【未保存的明天】9月2日
+★ 繁星相位制作组 - 是故事解析哇！剧透警告
+★ 漾夕制作组 - 第一期众筹周边打样！~钥匙扣 徽章~立牌 实拍图！~
+</p><div class="search-result-card__meta" b-swm99zdmqo=""><span class="search-result-card__meta-item" b-swm99zdmqo=""><svg class="cg-mdi-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" b-7pdrvwg029=""><path d="M12,9A3,3 0 0,1 15,12A3,3 0 0,1 12,15A3,3 0 0,1 9,12A3,3 0 0,1 12,9M12,4.5C17,4.5 21.27,7.61 23,12C21.27,16.39 17,19.5 12,19.5C7,19.5 2.73,16.39 1,12C2.73,7.61 7,4.5 12,4.5M3.18,12C4.83,15.36 8.24,17.5 12,17.5C15.76,17.5 19.17,15.36 20.82,12C19.17,8.64 15.76,6.5 12,6.5C8.24,6.5 4.83,8.64 3.18,12Z" b-7pdrvwg029=""></path></svg>
+                    2122</span><span class="search-result-card__meta-item" b-swm99zdmqo=""><svg class="cg-mdi-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" b-7pdrvwg029=""><path d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z" b-7pdrvwg029=""></path></svg>
+                    2026-04-05</span></div></div></a></div><nav class="cg-pagination" aria-label="Pagination" b-3f3byldjqi=""><a class="cg-pagination__btn cg-pagination__nav" href="/search?Text=cngal%E6%AF%8F%E5%91%A8%E9%80%9F%E6%8A%A5&amp;Sort=PubulishTime%20desc&amp;Times=1767196800000-1798732800000&amp;Page=2" aria-label="上一页" b-3f3byldjqi=""><svg class="cg-mdi-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" b-7pdrvwg029=""><path d="M15.41,16.58L10.83,12L15.41,7.41L14,6L8,12L14,18L15.41,16.58Z" b-7pdrvwg029=""></path></svg></a><a class="cg-pagination__btn " href="/search?Text=cngal%E6%AF%8F%E5%91%A8%E9%80%9F%E6%8A%A5&amp;Sort=PubulishTime%20desc&amp;Times=1767196800000-1798732800000&amp;Page=1" aria-label="第 1 页" b-3f3byldjqi="">1</a><a class="cg-pagination__btn " href="/search?Text=cngal%E6%AF%8F%E5%91%A8%E9%80%9F%E6%8A%A5&amp;Sort=PubulishTime%20desc&amp;Times=1767196800000-1798732800000&amp;Page=2" aria-label="第 2 页" b-3f3byldjqi="">2</a><span class="cg-pagination__btn cg-pagination__btn--active " aria-current="page" b-3f3byldjqi="">3</span><a class="cg-pagination__btn " href="/search?Text=cngal%E6%AF%8F%E5%91%A8%E9%80%9F%E6%8A%A5&amp;Sort=PubulishTime%20desc&amp;Times=1767196800000-1798732800000&amp;Page=4" aria-label="第 4 页" b-3f3byldjqi="">4</a><a class="cg-pagination__btn cg-pagination__page--s2" href="/search?Text=cngal%E6%AF%8F%E5%91%A8%E9%80%9F%E6%8A%A5&amp;Sort=PubulishTime%20desc&amp;Times=1767196800000-1798732800000&amp;Page=5" aria-label="第 5 页" b-3f3byldjqi="">5</a><a class="cg-pagination__btn cg-pagination__page--s3" href="/search?Text=cngal%E6%AF%8F%E5%91%A8%E9%80%9F%E6%8A%A5&amp;Sort=PubulishTime%20desc&amp;Times=1767196800000-1798732800000&amp;Page=6" aria-label="第 6 页" b-3f3byldjqi="">6</a><span class="cg-pagination__ellipsis" b-3f3byldjqi="">…</span><a class="cg-pagination__btn " href="/search?Text=cngal%E6%AF%8F%E5%91%A8%E9%80%9F%E6%8A%A5&amp;Sort=PubulishTime%20desc&amp;Times=1767196800000-1798732800000&amp;Page=324" aria-label="第 324 页" b-3f3byldjqi="">324</a><a class="cg-pagination__btn cg-pagination__nav" href="/search?Text=cngal%E6%AF%8F%E5%91%A8%E9%80%9F%E6%8A%A5&amp;Sort=PubulishTime%20desc&amp;Times=1767196800000-1798732800000&amp;Page=4" aria-label="下一页" b-3f3byldjqi=""><svg class="cg-mdi-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" b-7pdrvwg029=""><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" b-7pdrvwg029=""></path></svg></a></nav></div>
+
+<nav class="cg-bottom-nav" aria-label="底部导航" b-yxwfep1gsw=""><a href="/" class="cg-bottom-nav__item " b-yxwfep1gsw=""><svg class="cg-mdi-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" b-7pdrvwg029=""><path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" b-7pdrvwg029=""></path></svg>
+        <span b-yxwfep1gsw="">主页</span></a>
+    <a href="/search" class="cg-bottom-nav__item cg-bottom-nav__item--active" b-yxwfep1gsw=""><svg class="cg-mdi-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" b-7pdrvwg029=""><path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" b-7pdrvwg029=""></path></svg>
+        <span b-yxwfep1gsw="">探索</span></a>
+    <a href="/sharegames" class="cg-bottom-nav__item " b-yxwfep1gsw=""><svg class="cg-mdi-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" b-7pdrvwg029=""><path d="M17.5,7A5.5,5.5 0 0,1 23,12.5A5.5,5.5 0 0,1 17.5,18C15.79,18 14.27,17.22 13.26,16H10.74C9.73,17.22 8.21,18 6.5,18A5.5,5.5 0 0,1 1,12.5A5.5,5.5 0 0,1 6.5,7H17.5M6.5,9A3.5,3.5 0 0,0 3,12.5A3.5,3.5 0 0,0 6.5,16C7.9,16 9.1,15.18 9.66,14H14.34C14.9,15.18 16.1,16 17.5,16A3.5,3.5 0 0,0 21,12.5A3.5,3.5 0 0,0 17.5,9H6.5M5.75,10.25H7.25V11.75H8.75V13.25H7.25V14.75H5.75V13.25H4.25V11.75H5.75V10.25M16.75,12.5A1,1 0 0,1 17.75,13.5A1,1 0 0,1 16.75,14.5A1,1 0 0,1 15.75,13.5A1,1 0 0,1 16.75,12.5M18.75,10.5A1,1 0 0,1 19.75,11.5A1,1 0 0,1 18.75,12.5A1,1 0 0,1 17.75,11.5A1,1 0 0,1 18.75,10.5Z" b-7pdrvwg029=""></path></svg>
+        <span b-yxwfep1gsw="">游玩记录</span></a>
+    <a href="/square" class="cg-bottom-nav__item " b-yxwfep1gsw=""><svg class="cg-mdi-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" b-7pdrvwg029=""><path d="M11,13.5V21.5H3V13.5H11M9,15.5H5V19.5H9V15.5M12,2L17.5,11H6.5L12,2M12,5.86L10.08,9H13.92L12,5.86M17.5,13C20,13 22,15 22,17.5C22,20 20,22 17.5,22C15,22 13,20 13,17.5C13,15 15,13 17.5,13M17.5,15A2.5,2.5 0 0,0 15,17.5A2.5,2.5 0 0,0 17.5,20A2.5,2.5 0 0,0 20,17.5A2.5,2.5 0 0,0 17.5,15Z" b-7pdrvwg029=""></path></svg>
+        <span b-yxwfep1gsw="">广场</span></a>
+    <a href="/space/index" class="cg-bottom-nav__item " b-yxwfep1gsw=""><svg class="cg-mdi-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" b-7pdrvwg029=""><path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,6A2,2 0 0,0 10,8A2,2 0 0,0 12,10A2,2 0 0,0 14,8A2,2 0 0,0 12,6M12,13C14.67,13 20,14.33 20,17V20H4V17C4,14.33 9.33,13 12,13M12,14.9C9.03,14.9 5.9,16.36 5.9,17V18.1H18.1V17C18.1,16.36 14.97,14.9 12,14.9Z" b-7pdrvwg029=""></path></svg>
+                <span b-yxwfep1gsw="">空间</span></a></nav></article></div></main>
+
+    <footer class="cg-layout__footer" b-bh5voylcdx=""><div class="cg-footer-main" b-bh5voylcdx=""><div class="cg-footer-intro" b-bh5voylcdx=""><div class="cg-brand" b-bh5voylcdx=""><img class="cg-brand__icon" src="favicon.wb7x0tdnrd.ico" alt="CnGal" b-bh5voylcdx="">
+                       <h2 class="cg-brand__text" b-bh5voylcdx="">CnGal资料站</h2></div>
+                    <p b-bh5voylcdx="">CnGal是一个非营利性的，立志于收集整理国内制作组创作及中文化的中文Galgame/AVG的介绍、攻略、评测、感想等内容的资料性质的网站。 此外，CnGal官方还会与圈内中文AVG制作组进行友好合作，如免费提供Banner广告位，网站服务器资源等。</p>
+                    <p b-bh5voylcdx="">不良信息举报邮箱：help@cngal.org</p>
+                <div class="cg-footer-socials" aria-label="社交链接" b-bh5voylcdx=""><a href="https://weibo.com/cngalorg" target="_blank" rel="noopener noreferrer" aria-label="新浪微博" b-bh5voylcdx=""><svg class="cg-mdi-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" b-7pdrvwg029=""><path d="M9.82,13.87C10.89,13.87 11.77,14.74 11.77,15.82A1.95,1.95 0 0,1 9.82,17.77C8.74,17.77 7.87,16.89 7.87,15.82C7.87,14.74 8.74,13.87 9.82,13.87M14.5,3.34L15.18,3.31C18.94,3.31 22,6.37 22,10.13L21.95,10.95L20.76,10.58L20.78,10.13C20.78,7.04 18.27,4.53 15.18,4.53L14.83,4.54L14.5,3.34M15.32,6.23C17.38,6.3 19.05,8 19.08,10.06L17.84,9.68C17.65,8.56 16.78,7.68 15.67,7.5L15.32,6.23M2,15.41C1.97,14.8 2.07,12.64 4.95,9.97C8.35,6.81 9.82,7.05 9.82,7.05C9.82,7.05 13,6.75 11.06,10.46H11.13C11.6,9.96 12.62,9.21 14.69,9C16.77,8.79 16.77,10.5 16.5,11.7C18.38,12.64 19.56,14.03 19.56,15.58C19.56,18.4 15.63,20.69 10.78,20.69H10.65L10.5,20.69C7,20.69 4,19.42 2.71,17.59C2.25,16.97 2,16.29 2,15.58V15.41M9.82,11.92C6.59,11.92 3.97,13.67 3.97,15.82C3.97,17.97 6.59,19.72 9.82,19.72C13.05,19.72 15.67,17.97 15.67,15.82C15.67,13.67 13.05,11.92 9.82,11.92Z" b-7pdrvwg029=""></path></svg></a>
+                    <a href="https://space.bilibili.com/145239325" target="_blank" rel="noopener noreferrer" aria-label="Bilibili" b-bh5voylcdx=""><svg class="cg-mdi-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" b-7pdrvwg029=""><path d="M8.16,3L6.75,4.41L9.34,7H4C2.89,7 2,7.89 2,9V19C2,20.11 2.89,21 4,21H20C21.11,21 22,20.11 22,19V9C22,7.89 21.11,7 20,7H14.66L17.25,4.41L15.84,3L12,6.84L8.16,3M4,9H17V19H4V9M19.5,9A1,1 0 0,1 20.5,10A1,1 0 0,1 19.5,11A1,1 0 0,1 18.5,10A1,1 0 0,1 19.5,9M19.5,12A1,1 0 0,1 20.5,13A1,1 0 0,1 19.5,14A1,1 0 0,1 18.5,13A1,1 0 0,1 19.5,12Z" b-7pdrvwg029=""></path></svg></a>
+                    <a href="https://www.xiaoheihe.cn/app/user/profile/30519991" target="_blank" rel="noopener noreferrer" aria-label="知乎" b-bh5voylcdx=""><svg class="cg-mdi-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" b-7pdrvwg029=""><path d="M2,10.96C1.5,10.68 1.35,10.07 1.63,9.59L3.13,7C3.24,6.8 3.41,6.66 3.6,6.58L11.43,2.18C11.59,2.06 11.79,2 12,2C12.21,2 12.41,2.06 12.57,2.18L20.47,6.62C20.66,6.72 20.82,6.88 20.91,7.08L22.36,9.6C22.64,10.08 22.47,10.69 22,10.96L21,11.54V16.5C21,16.88 20.79,17.21 20.47,17.38L12.57,21.82C12.41,21.94 12.21,22 12,22C11.79,22 11.59,21.94 11.43,21.82L3.53,17.38C3.21,17.21 3,16.88 3,16.5V10.96C2.7,11.13 2.32,11.14 2,10.96M12,4.15V4.15L12,10.85V10.85L17.96,7.5L12,4.15M5,15.91L11,19.29V12.58L5,9.21V15.91M19,15.91V12.69L14,15.59C13.67,15.77 13.3,15.76 13,15.6V19.29L19,15.91M13.85,13.36L20.13,9.73L19.55,8.72L13.27,12.35L13.85,13.36Z" b-7pdrvwg029=""></path></svg></a></div></div>
+
+            <div class="cg-footer-links" b-bh5voylcdx=""><section b-bh5voylcdx=""><h3 b-bh5voylcdx="">社交平台</h3>
+                    <ul b-bh5voylcdx=""><li b-bh5voylcdx=""><a href="https://weibo.com/cngalorg" target="_blank" rel="noopener noreferrer" b-bh5voylcdx="">新浪微博</a></li>
+                            <li b-bh5voylcdx=""><a href="https://space.bilibili.com/145239325" target="_blank" rel="noopener noreferrer" b-bh5voylcdx="">Bilibili</a></li>
+                            <li b-bh5voylcdx=""><a href="https://www.zhihu.com/people/cngalorg" target="_blank" rel="noopener noreferrer" b-bh5voylcdx="">知乎</a></li></ul></section>
+
+                <section b-bh5voylcdx=""><h3 b-bh5voylcdx="">关于我们</h3>
+                    <ul b-bh5voylcdx=""><li b-bh5voylcdx=""><a href="/articles/index/767" b-bh5voylcdx="">概述</a></li>
+                            <li b-bh5voylcdx=""><a href="/articles/index/150" b-bh5voylcdx="">组织架构</a></li>
+                            <li b-bh5voylcdx=""><a href="/articles/index/225" b-bh5voylcdx="">隐私协议</a></li>
+                            <li b-bh5voylcdx=""><a href="/articles/index/766" b-bh5voylcdx="">更新日志</a></li></ul></section>
+
+                <section b-bh5voylcdx=""><h3 b-bh5voylcdx="">其他</h3>
+                    <ul b-bh5voylcdx=""><li b-bh5voylcdx=""><a href="https://open.cngal.org/" target="_blank" rel="noopener noreferrer" b-bh5voylcdx="">开放平台</a></li>
+                            <li b-bh5voylcdx=""><a href="https://app.cngal.org/" target="_blank" rel="noopener noreferrer" b-bh5voylcdx="">PWA 应用</a></li>
+                            <li b-bh5voylcdx=""><a href="/data" b-bh5voylcdx="">数据汇总</a></li>
+                            <li b-bh5voylcdx=""><a href="https://github.com/CnGal/CnGalWebSite" target="_blank" rel="noopener noreferrer" b-bh5voylcdx="">源代码仓库</a></li></ul></section></div></div>
+
+        <div class="cg-footer-bottom" b-bh5voylcdx=""><p b-bh5voylcdx="">© 2026 - CnGal资料站</p>
+            <div class="cg-footer-meta" b-bh5voylcdx=""><span b-bh5voylcdx=""><a href="http://beian.miit.gov.cn" target="_blank" rel="noopener noreferrer" b-bh5voylcdx="">粤ICP备15055899号</a></span>
+                    <span b-bh5voylcdx=""><a href="https://icp.gov.moe/?keyword=20225899" target="_blank" rel="noopener noreferrer" b-bh5voylcdx="">萌ICP备20225899号</a></span></div></div></footer></div>
+
+<nav class="floating-action-toolbar" aria-label="浮动工具栏" b-ir4po31gtu=""><div class="floating-action-toolbar__group" b-ir4po31gtu=""><button class="floating-action-toolbar__button" type="button" aria-label="社区交流" aria-haspopup="true" b-ir4po31gtu=""><svg class="cg-mdi-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" b-7pdrvwg029=""><path d="M3.9,12C3.9,10.29 5.29,8.9 7,8.9H11V7H7A5,5 0 0,0 2,12A5,5 0 0,0 7,17H11V15.1H7C5.29,15.1 3.9,13.71 3.9,12M8,13H16V11H8V13M17,7H13V8.9H17C18.71,8.9 20.1,10.29 20.1,12C20.1,13.71 18.71,15.1 17,15.1H13V17H17A5,5 0 0,0 22,12A5,5 0 0,0 17,7Z" b-7pdrvwg029=""></path></svg>
+            <span class="floating-action-toolbar__label" b-ir4po31gtu="">社区</span></button>
+        <div class="floating-action-toolbar__panel floating-action-toolbar__panel--community" role="group" aria-label="社区交流" b-ir4po31gtu=""><div class="floating-action-toolbar__panel-header" b-ir4po31gtu=""><svg class="cg-mdi-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" b-7pdrvwg029=""><path d="M9.5,4C5.36,4 2,6.69 2,10C2,11.89 3.08,13.56 4.78,14.66L4,17L6.5,15.5C7.39,15.81 8.37,16 9.41,16C9.15,15.37 9,14.7 9,14C9,10.69 12.13,8 16,8C16.19,8 16.38,8 16.56,8.03C15.54,5.69 12.78,4 9.5,4M6.5,6.5A1,1 0 0,1 7.5,7.5A1,1 0 0,1 6.5,8.5A1,1 0 0,1 5.5,7.5A1,1 0 0,1 6.5,6.5M11.5,6.5A1,1 0 0,1 12.5,7.5A1,1 0 0,1 11.5,8.5A1,1 0 0,1 10.5,7.5A1,1 0 0,1 11.5,6.5M16,9C12.69,9 10,11.24 10,14C10,16.76 12.69,19 16,19C16.67,19 17.31,18.92 17.91,18.75L20,20L19.38,18.13C20.95,17.22 22,15.71 22,14C22,11.24 19.31,9 16,9M14,11.5A1,1 0 0,1 15,12.5A1,1 0 0,1 14,13.5A1,1 0 0,1 13,12.5A1,1 0 0,1 14,11.5M18,11.5A1,1 0 0,1 19,12.5A1,1 0 0,1 18,13.5A1,1 0 0,1 17,12.5A1,1 0 0,1 18,11.5Z" b-7pdrvwg029=""></path></svg>
+                <span b-ir4po31gtu="">社区交流</span></div>
+            <communitylinkscontent b-ir4po31gtu=""></communitylinkscontent></div></div>
+
+    <div class="floating-action-toolbar__group" b-ir4po31gtu=""><button class="floating-action-toolbar__button" type="button" aria-label="工具箱" aria-haspopup="true" b-ir4po31gtu=""><svg class="cg-mdi-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" b-7pdrvwg029=""><path d="M22.61,19L13.53,9.91C14.46,7.57 14,4.81 12.09,2.91C9.79,0.61 6.21,0.4 3.66,2.26L7.5,6.11L6.08,7.5L2.25,3.69C0.39,6.23 0.6,9.82 2.9,12.11C4.76,13.97 7.47,14.46 9.79,13.59L18.9,22.7C19.29,23.09 19.92,23.09 20.31,22.7L22.61,20.4C23,20 23,19.39 22.61,19M19.61,20.59L10.15,11.13C9.54,11.58 8.86,11.85 8.15,11.95C6.79,12.15 5.36,11.74 4.32,10.7C3.37,9.76 2.93,8.5 3,7.26L6.09,10.35L10.33,6.11L7.24,3C8.5,2.95 9.73,3.39 10.68,4.33C11.76,5.41 12.17,6.9 11.92,8.29C11.8,9 11.5,9.66 11.04,10.25L20.5,19.7L19.61,20.59Z" b-7pdrvwg029=""></path></svg>
+            <span class="floating-action-toolbar__label" b-ir4po31gtu="">工具</span></button>
+        <div class="floating-action-toolbar__panel floating-action-toolbar__panel--tools" role="group" aria-label="工具箱" b-ir4po31gtu=""><div class="floating-action-toolbar__panel-header" b-ir4po31gtu=""><svg class="cg-mdi-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" b-7pdrvwg029=""><path d="M18 16H16V15H8V16H6V15H2V20H22V15H18V16M20 8H17V6C17 4.9 16.1 4 15 4H9C7.9 4 7 4.9 7 6V8H4C2.9 8 2 8.9 2 10V14H6V12H8V14H16V12H18V14H22V10C22 8.9 21.1 8 20 8M15 8H9V6H15V8Z" b-7pdrvwg029=""></path></svg>
+                <span b-ir4po31gtu="">工具箱</span></div>
+
+            <a class="floating-action-toolbar__login" href="/authentication/login?returnUrl=%2Fsearch%3FText%3Dcngal%25E6%25AF%258F%25E5%2591%25A8%25E9%2580%259F%25E6%258A%25A5%26Sort%3DPubulishTime%2520desc%26Times%3D1767196800000-1798732800000%26Page%3D3" b-ir4po31gtu=""><svg class="cg-mdi-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" b-7pdrvwg029=""><path d="M11 7L9.6 8.4L12.2 11H2V13H12.2L9.6 15.6L11 17L16 12L11 7M20 19H12V21H20C21.1 21 22 20.1 22 19V5C22 3.9 21.1 3 20 3H12V5H20V19Z" b-7pdrvwg029=""></path></svg>
+                        <span b-ir4po31gtu="">登录后使用工具箱</span></a></div></div>
+
+    <button class="floating-action-toolbar__button" type="button" aria-label="回到顶部" data-cg-action="scroll-top" b-ir4po31gtu=""><svg class="cg-mdi-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" b-7pdrvwg029=""><path d="M13,20H11V8L5.5,13.5L4.08,12.08L12,4.16L19.92,12.08L18.5,13.5L13,8V20Z" b-7pdrvwg029=""></path></svg>
+        <span class="floating-action-toolbar__label" b-ir4po31gtu="">顶部</span></button></nav>
+
+<div id="blazor-error-ui" data-nosnippet="" popover="manual" b-bh5voylcdx=""><div class="blazor-error-card" b-bh5voylcdx=""><div class="blazor-error-icon" aria-hidden="true" b-bh5voylcdx=""><svg viewBox="0 0 24 24" fill="currentColor" b-bh5voylcdx=""><path d="M11,15H13V17H11V15M11,7H13V13H11V7M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20Z" b-bh5voylcdx=""></path></svg></div>
+        <div class="blazor-error-content" b-bh5voylcdx=""><p class="blazor-error-title" b-bh5voylcdx="">发生了一个未处理的错误</p>
+            <p class="blazor-error-detail" b-bh5voylcdx="">页面可能无法正常工作，请尝试重新加载。</p></div>
+        <div class="blazor-error-actions" b-bh5voylcdx=""><button type="button" class="blazor-error-reload" data-cg-action="reload" b-bh5voylcdx="">重新加载</button>
+            <span class="dismiss" role="button" tabindex="0" aria-label="关闭" b-bh5voylcdx="">✕</span></div></div></div>
+
+<div id="components-reconnect-modal" popover="manual" b-bh5voylcdx=""><div class="reconnect-card reconnect-show" b-bh5voylcdx=""><div class="reconnect-spinner" aria-hidden="true" b-bh5voylcdx=""></div>
+        <div class="blazor-error-content" b-bh5voylcdx=""><p class="blazor-error-title" b-bh5voylcdx="">连接已断开</p>
+            <p class="blazor-error-detail" b-bh5voylcdx="">正在尝试重新连接，请稍候…</p></div></div>
+    <div class="reconnect-card reconnect-failed" b-bh5voylcdx=""><div class="blazor-error-icon" aria-hidden="true" b-bh5voylcdx=""><svg viewBox="0 0 24 24" fill="currentColor" b-bh5voylcdx=""><path d="M20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12M22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2A10,10 0 0,1 22,12M15.5,8C16.3,8 17,8.7 17,9.5C17,10.3 16.3,11 15.5,11C14.7,11 14,10.3 14,9.5C14,8.7 14.7,8 15.5,8M10,9.5C10,10.3 9.3,11 8.5,11C7.7,11 7,10.3 7,9.5C7,8.7 7.7,8 8.5,8C9.3,8 10,8.7 10,9.5M12,14C9.67,14 7.69,15.46 6.89,17.5H17.11C16.31,15.46 14.33,14 12,14Z" b-bh5voylcdx=""></path></svg></div>
+        <div class="blazor-error-content" b-bh5voylcdx=""><p class="blazor-error-title" b-bh5voylcdx="">连接已断开</p>
+            <p class="blazor-error-detail" b-bh5voylcdx="">请重新加载页面以恢复正常使用。</p></div>
+        <div class="blazor-error-actions" b-bh5voylcdx=""><button type="button" class="blazor-error-reload" data-cg-action="reload" b-bh5voylcdx="">重新加载</button></div></div></div>
+            <blazor-focus-on-navigate selector="h1"></blazor-focus-on-navigate>
+<script src="_framework/blazor.web.xmryko9e6j.js"></script></body></html>
